@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<gpx version="1.1" creator="GPSBabel - http://www.gpsbabel.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+  <metadata>
+    <link href="http://www.garmin.com">
+      <text>Garmin International</text>
+    </link>
+    <time>2024-10-04T01:14:47Z</time>
+    <bounds minlat="36.261596412877864" minlon="117.02222287" maxlat="36.262542351347435" maxlon="117.02779677358703" />
+  </metadata>
+  <extensions>
+    <name>2024-10-04 09:14 其它</name>
+    <description></description>
+    <TrackId>60637786</TrackId>
+    <TrackTypeId>7</TrackTypeId>
+    <TrackTags></TrackTags>
+    <BeginTime>1728004487000</BeginTime>
+    <EndTime>1728004562000</EndTime>
+    <TimeUsed>75305</TimeUsed>
+    <PauseTime>2926</PauseTime>
+    <PosStartName>增福殿</PosStartName>
+    <PosEndName>泰山风景名胜区</PosEndName>
+    <ProductVersion>and_7.8.2</ProductVersion>
+    <StartDistrictId>14185</StartDistrictId>
+    <EndDistrictId>14185</EndDistrictId>
+    <CreaterId>52492251</CreaterId>
+    <CreaterName>更改名字_LBL4013120</CreaterName>
+    <CreaterIcon>1241067909</CreaterIcon>
+    <ThumbnailId>0</ThumbnailId>
+  </extensions>
+  <trk>
+    <trkseg>
+      <trkpt lat="36.2619798" lon="117.02222287">
+        <ele>271.415771484375</ele>
+        <time>2024-10-04T01:14:47Z</time>
+        <speed>5.59</speed>
+      </trkpt>
+      <trkpt lat="36.26206847276074" lon="117.02249619271761">
+        <ele>271.415771484375</ele>
+        <time>2024-10-04T01:14:53Z</time>
+        <speed>3.61</speed>
+      </trkpt>
+      <trkpt lat="36.26210903268484" lon="117.02276727576995">
+        <ele>272.7049641229933</ele>
+        <time>2024-10-04T01:14:57Z</time>
+        <speed>3.64</speed>
+      </trkpt>
+      <trkpt lat="36.26221049783829" lon="117.023030077034">
+        <ele>273.7931460441181</ele>
+        <time>2024-10-04T01:15:03Z</time>
+        <speed>4.89</speed>
+      </trkpt>
+      <trkpt lat="36.262291180885235" lon="117.02329183113957">
+        <ele>275.76268350062196</ele>
+        <time>2024-10-04T01:15:07Z</time>
+        <speed>7.51</speed>
+      </trkpt>
+      <trkpt lat="36.26237352618885" lon="117.0235283392742">
+        <ele>277.7653834328708</ele>
+        <time>2024-10-04T01:15:11Z</time>
+        <speed>7.49</speed>
+      </trkpt>
+      <trkpt lat="36.262432503240376" lon="117.02382682972521">
+        <ele>279.2047265377038</ele>
+        <time>2024-10-04T01:15:15Z</time>
+        <speed>8.26</speed>
+      </trkpt>
+      <trkpt lat="36.26245513095363" lon="117.02419846531811">
+        <ele>280.45844256313643</ele>
+        <time>2024-10-04T01:15:19Z</time>
+        <speed>9.06</speed>
+      </trkpt>
+      <trkpt lat="36.26245545162925" lon="117.02460648473237">
+        <ele>281.1611507980849</ele>
+        <time>2024-10-04T01:15:23Z</time>
+        <speed>9.51</speed>
+      </trkpt>
+      <trkpt lat="36.26247353887299" lon="117.02503862096381">
+        <ele>282.1573051511907</ele>
+        <time>2024-10-04T01:15:27Z</time>
+        <speed>9.55</speed>
+      </trkpt>
+      <trkpt lat="36.26249874034029" lon="117.02546832047075">
+        <ele>282.64477167977657</ele>
+        <time>2024-10-04T01:15:31Z</time>
+        <speed>9.53</speed>
+      </trkpt>
+      <trkpt lat="36.26253147488992" lon="117.02588849603838">
+        <ele>282.83176042493005</ele>
+        <time>2024-10-04T01:15:35Z</time>
+        <speed>9.31</speed>
+      </trkpt>
+      <trkpt lat="36.262542351347435" lon="117.02629274020146">
+        <ele>283.55926795921204</ele>
+        <time>2024-10-04T01:15:39Z</time>
+        <speed>8.43</speed>
+      </trkpt>
+      <trkpt lat="36.26248066818375" lon="117.02667191686363">
+        <ele>284.19912406125655</ele>
+        <time>2024-10-04T01:15:43Z</time>
+        <speed>8.74</speed>
+      </trkpt>
+      <trkpt lat="36.26229581941431" lon="117.02697809356754">
+        <ele>285.98124001276693</ele>
+        <time>2024-10-04T01:15:47Z</time>
+        <speed>8.46</speed>
+      </trkpt>
+      <trkpt lat="36.2620418464763" lon="117.02722393602059">
+        <ele>287.4273150171456</ele>
+        <time>2024-10-04T01:15:51Z</time>
+        <speed>7.92</speed>
+      </trkpt>
+      <trkpt lat="36.261806118243406" lon="117.02748771460831">
+        <ele>288.4910274814999</ele>
+        <time>2024-10-04T01:15:55Z</time>
+        <speed>8.81</speed>
+      </trkpt>
+      <trkpt lat="36.261596412877864" lon="117.02779677358703">
+        <ele>289.41932089590625</ele>
+        <time>2024-10-04T01:15:59Z</time>
+        <speed>9.31</speed>
+      </trkpt>
+      <trkpt lat="36.261596412877864" lon="117.02779677358703">
+        <ele>289.41932089590625</ele>
+        <time>2024-10-04T01:16:00Z</time>
+        <speed>9.31</speed>
+      </trkpt>
+      <extensions>
+        <PauseTimes>1728004560051:pause</PauseTimes>
+      </extensions>
+    </trkseg>
+  </trk>
+</gpx>

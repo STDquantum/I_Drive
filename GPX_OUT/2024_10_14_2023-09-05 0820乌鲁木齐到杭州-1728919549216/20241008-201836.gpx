@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with BasicAirData GPS Logger for Android - ver. 3.2.2 -->
+<!-- Track 4 = 15 TrackPoints + 0 Placemarks -->
+
+<!-- Track Statistics (based on Total Time | Time in Movement): -->
+<!--  Distance = 302 米 -->
+<!--  Duration = 03:02 | 01:56 -->
+<!--  Altitude Gap = 6 米 -->
+<!--  Max Speed = 14 公里/时 -->
+<!--  Avg Speed = 6.0 | 9.4 公里/时 -->
+<!--  Direction = 东北偏东 -->
+<!--  Activity = running -->
+<!--  Altitudes = Raw -->
+
+<gpx version="1.0"
+     creator="BasicAirData GPS Logger 3.2.2"
+     xmlns="http://www.topografix.com/GPX/1/0"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.topografix.com/GPX/1/0 http://www.topografix.com/GPX/1/0/gpx.xsd">
+<name>GPS Logger 20241008-201836</name>
+<time>2024-10-14T15:31:29Z</time>
+<keywords>running</keywords>
+<bounds minlat="30.27019045" minlon="120.11890850" maxlat="30.27112164" maxlon="120.12059819" />
+
+<trk>
+ <name>轨迹 20241008-201836</name>
+ <trkseg>
+  <trkpt lat="30.27019045" lon="120.11890850"><ele>11.024</ele><time>2024-10-08T12:18:36Z</time><speed>1.220</speed><sat>32</sat></trkpt>
+  <trkpt lat="30.27037057" lon="120.11914113"><ele>12.521</ele><time>2024-10-08T12:18:52Z</time><speed>3.050</speed><sat>39</sat></trkpt>
+  <trkpt lat="30.27054900" lon="120.11940498"><ele>9.554</ele><time>2024-10-08T12:19:08Z</time><speed>3.070</speed><sat>42</sat></trkpt>
+  <trkpt lat="30.27097094" lon="120.11957085"><ele>7.509</ele><time>2024-10-08T12:19:24Z</time><speed>2.820</speed><sat>41</sat></trkpt>
+  <trkpt lat="30.27112164" lon="120.12000827"><ele>9.947</ele><time>2024-10-08T12:19:40Z</time><speed>3.880</speed><sat>36</sat></trkpt>
+  <trkpt lat="30.27097237" lon="120.12049795"><ele>9.397</ele><time>2024-10-08T12:19:56Z</time><speed>3.860</speed><sat>39</sat></trkpt>
+  <trkpt lat="30.27056456" lon="120.12047332"><ele>14.692</ele><time>2024-10-08T12:20:12Z</time><speed>1.730</speed><sat>36</sat></trkpt>
+  <trkpt lat="30.27031121" lon="120.12050205"><ele>10.382</ele><time>2024-10-08T12:20:28Z</time><speed>0.250</speed><sat>31</sat></trkpt>
+  <trkpt lat="30.27031588" lon="120.12050456"><ele>11.101</ele><time>2024-10-08T12:20:30Z</time><speed>0.510</speed><sat>31</sat></trkpt>
+  <trkpt lat="30.27032190" lon="120.12050046"><ele>11.219</ele><time>2024-10-08T12:20:32Z</time><speed>0.000</speed><sat>30</sat></trkpt>
+  <trkpt lat="30.27032444" lon="120.12050656"><ele>11.628</ele><time>2024-10-08T12:20:48Z</time><speed>0.000</speed><sat>8</sat></trkpt>
+  <trkpt lat="30.27032616" lon="120.12051038"><ele>10.665</ele><time>2024-10-08T12:21:04Z</time><speed>0.000</speed><sat>6</sat></trkpt>
+  <trkpt lat="30.27033924" lon="120.12051558"><ele>10.451</ele><time>2024-10-08T12:21:20Z</time><speed>0.000</speed><sat>11</sat></trkpt>
+  <trkpt lat="30.27038465" lon="120.12054810"><ele>11.260</ele><time>2024-10-08T12:21:22Z</time><speed>0.840</speed><sat>16</sat></trkpt>
+  <trkpt lat="30.27049135" lon="120.12059819"><ele>17.268</ele><time>2024-10-08T12:21:38Z</time><speed>0.830</speed><sat>25</sat></trkpt>
+ </trkseg>
+</trk>
+
+</gpx>
+ 
