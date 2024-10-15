@@ -33,6 +33,10 @@ concurrency:
   group: 'pages'
   cancel-in-progress: true
 
+env:
+  GITHUB_NAME: "action@github.com" # default Actions bot you can change it to yours
+  GITHUB_EMAIL: "GitHub Action" # default Actions bot you can change it to yours
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -96,14 +100,28 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+        
       - name: Build
         run: PATH_PREFIX=/${{ github.event.repository.name }} pnpm build
+
+      - name: Copy artifacts to publish directory
+        run: cp -r dist/* ./public/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist repository
           path: './dist'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Commit to repository
+        if: always()
+        run: |
+          git config --local user.email "${{ env.GITHUB_EMAIL }}"
+          git config --local user.name "${{ env.GITHUB_NAME }}"
+          git add public/
+          git commit -m "Update public folder" || echo "nothing to commit"
+          git push || echo "nothing to push"
