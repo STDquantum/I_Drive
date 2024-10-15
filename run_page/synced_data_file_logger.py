@@ -6,10 +6,10 @@ import json
 def save_synced_data_file_list(file_list: list):
     old_list = load_synced_file_list()
 
-    with open(SYNCED_FILE, "w") as f:
+    with open(SYNCED_FILE, "w", encoding="utf-8") as f:
         file_list.extend(old_list)
 
-        json.dump(file_list, f)
+        json.dump(file_list, f, indent=4, ensure_ascii=False)
 
 
 def save_synced_activity_list(activity_list: list):
