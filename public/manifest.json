@@ -1,0 +1,82 @@
+{
+  "_activities-e027e86c.js": {
+    "file": "assets/activities-e027e86c.js"
+  },
+  "_vendors-1a30de1e.js": {
+    "file": "assets/vendors-1a30de1e.js"
+  },
+  "assets/end.svg": {
+    "file": "assets/end-a91503f9.svg",
+    "src": "assets/end.svg"
+  },
+  "assets/github.svg": {
+    "assets": [
+      "assets/github-0f4794e8.svg"
+    ],
+    "file": "assets/github.svg-778de711.js",
+    "imports": [
+      "_vendors-1a30de1e.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/github.svg"
+  },
+  "assets/grid.svg": {
+    "assets": [
+      "assets/grid-601ae4d7.svg"
+    ],
+    "file": "assets/grid.svg-2f82cc6c.js",
+    "imports": [
+      "_vendors-1a30de1e.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/grid.svg"
+  },
+  "assets/start.svg": {
+    "file": "assets/start-2a9d06f3.svg",
+    "src": "assets/start.svg"
+  },
+  "assets/year_2023.svg": {
+    "assets": [
+      "assets/year_2023-f6d3517e.svg"
+    ],
+    "file": "assets/year_2023-f0d9a64d.js",
+    "imports": [
+      "_vendors-1a30de1e.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/year_2023.svg"
+  },
+  "assets/year_2024.svg": {
+    "assets": [
+      "assets/year_2024-29ed2e40.svg"
+    ],
+    "file": "assets/year_2024-36630473.js",
+    "imports": [
+      "_vendors-1a30de1e.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/year_2024.svg"
+  },
+  "index.css": {
+    "file": "assets/index-48f34a55.css",
+    "src": "index.css"
+  },
+  "index.html": {
+    "css": [
+      "assets/index-48f34a55.css"
+    ],
+    "dynamicImports": [
+      "assets/year_2023.svg",
+      "assets/year_2024.svg",
+      "assets/github.svg",
+      "assets/grid.svg"
+    ],
+    "file": "assets/index-5f0330fc.js",
+    "imports": [
+      "_vendors-1a30de1e.js",
+      "_activities-e027e86c.js"
+    ],
+    "isEntry": true,
+    "src": "index.html"
+  }
+}
