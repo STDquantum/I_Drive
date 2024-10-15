@@ -105,7 +105,7 @@ jobs:
         run: PATH_PREFIX=/${{ github.event.repository.name }} pnpm build
 
       - name: Copy artifacts to publish directory
-        run: cp -r dist/* ./public/
+        run: cp -r dist/* ./running_page/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -122,6 +122,6 @@ jobs:
         run: |
           git config --local user.email "${{ env.GITHUB_EMAIL }}"
           git config --local user.name "${{ env.GITHUB_NAME }}"
-          git add public/
+          git add running_page/
           git commit -m "Update public folder" || echo "nothing to commit"
           git push || echo "nothing to push"
