@@ -58,12 +58,12 @@
     "src": "assets/year_2024.svg"
   },
   "index.css": {
-    "file": "assets/index-48f34a55.css",
+    "file": "assets/index-152466b5.css",
     "src": "index.css"
   },
   "index.html": {
     "css": [
-      "assets/index-48f34a55.css"
+      "assets/index-152466b5.css"
     ],
     "dynamicImports": [
       "assets/year_2023.svg",
@@ -71,7 +71,7 @@
       "assets/github.svg",
       "assets/grid.svg"
     ],
-    "file": "assets/index-6bf9c273.js",
+    "file": "assets/index-a561b619.js",
     "imports": [
       "_vendors-1a30de1e.js",
       "_activities-94256570.js"
