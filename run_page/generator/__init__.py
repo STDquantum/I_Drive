@@ -147,8 +147,7 @@ class Generator:
                 streak = 1
             activity.streak = streak
             last_date = date
-            if not IGNORE_BEFORE_SAVING:
-                activity.summary_polyline = filter_out(activity.summary_polyline)
+            activity.summary_polyline = activity.summary_polyline
             activity_list.append(activity.to_dict())
 
         return activity_list
