@@ -13,9 +13,9 @@ def run_strava_sync(client_id, client_secret, refresh_token, only_run=False):
     generator.only_run = only_run
     generator.sync(False)
 
-    activities_list = generator.loadForMapping()
+    activities_list = generator.load()
     with open(JSON_FILE, "w") as f:
-        json.dump(activities_list, f, indent=0)
+        json.dump(activities_list, f)
 
 
 if __name__ == "__main__":
