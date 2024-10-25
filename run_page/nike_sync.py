@@ -143,7 +143,7 @@ def save_activity(activity):
     path = os.path.join(OUTPUT_DIR, f"{activity_time}.json")
     try:
         with open(path, "w", encoding="utf-8") as f:
-            json.dump(activity, f, indent=4)
+            json.dump(activity, f, indent=4, ensure_ascii=False)
     except Exception:
         os.unlink(path)
         raise

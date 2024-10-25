@@ -129,7 +129,7 @@ if __name__ == "__main__":
         ]
     )
     with open(KEEP2STRAVA_BK_PATH, "w", encoding="utf-8") as f:
-        json.dump(content, f, indent=0)
+        json.dump(content, f, indent=4, ensure_ascii=False)
 
     # del the uploaded GPX file.
     for track in uploaded_file_paths:

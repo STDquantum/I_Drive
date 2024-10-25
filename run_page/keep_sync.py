@@ -330,7 +330,7 @@ def run_keep_sync(email, password, keep_sports_data_api, with_download_gpx=False
 
     activities_list = generator.load()
     with open(JSON_FILE, "w", encoding="utf-8") as f:
-        json.dump(activities_list, f)
+        json.dump(activities_list, indent=4, ensure_ascii=False)
 
 
 if __name__ == "__main__":

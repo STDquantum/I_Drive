@@ -458,7 +458,7 @@ if __name__ == "__main__":
     generator.sync_from_app(tracks)
     activities_list = generator.load()
     with open(JSON_FILE, "w", encoding="utf-8") as f:
-        json.dump(activities_list, f)
+        json.dump(activities_list, indent=4, ensure_ascii=False)
 
     print("Data export to DB done")
     _generate_svg_profile(options.athlete, options.min_grid_distance)

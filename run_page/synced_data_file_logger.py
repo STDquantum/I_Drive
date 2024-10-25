@@ -14,7 +14,7 @@ def save_synced_data_file_list(file_list: list):
 
 def save_synced_activity_list(activity_list: list):
     with open(SYNCED_ACTIVITY_FILE, "w", encoding="utf-8") as f:
-        json.dump(activity_list, f)
+        json.dump(activity_list, f, indent=4, ensure_ascii=False)
 
 
 def load_synced_file_list():
