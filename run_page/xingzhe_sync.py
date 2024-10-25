@@ -152,6 +152,7 @@ class Xingzhe:
             tracks[0].number = track["id"]
             async with aiofiles.open(file_path, "wb") as fb:
                 await fb.write(gpx.to_xml(version="1.1").encode("utf8"))
+                print(f"写入文件：{file_path}")
         except Exception as err:
             print(f"Failed to download activity {track}: " + str(err))
             pass

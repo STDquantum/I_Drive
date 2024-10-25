@@ -57,7 +57,7 @@ class TrackLoader:
     """
 
     def __init__(self):
-        self.min_length = 100
+        self.min_length = 0
         self.special_file_names = []
         self.year_range = YearRange()
         self.load_func_dict = {

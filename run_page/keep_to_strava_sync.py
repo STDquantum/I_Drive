@@ -25,7 +25,7 @@ KEEP2STRAVA_BK_PATH = os.path.join(OUTPUT_DIR, "keep2strava.json")
 def run_keep_sync(email, password, keep_sports_data_api, with_download_gpx=False):
 
     if not os.path.exists(KEEP2STRAVA_BK_PATH):
-        file = open(KEEP2STRAVA_BK_PATH, "w")
+        file = open(KEEP2STRAVA_BK_PATH, "w", encoding="utf-8")
         file.close()
         content = []
     else:
@@ -110,7 +110,7 @@ if __name__ == "__main__":
 
     # This file is used to record which logs have been uploaded to strava
     # to avoid intrusion into the data.db resulting in double counting of data.
-    with open(KEEP2STRAVA_BK_PATH, "r") as f:
+    with open(KEEP2STRAVA_BK_PATH, "r", encoding="utf-8") as f:
         try:
             content = json.loads(f.read())
         except:
@@ -128,7 +128,7 @@ if __name__ == "__main__":
             for track in uploaded_file_paths
         ]
     )
-    with open(KEEP2STRAVA_BK_PATH, "w") as f:
+    with open(KEEP2STRAVA_BK_PATH, "w", encoding="utf-8") as f:
         json.dump(content, f, indent=0)
 
     # del the uploaded GPX file.

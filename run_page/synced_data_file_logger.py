@@ -13,13 +13,13 @@ def save_synced_data_file_list(file_list: list):
 
 
 def save_synced_activity_list(activity_list: list):
-    with open(SYNCED_ACTIVITY_FILE, "w") as f:
+    with open(SYNCED_ACTIVITY_FILE, "w", encoding="utf-8") as f:
         json.dump(activity_list, f)
 
 
 def load_synced_file_list():
     if os.path.exists(SYNCED_FILE):
-        with open(SYNCED_FILE, "r") as f:
+        with open(SYNCED_FILE, "r", encoding="utf-8") as f:
             try:
                 return json.load(f)
             except Exception as e:
@@ -31,7 +31,7 @@ def load_synced_file_list():
 
 def load_synced_activity_list():
     if os.path.exists(SYNCED_ACTIVITY_FILE):
-        with open(SYNCED_ACTIVITY_FILE, "r") as f:
+        with open(SYNCED_ACTIVITY_FILE, "r", encoding="utf-8") as f:
             try:
                 return json.load(f)
             except Exception as e:

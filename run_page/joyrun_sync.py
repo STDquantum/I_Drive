@@ -25,7 +25,7 @@ def download_joyrun_gpx(gpx_data, joyrun_id):
     try:
         print(f"downloading joyrun_id {str(joyrun_id)} gpx")
         file_path = os.path.join(GPX_FOLDER, str(joyrun_id) + ".gpx")
-        with open(file_path, "w") as fb:
+        with open(file_path, "w", encoding="utf-8") as fb:
             fb.write(gpx_data)
     except:
         print(f"wrong id {joyrun_id}")
@@ -457,7 +457,7 @@ if __name__ == "__main__":
     tracks = j.get_all_joyrun_tracks(old_tracks_ids, options.with_gpx)
     generator.sync_from_app(tracks)
     activities_list = generator.load()
-    with open(JSON_FILE, "w") as f:
+    with open(JSON_FILE, "w", encoding="utf-8") as f:
         json.dump(activities_list, f)
 
     print("Data export to DB done")

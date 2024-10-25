@@ -142,7 +142,7 @@ def save_activity(activity):
     logger.info(f"Saving activity {activity_id}")
     path = os.path.join(OUTPUT_DIR, f"{activity_time}.json")
     try:
-        with open(path, "w") as f:
+        with open(path, "w", encoding="utf-8") as f:
             json.dump(activity, f, indent=4)
     except Exception:
         os.unlink(path)
@@ -325,7 +325,7 @@ def parse_activity_data(activity):
 
 def save_gpx(gpx_data, activity_id):
     file_path = os.path.join(GPX_FOLDER, activity_id + ".gpx")
-    with open(file_path, "w") as f:
+    with open(file_path, "w", encoding="utf-8") as f:
         f.write(gpx_data)
 
 
@@ -388,7 +388,7 @@ def make_new_gpxs(files):
     gpx_files = []
     tracks_list = []
     for file in files:
-        with open(file, "r") as f:
+        with open(file, "r", encoding="utf-8") as f:
             try:
                 json_data = json.loads(f.read())
             except:

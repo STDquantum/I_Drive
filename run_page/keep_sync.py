@@ -312,7 +312,7 @@ def download_keep_gpx(gpx_data, keep_id):
     try:
         print(f"downloading keep_id {str(keep_id)} gpx")
         file_path = os.path.join(GPX_FOLDER, str(keep_id) + ".gpx")
-        with open(file_path, "w") as fb:
+        with open(file_path, "w", encoding="utf-8") as fb:
             fb.write(gpx_data)
         return file_path
     except:
@@ -329,7 +329,7 @@ def run_keep_sync(email, password, keep_sports_data_api, with_download_gpx=False
     generator.sync_from_app(new_tracks)
 
     activities_list = generator.load()
-    with open(JSON_FILE, "w") as f:
+    with open(JSON_FILE, "w", encoding="utf-8") as f:
         json.dump(activities_list, f)
 
 
