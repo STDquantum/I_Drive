@@ -19,6 +19,7 @@ from config import (
     run_map,
 )
 from generator import Generator
+
 from utils import adjust_time, make_activities_file
 
 # logging.basicConfig(level=logging.INFO)
@@ -143,7 +144,7 @@ def save_activity(activity):
     path = os.path.join(OUTPUT_DIR, f"{activity_time}.json")
     try:
         with open(path, "w") as f:
-            json.dump(activity, f, indent=4)
+            json.dump(activity, f, indent=0)
     except Exception:
         os.unlink(path)
         raise
@@ -373,6 +374,7 @@ def parse_no_gpx_data(activity):
         "moving_time": moving_time,
         "elapsed_time": elapsed_time,
         "average_speed": distance / int(activity["active_duration_ms"] / 1000),
+        "elevation_gain": 0,
         "location_country": "",
     }
     return namedtuple("x", d.keys())(*d.values())
@@ -388,7 +390,7 @@ def make_new_gpxs(files):
     gpx_files = []
     tracks_list = []
     for file in files:
-        with open(file, "r") as f:
+        with open(file, "rb") as f:
             try:
                 json_data = json.loads(f.read())
             except:

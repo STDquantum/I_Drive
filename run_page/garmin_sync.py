@@ -19,7 +19,7 @@ import garth
 import httpx
 from config import FOLDER_DICT, JSON_FILE, SQL_FILE, config
 from garmin_device_adaptor import wrap_device_info
-from utils import make_activities_file
+from utils import make_activities_file_only
 
 # logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
@@ -31,7 +31,7 @@ GARMIN_COM_URL_DICT = {
     "MODERN_URL": "https://connectapi.garmin.com",
     "SIGNIN_URL": "https://sso.garmin.com/sso/signin",
     "UPLOAD_URL": "https://connectapi.garmin.com/upload-service/upload/",
-    "ACTIVITY_URL": "https://connectapi.garmin.com/activity-service/activity/{activity_id}",
+    "ACTIVITY_URL": "https://connectapi.garmin.com/activity-service/activity/{}",
 }
 
 GARMIN_CN_URL_DICT = {
@@ -40,7 +40,7 @@ GARMIN_CN_URL_DICT = {
     "MODERN_URL": "https://connectapi.garmin.cn",
     "SIGNIN_URL": "https://sso.garmin.cn/sso/signin",
     "UPLOAD_URL": "https://connectapi.garmin.cn/upload-service/upload/",
-    "ACTIVITY_URL": "https://connectapi.garmin.cn/activity-service/activity/{activity_id}",
+    "ACTIVITY_URL": "https://connectapi.garmin.cn/activity-service/activity/{}",
 }
 
 
@@ -107,6 +107,19 @@ class Garmin:
         if self.is_only_running:
             url = url + "&activityType=running"
         return await self.fetch_data(url)
+
+    async def get_activity(self, activity_id):
+        """
+        Fetch activity detail
+        """
+        url = self.activity_url.format(activity_id)
+        data = {}
+        try:
+            data = await self.fetch_data(url)
+        except Exception as e:
+            print(f"fetch error: {activity_id} {str(e)}")
+            # just pass for now
+        return data
 
     async def download_activity(self, activity_id, file_type="gpx"):
         url = f"{self.modern_url}/download-service/export/{file_type}/activity/{activity_id}"
@@ -301,6 +314,25 @@ async def download_new_activities(
     return to_generate_garmin_ids
 
 
+async def get_activities_name(secret_string, auth_domain, new_ids):
+    client = Garmin(secret_string, auth_domain)
+    print(f"{len(new_ids)} new activities detail to be fetch")
+
+    start_time = time.time()
+    returns = await gather_with_concurrency(
+        10,
+        [client.get_activity(id) for id in new_ids],
+    )
+    print(f"Fetch finished. Elapsed {time.time()-start_time} seconds")
+
+    await client.req.aclose()
+    names_mapping = {}
+    for i in returns:
+        if "activityId" in i:
+            names_mapping[i["activityId"]] = i["activityName"]
+    return names_mapping
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -364,5 +396,7 @@ if __name__ == "__main__":
     loop.run_until_complete(future)
     # fit may contain gpx(maybe upload by user)
     if file_type == "fit":
-        make_activities_file(SQL_FILE, FOLDER_DICT["gpx"], JSON_FILE, file_suffix="gpx")
-    make_activities_file(SQL_FILE, folder, JSON_FILE, file_suffix=file_type)
+        make_activities_file_only(
+            SQL_FILE, FOLDER_DICT["gpx"], JSON_FILE, file_suffix="gpx"
+        )
+    make_activities_file_only(SQL_FILE, folder, JSON_FILE, file_suffix=file_type)
