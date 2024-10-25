@@ -4,6 +4,8 @@
 import argparse
 import asyncio
 import os
+import glob
+from datetime import datetime, timedelta
 from base64 import b64encode
 from datetime import datetime
 
@@ -15,6 +17,7 @@ from config import GPX_FOLDER, JSON_FILE, SQL_FILE
 from Crypto.Cipher import PKCS1_v1_5
 from Crypto.PublicKey import RSA
 from generator import Generator
+import re
 
 from utils import make_activities_file
 
@@ -140,16 +143,27 @@ class Xingzhe:
 
     async def download_xingzhe_gpx(self, track):
         try:
-            file_path = os.path.join(GPX_FOLDER, f"{track['id']}.gpx")
-            if os.path.exists(file_path):
+            file_path = os.path.join(GPX_FOLDER, f"{track['id']}-*.gpx")
+            if glob.glob(file_path):
                 print(f"activity {str(track['id'])}: downloaded already")
-                pass
+                return
             gpx_data = self.download_gpx(track["id"])
-            gpx = mod_gpxpy.parse(gpx_data.decode("utf8"))
+            gpx_str = gpx_data.decode("utf8")
+            times = re.findall(r"(\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z)", gpx_str)
+            time_start = None
+            for time_cur in times:
+                time_obj = datetime.strptime(time_cur, "%Y-%m-%dT%H:%M:%SZ")
+                new_time_obj = time_obj - timedelta(hours=8)
+                if not time_start:
+                    time_start = new_time_obj.strftime("%Y%m%d-%H%M%S")
+                new_time_str = new_time_obj.strftime("%Y-%m-%dT%H:%M:%SZ")
+                gpx_str = gpx_str.replace(time_cur, new_time_str)
+            gpx = mod_gpxpy.parse(gpx_str)
             tracks = gpx.tracks
             tracks[0].source = "xingzhe"
             tracks[0].type = track["type"]
             tracks[0].number = track["id"]
+            file_path = os.path.join(GPX_FOLDER, f"{track['id']}-{time_start}.gpx")
             async with aiofiles.open(file_path, "wb") as fb:
                 await fb.write(gpx.to_xml(version="1.1").encode("utf8"))
                 print(f"写入文件：{file_path}")
