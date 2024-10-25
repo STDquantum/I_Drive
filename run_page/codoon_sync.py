@@ -637,5 +637,5 @@ if __name__ == "__main__":
 
     generator.sync_from_app(tracks)
     activities_list = generator.load()
-    with open(JSON_FILE, "w", encoding="utf-8") as f:
-        json.dump(activities_list, f, indent=4, ensure_ascii=False)
+    with open(JSON_FILE, "w") as f:
+        json.dump(activities_list, f, indent=0)
