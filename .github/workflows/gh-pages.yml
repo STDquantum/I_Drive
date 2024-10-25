@@ -105,7 +105,7 @@ jobs:
         run: PATH_PREFIX=/${{ github.event.repository.name }} pnpm build
 
       - name: Copy artifacts to publish directory
-        run: mkdir -p ./running_page/ && cp -r dist/* ./running_page/
+        run: mkdir -p ./running_page/ && rm -rf ./running_page/* && cp -r dist/* ./running_page/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
