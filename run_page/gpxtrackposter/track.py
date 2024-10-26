@@ -186,7 +186,7 @@ class Track:
         self.length = gpx.length_2d()
         if self.length == 0:
             raise TrackLoadError("Track is empty.")
-        gpx.simplify()
+        # gpx.simplify()
         polyline_container = []
         heart_rate_list = []
         for t in gpx.tracks:
