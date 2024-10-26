@@ -446,5 +446,19 @@
         "average_heartrate": null,
         "average_speed": 1.824162734329363,
         "streak": 3
+    },
+    {
+        "run_id": 1729899893000,
+        "name": "run from gpx",
+        "distance": 61114.932412899856,
+        "moving_time": "3:53:46",
+        "type": "Run",
+        "start_date": "2024-10-25 23:44:53",
+        "start_date_local": "2024-10-26 07:44:53",
+        "location_country": "浙江大学玉泉校区, 西溪谷沿山慢行道, 桃源坞基金小镇, 古荡街道, 西湖区, 杭州市, 浙江省, 310012, 中国",
+        "summary_polyline": "ucwwD_dd|Us@jC`@Uc@n@NY_BSnNbDXkDtCmMic@{NeBU]^eB|o@b@xa@r@rH~DnNijBv_@wa@jE]`@LxF[zFqDnQ{@vIYhf@o]bAua@ByXdDWt@dAbHhCdIiK\\pBPUKCh@_@ORJ_@Jb@O_@\\\\c@QPRBG]QJRUJRq@j@Cg@vA`@J]_@]ROjDQxLb@rKgC\\l@dAxM\\Nc@Rx@KI]Q^f@K]OVL_AXtA?o@Yt@C[McALlABa@Y^Jc@H^NS]v@IkCn@nCQ{ANTSr@TiAi@^\\c@Fp@QMQRP[WBj@VKi@@b@Cs@OpAPsBKlAHn@_DkAlBtBj@uBYOVVEg@y@GnAR]^RE[Nj@}DuBWf@i@MeAl@oHfA]ZN|Aa@^Ax@s@QOrA`@K?k@VpAXiA}@uEsDE{@iLaDUgAR]|@t@sAjCI}CZH]tHWkDyKe@}FzN}BpKw@x[Dn`@y@^fANlZZdFbB`KbCbGp@X`NiEj\\{DzKU~IcB``@yKnTyHoAZfEeCrEkAv]wAttQerBnGkBtIqAzRaAp`@r@v\\s@jLnB|Bc@dAyBGoBmEoGoCgMaMeYsi@_aBqDkFuEaEgMsFmFgDeH}ImByFgHe\\_Fa[iC_UZqhB[yTVaRMyOv@iu@[eRiBg`@tBm[DkB[k@}bAE@kARLa@TGo@a@?Bq@q@m@Nl@xAo@vB}DFsEw@g@yAn@dCQXrAQ|BkEtHil@xCYtAtA`j@cZpDaHhB?x@rKb]OtEmBtDiqCz|AaMdDwVbBqBbLBxHqB~DuCxJwAtKqBrHoFtDuKb@kH`LsAhHpAtBrBj@~L]zA`Rq@nIlBpST|GdPbh@o^bUkW~^eEjCyCMsDyC}JqLm[lG{S`ByVd@kFbBeKcCsJL}EgAmHf@w@~AaH~ZaAnA}@|CTxA_AfAiCzKoJcBiIcCNuCSe@oHuBwByAh@U_@MnGpBrAO|@x@Of@aIgDRwA",
+        "average_heartrate": null,
+        "average_speed": 4.357260260437748,
+        "streak": 4
     }
 ]
