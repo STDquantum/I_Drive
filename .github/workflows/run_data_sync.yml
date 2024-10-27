@@ -1,10 +1,17 @@
 name: Run Data Sync
 
 on:
-  workflow_dispatch: 
+  # 当推送到 master 分支时触发
   push:
     branches:
       - master
+
+  # 允许手动触发工作流
+  workflow_dispatch:
+
+  # 每天凌晨0点执行
+  schedule:
+    - cron: '0 0 * * *'
 
 env:
   # please change to your own config.
