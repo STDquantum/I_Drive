@@ -516,5 +516,19 @@
         "average_heartrate": null,
         "average_speed": 3.77527964276767,
         "streak": 6
+    },
+    {
+        "run_id": 1730121877000,
+        "name": "run from gpx",
+        "distance": 1141.7379387414449,
+        "moving_time": "0:04:06",
+        "type": "Run",
+        "start_date": "2024-10-28 13:24:37",
+        "start_date_local": "2024-10-28 21:24:37",
+        "location_country": "博创街, 紫金港社区, 三墩镇, 西湖区, 杭州市, 浙江省, 310058, 中国",
+        "summary_polyline": "_v~wDsoz{UM?\\c@KDOJYVCPe@b@UR??????????gHpGDA@ADCJKHGDEHI?GTM@C@CHM?C?E?A?CBEBGBE??@?@EFEDAD?HAFAD?HAFAD@B?HAD?DAB???B?@@@@@@A@D@?D@@??AA@?DCD?LCDA@?@CBADAFABADA??HAD?DAB@?@@@@?@@B??@@?@?B?@?BEB?@?@CBABEBCBEDI@CAKAE?ECGAECCCC?GCG?GAEAC?KCE?GAEAICCC?A?C@C@ADC@C@A?EDGBEBGDEBEBEBA?C@C@C@C@C?C@EBC?A?A@@AB?BC@@B@B?BBDBD@BDBBBDBBDFCHGPEHAH?JGLCHEJADDADAFAD?DADCDADCB?B?DADAB?DAD?DADCBAB?BABCB?DCD?@EBABCBE@C@E@GAGCEAGAGCCAECCCEAC?K?E?CAK?EAEAECEEEC?GDEBIFIDE@@?BA@?DABAB?BC@?@?B?DE@A?A???A?@FG?C??????@?@?@?@?????@@@@ADADABCD",
+        "average_heartrate": null,
+        "average_speed": 4.641211133095304,
+        "streak": 6
     }
 ]
