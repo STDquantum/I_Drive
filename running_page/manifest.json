@@ -2,8 +2,8 @@
   "_activities-5a65a67a.js": {
     "file": "assets/activities-5a65a67a.js"
   },
-  "_vendors-1a30de1e.js": {
-    "file": "assets/vendors-1a30de1e.js"
+  "_vendors-f739ae73.js": {
+    "file": "assets/vendors-f739ae73.js"
   },
   "assets/end.svg": {
     "file": "assets/end-a91503f9.svg",
@@ -13,9 +13,9 @@
     "assets": [
       "assets/github-afaf4974.svg"
     ],
-    "file": "assets/github.svg-bae0450a.js",
+    "file": "assets/github.svg-c819e48a.js",
     "imports": [
-      "_vendors-1a30de1e.js"
+      "_vendors-f739ae73.js"
     ],
     "isDynamicEntry": true,
     "src": "assets/github.svg"
@@ -24,9 +24,9 @@
     "assets": [
       "assets/grid-98c64139.svg"
     ],
-    "file": "assets/grid.svg-01c2f42d.js",
+    "file": "assets/grid.svg-576ae941.js",
     "imports": [
-      "_vendors-1a30de1e.js"
+      "_vendors-f739ae73.js"
     ],
     "isDynamicEntry": true,
     "src": "assets/grid.svg"
@@ -39,9 +39,9 @@
     "assets": [
       "assets/year_2023-fc840f49.svg"
     ],
-    "file": "assets/year_2023-bac3f6b8.js",
+    "file": "assets/year_2023-c812b52c.js",
     "imports": [
-      "_vendors-1a30de1e.js"
+      "_vendors-f739ae73.js"
     ],
     "isDynamicEntry": true,
     "src": "assets/year_2023.svg"
@@ -50,9 +50,9 @@
     "assets": [
       "assets/year_2024-2606611e.svg"
     ],
-    "file": "assets/year_2024-10c72ecc.js",
+    "file": "assets/year_2024-4b64b41e.js",
     "imports": [
-      "_vendors-1a30de1e.js"
+      "_vendors-f739ae73.js"
     ],
     "isDynamicEntry": true,
     "src": "assets/year_2024.svg"
@@ -71,9 +71,9 @@
       "assets/github.svg",
       "assets/grid.svg"
     ],
-    "file": "assets/index-52f3e63d.js",
+    "file": "assets/index-1cce8b8f.js",
     "imports": [
-      "_vendors-1a30de1e.js",
+      "_vendors-f739ae73.js",
       "_activities-5a65a67a.js"
     ],
     "isEntry": true,
