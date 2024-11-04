@@ -656,5 +656,19 @@
         "average_heartrate": null,
         "average_speed": 2.8610171654064507,
         "streak": 1
+    },
+    {
+        "run_id": 1730697829000,
+        "name": "run from gpx",
+        "distance": 86.89944266633447,
+        "moving_time": "0:00:52",
+        "type": "Run",
+        "start_date": "2024-11-04 05:23:49",
+        "start_date_local": "2024-11-04 13:23:49",
+        "location_country": "浙江大学玉泉校区, 西溪谷沿山慢行道, 桃源坞基金小镇, 古荡街道, 西湖区, 杭州市, 浙江省, 310012, 中国",
+        "summary_polyline": "ugvwDsoc|UED@CBG@CBG?BA@?E@AA@A?ADA@?@CDPL?D@@PDBAFG@?BC@?BD@?@B",
+        "average_heartrate": null,
+        "average_speed": 1.6711431281987397,
+        "streak": 2
     }
 ]
