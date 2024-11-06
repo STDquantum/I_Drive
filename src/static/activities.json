@@ -740,5 +740,19 @@
         "average_heartrate": null,
         "average_speed": 2.235017772140666,
         "streak": 4
+    },
+    {
+        "run_id": 1730868063000,
+        "name": "run from gpx",
+        "distance": 204.66195428189533,
+        "moving_time": "0:02:19",
+        "type": "Run",
+        "start_date": "2024-11-06 04:41:03",
+        "start_date_local": "2024-11-06 12:41:03",
+        "location_country": "仁寿山, 灵隐街道, 西湖区, 杭州市, 浙江省, 310007, 中国",
+        "summary_polyline": "u{uwDybd|UDG@IBMBI?ICACCEAC?ABA?@?BB???@EAA?AA?EAA?C??A?A??@AA@D?????B??A??????A?AD?D@B?@?DA@??A?C??A?BC?E???C?A?A?A?A?AAA?E?A@A?G??@C?A?C@??A@?d@[@C?A@C?A???@AA?AAC@?@BAE?CAA?AA?A?C?C@C@E?",
+        "average_heartrate": null,
+        "average_speed": 1.4723881603014053,
+        "streak": 4
     }
 ]
