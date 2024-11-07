@@ -219,25 +219,34 @@ const geoJsonForMap = (): FeatureCollection<RPGeometry> => ({
 const titleForRun = (run: Activity): string => {
   const runDistance = run.distance / 1000;
   const runHour = +run.start_date_local.slice(11, 13);
-  if (runDistance > 20 && runDistance < 40) {
-    return RUN_TITLES.HALF_MARATHON_RUN_TITLE;
+  const runName = run.name;
+  const runMatch = runName.match(/\d{4}-\d{2}-\d{2} \d{2}:\d{2}([^: ]+)$/);
+  let prefix = "";
+  if (runMatch && runMatch[1]) {
+    prefix = runMatch[1];
   }
-  if (runDistance >= 40) {
-    return RUN_TITLES.FULL_MARATHON_RUN_TITLE;
+  if (prefix !== "") {
+    prefix += " ";
+  }
+  if (runDistance >= 100) {
+    return prefix + "长途奔波";
+  }
+  if (runDistance >= 30) {
+    return prefix + "中长途旅程";
   }
   if (runHour >= 0 && runHour <= 10) {
-    return RUN_TITLES.MORNING_RUN_TITLE;
+    return prefix + "清晨";
   }
   if (runHour > 10 && runHour <= 14) {
-    return RUN_TITLES.MIDDAY_RUN_TITLE;
+    return prefix + "中午";
   }
   if (runHour > 14 && runHour <= 18) {
-    return RUN_TITLES.AFTERNOON_RUN_TITLE;
+    return prefix + "下午";
   }
   if (runHour > 18 && runHour <= 21) {
-    return RUN_TITLES.EVENING_RUN_TITLE;
+    return prefix + "晚间";
   }
-  return RUN_TITLES.NIGHT_RUN_TITLE;
+  return prefix + "夜里";
 };
 
 export interface IViewState {

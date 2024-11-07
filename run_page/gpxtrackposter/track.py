@@ -189,6 +189,25 @@ class Track:
         # gpx.simplify()
         polyline_container = []
         heart_rate_list = []
+        # determinate source
+        if gpx.creator:
+            self.source = gpx.creator
+        if gpx.tracks[0].source:
+            self.source = gpx.tracks[0].source
+        if self.source == "xingzhe":
+            self.run_id = gpx.tracks[0].number
+        # determinate name
+        if gpx.name:
+            self.name = gpx.name
+        elif gpx.tracks[0].name:
+            self.name = gpx.tracks[0].name
+        elif gpx.extensions:
+            for extension in gpx.extensions:
+                if extension.tag == 'name' and extension.text:
+                    self.name = extension.text
+                    break
+        else:
+            self.name = self.type + " from " + self.source
         for t in gpx.tracks:
             for s in t.segments:
                 try:
@@ -333,11 +352,7 @@ class Track:
     def to_namedtuple(self, run_from="gpx"):
         d = {
             "id": self.run_id,
-            "name": (
-                f"run from {run_from} by {self.device}"
-                if self.device
-                else f"run from {run_from}"
-            ),  # maybe change later
+            "name": self.name,  # maybe change later
             "type": "Run",  # Run for now only support run for now maybe change later
             "start_date": self.start_time.strftime("%Y-%m-%d %H:%M:%S"),
             "end": self.end_time.strftime("%Y-%m-%d %H:%M:%S"),
