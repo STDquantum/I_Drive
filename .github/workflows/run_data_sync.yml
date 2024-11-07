@@ -210,7 +210,7 @@ jobs:
           git config --local user.email "${{ env.GITHUB_EMAIL }}"
           git config --local user.name "${{ env.GITHUB_NAME }}"
           git add .
-          git commit -m 'update new runs' || echo "nothing to commit"
+          git commit -m '更新轨迹或生成文件' || echo "nothing to commit"
           git push || echo "nothing to push"
 
       - name: Set Output

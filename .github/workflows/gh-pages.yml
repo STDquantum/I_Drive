@@ -123,5 +123,5 @@ jobs:
           git config --local user.email "${{ env.GITHUB_EMAIL }}"
           git config --local user.name "${{ env.GITHUB_NAME }}"
           git add I_drive/
-          git commit -m "Update public folder" || echo "nothing to commit"
+          git commit -m "更新 public 文件夹" || echo "nothing to commit"
           git push || echo "nothing to push"
