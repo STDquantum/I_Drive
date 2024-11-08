@@ -244,9 +244,9 @@ const titleForRun = (run: Activity): string => {
     return prefix + "下午";
   }
   if (runHour > 18 && runHour <= 21) {
-    return prefix + "晚间";
+    return prefix + "傍晚";
   }
-  return prefix + "夜里";
+  return prefix + "夜间";
 };
 
 export interface IViewState {
