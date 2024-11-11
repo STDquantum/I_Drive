@@ -852,5 +852,19 @@
         "average_heartrate": null,
         "average_speed": 3.827603027043046,
         "streak": 8
+    },
+    {
+        "run_id": 178387341,
+        "name": "2024-11-11 下午 骑行",
+        "distance": 799.9195428119698,
+        "moving_time": "0:03:35",
+        "type": "Run",
+        "start_date": "2024-11-11 05:14:31",
+        "start_date_local": "2024-11-11 13:14:31",
+        "location_country": "浙江大学玉泉校区, 智泉路, 灵隐街道, 西湖区, 杭州市, 浙江省, 310007, 中国",
+        "summary_polyline": "ufwwDuwc|UF?FBD@FDH?H@FBDBD?DBB?DBV?LAJ@H@J@F?F?ZF????H@HBFDD@HDFDHBFBFDJBFBHBHFHBHDFBHBF@HDHDH@HBJ@FBH@JBHBHBH@JBHBJ?J@H@FBH@FDH@FBF?DBB@D?B?DAFAHAF@FBHBHBHBFFJBHBJBH@HBHBHDFBHBFBH@FDFFHBHDFBHBHFHDHBH@HBHBH@FBJFF@FBFBFBB@B??AACCCAIAG@EBGBGB??D?DGBC@E@G@C@C?BEAC?AA??C@ADEBI@C@C?ABI@A?CA?A?A??BA@@BA@???@LL@AB?@@@@RDB?@?@?@A@?@@@BBB@?@?B?@?@?@?@@B?@?@A@?@?@?@?@???B?BCDCDBF??C@A@ABA@@BA@@?B?AA?@?e@?BIAGAC?AC@E@C@C@",
+        "average_heartrate": null,
+        "average_speed": 3.7205560130789292,
+        "streak": 9
     }
 ]
