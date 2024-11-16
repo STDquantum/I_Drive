@@ -1,6 +1,6 @@
 {
-  "_activities-875a98da.js": {
-    "file": "assets/activities-875a98da.js"
+  "_activities-a3a3d950.js": {
+    "file": "assets/activities-a3a3d950.js"
   },
   "_vendors-f739ae73.js": {
     "file": "assets/vendors-f739ae73.js"
@@ -83,10 +83,10 @@
       "assets/github.svg",
       "assets/grid.svg"
     ],
-    "file": "assets/index-da4c6411.js",
+    "file": "assets/index-fed081be.js",
     "imports": [
       "_vendors-f739ae73.js",
-      "_activities-875a98da.js"
+      "_activities-a3a3d950.js"
     ],
     "isEntry": true,
     "src": "index.html"
