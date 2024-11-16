@@ -87,6 +87,7 @@ def update_or_create_activity(session, run_activity):
                             f"{start_point.lat}, {start_point.lon}", language="zh-CN"
                         )
                     )
+                    print('success location:', location_country)
                 # limit (only for the first time)
                 except Exception as e:
                     try:
@@ -97,6 +98,7 @@ def update_or_create_activity(session, run_activity):
                             )
                         )
                     except Exception as e:
+                        print('fail location:', run_activity.name)
                         pass
 
             activity = Activity(
@@ -118,6 +120,15 @@ def update_or_create_activity(session, run_activity):
             session.add(activity)
             created = True
         else:
+            if not activity.location_country:
+                po = run_activity.start_latlng
+                latlng = f'{po.lat}, {po.lon}'
+                try:
+                    lo = str(g.reverse(latlng, language='zh-CN'))
+                    print("success locate:", lo)
+                    activity.location_country = lo
+                except:
+                    print("fail locate:", run_activity.name, latlng)
             activity.name = run_activity.name
             activity.distance = float(run_activity.distance)
             activity.moving_time = run_activity.moving_time
