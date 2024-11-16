@@ -1,6 +1,6 @@
 {
-  "_activities-1922e7dc.js": {
-    "file": "assets/activities-1922e7dc.js"
+  "_activities-875a98da.js": {
+    "file": "assets/activities-875a98da.js"
   },
   "_vendors-f739ae73.js": {
     "file": "assets/vendors-f739ae73.js"
@@ -11,9 +11,9 @@
   },
   "assets/github.svg": {
     "assets": [
-      "assets/github-30219e44.svg"
+      "assets/github-ac9de8d8.svg"
     ],
-    "file": "assets/github.svg-cf45b604.js",
+    "file": "assets/github.svg-6aec5d4c.js",
     "imports": [
       "_vendors-f739ae73.js"
     ],
@@ -22,9 +22,9 @@
   },
   "assets/grid.svg": {
     "assets": [
-      "assets/grid-6f34c0ca.svg"
+      "assets/grid-3f74118d.svg"
     ],
-    "file": "assets/grid.svg-f75c9c41.js",
+    "file": "assets/grid.svg-4ddd04e6.js",
     "imports": [
       "_vendors-f739ae73.js"
     ],
@@ -83,10 +83,10 @@
       "assets/github.svg",
       "assets/grid.svg"
     ],
-    "file": "assets/index-51c9454e.js",
+    "file": "assets/index-da4c6411.js",
     "imports": [
       "_vendors-f739ae73.js",
-      "_activities-1922e7dc.js"
+      "_activities-875a98da.js"
     ],
     "isEntry": true,
     "src": "index.html"
