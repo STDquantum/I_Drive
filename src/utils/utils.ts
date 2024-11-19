@@ -220,11 +220,51 @@ const geoJsonForMap = (): FeatureCollection<RPGeometry> => ({
 const titleForRun = (run: Activity): string => {
   const runDistance = run.distance / 1000;
   const runHour = +run.start_date_local.slice(11, 13);
-  const runName = run.name;
-  const runMatch = runName.match(/\d{4}-\d{2}-\d{2} \d{2}:\d{2}([^: ]+)$/);
+  const start_point = run.location_country;
+  const end_point = run.ending_point_pos;
+  function getPrefix(pos: string | null | undefined) {
+    // 判断输入是否为字符串
+    if (typeof pos !== "string") {
+      return "";
+    }
+
+    if (!pos.endsWith("中国")) {
+      return "";
+    }
+
+    const elements = pos.split(",").map(s => s.trim());
+    const directCities = ["北京市", "上海市", "天津市", "重庆市"];
+    let anchorIndex = -1;
+
+    if (elements[0].includes("大学")) {
+      return elements[0];
+    }
+    for (let i = elements.length - 1; i >= 0; i--) {
+      const element = elements[i];
+      if (directCities.includes(element)) {
+        anchorIndex = i;
+        break;
+      } else if (element.includes("省") || element.includes("自治区")) {
+        anchorIndex = i - 1; // 找到省或自治区时设置为前一个元素
+        break;
+      }
+    }
+
+    if (anchorIndex >= 1) { // 确保锚点及其前一个元素存在
+      return elements[anchorIndex] + elements[anchorIndex - 1];
+    }
+
+    return ""; // 如果没有找到符合条件的锚点
+  }
+  const start_prefix = getPrefix(start_point);
+  const end_prefix = getPrefix(end_point);
   let prefix = "";
-  if (runMatch && runMatch[1]) {
-    prefix = runMatch[1];
+  if (start_prefix && end_prefix) {
+    prefix = start_prefix === end_prefix
+      ? start_prefix
+      : `${start_prefix}到${end_prefix}`;
+  } else {
+    prefix = start_prefix || end_prefix || "";
   }
   if (prefix !== "") {
     prefix += " ";
