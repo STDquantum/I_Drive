@@ -19,7 +19,7 @@ env:
   ATHLETE: STDquantum
   TITLE: STDquantum Tracks
   MIN_GRID_DISTANCE: 0 # change min distance here
-  TITLE_GRID: Over 10km Runs # also here
+  TITLE_GRID: All my Tracks # also here
   GITHUB_NAME: "action@github.com" # default Actions bot you can change it to yours
   GITHUB_EMAIL: "GitHub Action" # default Actions bot you can change it to yours
 
