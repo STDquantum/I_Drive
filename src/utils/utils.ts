@@ -20,6 +20,7 @@ export interface Activity {
   start_date: string;
   start_date_local: string;
   location_country?: string | null;
+  ending_point_pos?: string | null;
   summary_polyline?: string | null;
   average_heartrate?: number | null;
   average_speed: number;

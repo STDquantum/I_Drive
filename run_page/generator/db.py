@@ -32,6 +32,7 @@ ACTIVITY_KEYS = [
     "start_date",
     "start_date_local",
     "location_country",
+    "ending_point_pos",
     "summary_polyline",
     "average_heartrate",
     "average_speed",
@@ -50,6 +51,7 @@ class Activity(Base):
     start_date = Column(String)
     start_date_local = Column(String)
     location_country = Column(String)
+    ending_point_pos = Column(String)
     summary_polyline = Column(String)
     average_heartrate = Column(Float)
     average_speed = Column(Float)
@@ -78,7 +80,9 @@ def update_or_create_activity(session, run_activity):
         )
         if not activity:
             start_point = run_activity.start_latlng
+            end_point = run_activity.end_latlng
             location_country = getattr(run_activity, "location_country", "")
+            ending_point_pos = getattr(run_activity, "ending_point_pos", "")
             # or China for #176 to fix
             if not location_country and start_point or location_country == "China":
                 try:
@@ -87,7 +91,13 @@ def update_or_create_activity(session, run_activity):
                             f"{start_point.lat}, {start_point.lon}", language="zh-CN"
                         )
                     )
-                    print('success location:', location_country)
+                    ending_point_pos = str(
+                        g.reverse(
+                            f"{end_point.lat}, {end_point.lon}", language="zh-CN"
+                        )
+                    )
+                    print('success start location:', location_country)
+                    print('success end location:', ending_point_pos)
                 # limit (only for the first time)
                 except Exception as e:
                     try:
@@ -97,6 +107,13 @@ def update_or_create_activity(session, run_activity):
                                 language="zh-CN",
                             )
                         )
+                        ending_point_pos = str(
+                            g.reverse(
+                                f"{end_point.lat}, {end_point.lon}", language="zh-CN"
+                            )
+                        )
+                        print('2nd success start location:', location_country)
+                        print('2nd success end location:', ending_point_pos)
                     except Exception as e:
                         print('fail location:', run_activity.name)
                         pass
@@ -111,6 +128,7 @@ def update_or_create_activity(session, run_activity):
                 start_date=run_activity.start_date,
                 start_date_local=run_activity.start_date_local,
                 location_country=location_country,
+                ending_point_pos=ending_point_pos,
                 average_heartrate=run_activity.average_heartrate,
                 average_speed=float(run_activity.average_speed),
                 summary_polyline=(
@@ -120,15 +138,17 @@ def update_or_create_activity(session, run_activity):
             session.add(activity)
             created = True
         else:
-            if not activity.location_country:
-                po = run_activity.start_latlng
-                latlng = f'{po.lat}, {po.lon}'
-                try:
-                    lo = str(g.reverse(latlng, language='zh-CN'))
-                    print("success locate:", lo)
-                    activity.location_country = lo
-                except:
-                    print("fail locate:", run_activity.name, latlng)
+            end_point = run_activity.end_latlng
+            ending_point_pos = getattr(run_activity, "ending_point_pos", "")
+            try:
+                ending_point_pos = str(
+                    g.reverse(
+                        f"{end_point.lat}, {end_point.lon}", language="zh-CN"
+                    )
+                )
+            except:
+                print('success end location:', ending_point_pos)
+            
             activity.name = run_activity.name
             activity.distance = float(run_activity.distance)
             activity.moving_time = run_activity.moving_time

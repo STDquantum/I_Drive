@@ -24,6 +24,7 @@ from .exceptions import TrackLoadError
 from .utils import parse_datetime_to_local
 
 start_point = namedtuple("start_point", "lat lon")
+end_point = namedtuple("end_point", "lat lon")
 run_map = namedtuple("polyline", "summary_polyline")
 
 IGNORE_BEFORE_SAVING = os.getenv("IGNORE_BEFORE_SAVING", False)
@@ -51,6 +52,7 @@ class Track:
         self.moving_dict = {}
         self.run_id = 0
         self.start_latlng = []
+        self.end_latlng = []
         self.type = "Run"
         self.device = ""
 
@@ -160,9 +162,10 @@ class Track:
             self.start_time_local, self.end_time_local = parse_datetime_to_local(
                 self.start_time, self.end_time, polyline_container[0]
             )
-            # get start point
+            # get start end point
             try:
                 self.start_latlng = start_point(*polyline_container[0])
+                self.end_latlng = end_point(*polyline_container[-1])
             except:
                 pass
             self.polyline_str = polyline.encode(polyline_container)
@@ -238,6 +241,7 @@ class Track:
         # get start point
         try:
             self.start_latlng = start_point(*polyline_container[0])
+            self.end_latlng = end_point(*polyline_container[-1])
         except:
             pass
         self.start_time_local, self.end_time_local = parse_datetime_to_local(
@@ -295,6 +299,7 @@ class Track:
                 self.start_time, self.end_time, self.polyline_container[0]
             )
             self.start_latlng = start_point(*self.polyline_container[0])
+            self.end_latlng = end_point(*self.polyline_container[-1])
             self.polylines.append(_polylines)
             self.polyline_str = polyline.encode(self.polyline_container)
         else:
@@ -364,6 +369,7 @@ class Track:
             ),
             "map": run_map(self.polyline_str),
             "start_latlng": self.start_latlng,
+            "end_latlng": self.end_latlng,
         }
         d.update(self.moving_dict)
         # return a nametuple that can use . to get attr
