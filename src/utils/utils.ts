@@ -236,7 +236,7 @@ const titleForRun = (run: Activity): string => {
     const directCities = ["北京市", "上海市", "天津市", "重庆市"];
     let anchorIndex = -1;
 
-    if (elements[0].includes("大学")) {
+    if (elements[0].includes("浙江大学")) {
       return elements[0];
     }
     for (let i = elements.length - 1; i >= 0; i--) {
@@ -251,7 +251,10 @@ const titleForRun = (run: Activity): string => {
     }
 
     if (anchorIndex >= 1) { // 确保锚点及其前一个元素存在
-      return elements[anchorIndex] + elements[anchorIndex - 1];
+      const ret = elements[anchorIndex] + elements[anchorIndex - 1];
+      if (anchorIndex - 1 !== 0) {
+        return ret + elements[0];
+      }
     }
 
     return ""; // 如果没有找到符合条件的锚点
@@ -262,7 +265,7 @@ const titleForRun = (run: Activity): string => {
   if (start_prefix && end_prefix) {
     prefix = start_prefix === end_prefix
       ? start_prefix
-      : `${start_prefix}到${end_prefix}`;
+      : `${start_prefix} → ${end_prefix}`;
   } else {
     prefix = start_prefix || end_prefix || "";
   }
