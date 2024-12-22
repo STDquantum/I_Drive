@@ -26,9 +26,9 @@
   },
   "assets/grid.svg": {
     "assets": [
-      "assets/grid-97bc272d.svg"
+      "assets/grid-c55c3fb5.svg"
     ],
-    "file": "assets/grid.svg-705bf6bb.js",
+    "file": "assets/grid.svg-535d7ac5.js",
     "imports": [
       "_vendors-f739ae73.js"
     ],
@@ -87,7 +87,7 @@
       "assets/github.svg",
       "assets/grid.svg"
     ],
-    "file": "assets/index-6a68dc7c.js",
+    "file": "assets/index-f89b15f0.js",
     "imports": [
       "_vendors-f739ae73.js",
       "_activities-b19d7165.js"
