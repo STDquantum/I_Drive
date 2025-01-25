@@ -2158,5 +2158,20 @@
         "average_heartrate": null,
         "average_speed": 11.42191232820264,
         "streak": 4
+    },
+    {
+        "run_id": 1737813580989,
+        "name": "GPS Logger 20250125-215940",
+        "distance": 36907.221984079406,
+        "moving_time": "0:42:37.011000",
+        "type": "Run",
+        "start_date": "2025-01-25 13:59:40",
+        "start_date_local": "2025-01-25 21:59:40",
+        "location_country": "北关街道, 未央区, 西安市, 陕西省, 710016, 中国",
+        "ending_point_pos": "砖房南路, 秦陵街道, 临潼区, 西安市, 陕西省, 710600, 中国",
+        "summary_polyline": "orkpEyv|wS?EN^CCKCGCESQI[G_@Kc@Sa@Qi@Ga@?i@?s@Cy@C}@CaAEaAAaA?}@Ey@C{@Aw@Au@Eo@Ai@GUOYOWa@Ka@Cc@Dg@Pc@Z[`@Id@B^TZf@Pt@D|@Bz@?r@Ad@AV?D?L?RAXGb@Md@Y`@c@Tg@@g@S]g@Kq@Fq@Ti@`@[f@Op@G|@C|@AfAGfAChA?fAAhA?bA?fAAjA?hA@bAAt@?l@?Z?@@??B@L@VC?QU?e@?m@@q@@w@Ay@?_AA{@A}@C_ACaAGiA@cAA_ACq@Se@g@Yu@I_A?oA?_BAgBAmB?eB?}A@yAAkACcACoA@yA?sA?wAA}A?}A?yA?wA?uA?{A@}A?aBAaB@_BA}A?wA?yA?aB?}A?yA@sA?wA?yAAsA?iA@sAAuA?yA@yA?yA?{A?yA?yA?yA?wA?wA?}A@gB?iB?aB?}AAcB?cB?gB?gB?iB?eB@}A@{A?_B?_B?}A?wAAsA?oAAmA?kAAoA?oA@oACoA?kA?iAAiA?iAAiA?kA?qAAuA?uAAqA?sA?qAAoA?qA?mA?oAAkA?oA?sA?sAAsAAsAAuAAwAEwAGyAG_BGcBCgBCgBCgBEgBCcBCaBCcBCcBAeBCkBAmBAmB?mBAqBAqB?qB?oBAmB?kBAmB?qBAmB?mB?iB?kB?kB?kB?mB?sB?wB?yB?wB?yB?yB?wB?yB@yB?{B?yBAyB?yBAaCCiCEiCGkCGiCEkCEiCAkCAkC?iC?kC?kC?gCCeCEeCCgCCeCAcC@_CAcC?cC?aC?aC?aCA}B?}B?{B?}BBaC@_C?wB?kB@gB?cBBcB?gB?mBAkBAkB?kB?qB?oB?oBAqB?uBAoBIeBS}A_@yAk@wA_AuAgAcAgAq@oAa@sAUuACyAJ{AN{AHuAAuAQuAUuA[{Aa@gBi@kBk@eBk@cBg@aBi@aBi@_Bg@gBi@qBq@oBm@mBm@mBm@kBm@iBi@cBi@_Bi@cBg@iBk@iBo@aBo@eBs@mB}@sBcAqBiAoBkAoBoAmBsAkBqAoBkAsBeAwB}@{Bq@}Bg@_C[aCW_CQcCQ_CQaCQ_CQaCQaCSaCO_CS{BQ{BO_CQ_CSwBW{A]kAe@gAs@aA}@y@gAq@qAg@wA]_BSiBIkBBmBBeBBqA@i@DYJUDS@e@@o@?m@Bk@?g@@a@@m@@{@DkA@oAGsAKiAOkAYuAc@sAq@mAw@aA}@u@gAi@iAi@mAi@gAg@eAc@iAc@mAa@sA_@uAa@sAc@uAm@wAw@yAaAuAeAwAiA{AkA_BqAiByAsBeBuBgBuBeBsBeBuBeBsBgBsBgBoBkBmBoBkBsBgBwBcB}B_BaC{AgCuAmCsAoCkAqCiA{CgAeDcAmD{@qDu@qDm@wDi@wDe@{Da@yDa@{Da@{Da@yDe@{Di@{Di@wDo@uDw@sD}@oDaAmDkAiDmAgDuAaD{A}C_BwCeBsCiBmCqBeCsBcCuB}B{BuBaCoBcCgBiCaBkCyAaCmAoB{@kBw@uBw@yBs@_Cm@aCi@_Ca@aCa@_C]wBYkBWiBWcBYyAUyAUqASkAUaA]o@g@g@q@_@y@YaASiAKoAGqAIsAOuAIeAMu@Mk@Oi@Qq@Ou@Qy@Yq@[o@[m@We@[k@[s@Wu@Ww@S}@M_AKeAGmA?oAFuAL}ARaBPaBRwAPwAPuAPwANsAN{AR_BReBTeBTeBVoBXsBZuBXsBVuBXuBTuBRwBPwBNwBLwBJwBFyBFwBDyB@yB@yBAwBAoBAeB?mAA}@?q@?Y?M?@?A???@?????????????A?O?_@As@?cA?mAAyAAgBAuBAwBAwB?wBAsBAkB?iBAgBAgBAkBAqBAuB?iB?eBAaBAiB@oB@sBAmBAgBAeBAcBAeBAgB?mBCsBAwBAyBAcBAeA?_A?s@@_A?iACwAA}ACgB?kBAiBAcB?aB@}A@oA?}@Ag@?Y?U?G?A?@???????A?C?S?m@A}@?iAAaB@gB@kBAsBAuBEkBAiBAmBAqBAqBAwBAyBAyBAyB?yBAyBAyBAuB?mBAmB?{AAgAAaA?cAA}@Au@A{@?eAAmA?qA?wAAuAAsAAqAAuAAuA?yAA}AAaBAaB@_BDsANqAToARoALyA@cBK_BY}AW{AS{AK{AAwA?yAA_BCaB?}A?aBAeBAgBAkBAuB?uBCwB?{BAwBAwBAkBAkB?mBAsBCqBMiBQcBYyA_@yAe@uAo@uAu@mA_AkAeAeAgAy@y@k@o@]g@WWKQIYKWKSIMEIEECECMGa@Ss@c@y@o@{@}@{@eAw@qAm@sAc@qA_@{AYmBOuBEyB?oB@}A?cB?}A?}A?}A?}A?{A?_B?gB?gB@kB?gB?gB?kB?uB?uB?mB?iB?kB@sB?yB?wBAoBAiBCgBEgBAgB?iB@gB@gBB_B@}A@_B@yAAuACyA@wA?wAByA?yA?kA?gA@aA?s@BWTGb@Tl@`@x@f@z@j@x@f@t@f@n@b@b@\\d@Zh@`@l@d@l@f@p@h@p@j@r@l@t@n@t@p@r@n@t@p@r@r@r@p@j@n@`@^VBXWZi@\\m@^m@`@o@b@u@^o@`@m@^q@`@q@^o@`@q@Xe@La@?s@@_AAcA?aAA_A?eAAcAAeA?_AAe@?g@?s@?y@?y@A{@A}@?aA?_AA_AAy@?y@?s@Am@@[JERAJABCDAB????@????C@??@@?????????????@@@?@????????A@A????????A?A????????????a@}A`@|A????s@qDr@rD?@????@@???@?@CBAD?BDCBEBEBC@?????@AA????????????B",
+        "average_heartrate": null,
+        "average_speed": 14.433736102065813,
+        "streak": 4
     }
 ]
