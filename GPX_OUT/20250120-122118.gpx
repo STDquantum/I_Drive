@@ -25,13 +25,6 @@
 <trk>
  <name>轨迹 20250120-122118</name>
  <trkseg>
-  <trkpt lat="39.90815071" lon="116.40503894"><ele>202.125</ele><time>2025-01-20T04:21:18.057Z</time><speed>1.200</speed></trkpt>
-  <trkpt lat="39.90815071" lon="116.40503894"><ele>201.159</ele><time>2025-01-20T04:21:21.079Z</time><speed>1.200</speed></trkpt>
-  <trkpt lat="39.90815071" lon="116.40503894"><ele>203.193</ele><time>2025-01-20T04:21:24.097Z</time><speed>1.200</speed><sat>24</sat></trkpt>
-  <trkpt lat="39.90815071" lon="116.40503894"><ele>196.124</ele><time>2025-01-20T04:21:27.119Z</time><speed>1.200</speed><sat>40</sat></trkpt>
-  <trkpt lat="39.90815071" lon="116.40503894"><ele>202.452</ele><time>2025-01-20T04:21:30.142Z</time><speed>1.200</speed><sat>38</sat></trkpt>
-  <trkpt lat="39.90815071" lon="116.40503894"><ele>198.224</ele><time>2025-01-20T04:21:33.153Z</time><speed>1.200</speed><sat>36</sat></trkpt>
-  <trkpt lat="39.90815071" lon="116.40503894"><ele>200.476</ele><time>2025-01-20T04:21:36.820Z</time><speed>1.200</speed><sat>34</sat></trkpt>
   <trkpt lat="38.86877448" lon="115.50490940"><ele>0.205</ele><time>2025-01-20T04:21:36Z</time><speed>0.000</speed><sat>34</sat></trkpt>
   <trkpt lat="38.86877725" lon="115.50489580"><ele>0.310</ele><time>2025-01-20T04:21:37Z</time><speed>0.310</speed><sat>34</sat></trkpt>
   <trkpt lat="38.86878155" lon="115.50488056"><ele>0.671</ele><time>2025-01-20T04:21:38Z</time><speed>0.000</speed><sat>34</sat></trkpt>
