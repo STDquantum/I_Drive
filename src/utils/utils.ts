@@ -228,11 +228,11 @@ const titleForRun = (run: Activity): string => {
       return "";
     }
 
+    const elements = pos.split(",").map(s => s.trim());
     if (!pos.endsWith("中国")) {
-      return "";
+      return elements[0];
     }
 
-    const elements = pos.split(",").map(s => s.trim());
     const directCities = ["北京市", "上海市", "天津市", "重庆市"];
     let anchorIndex = -1;
 
@@ -252,8 +252,10 @@ const titleForRun = (run: Activity): string => {
 
     if (anchorIndex >= 1) { // 确保锚点及其前一个元素存在
       const ret = elements[anchorIndex] + elements[anchorIndex - 1];
-      if (anchorIndex - 1 !== 0) {
+      if (anchorIndex - 1 !== 0) { // 存在区以下的细分地址
         return ret + elements[0];
+      } else {
+        return ret; // 只保留到区
       }
     }
 
