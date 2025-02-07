@@ -230,7 +230,10 @@ const titleForRun = (run: Activity): string => {
 
     const elements = pos.split(",").map(s => s.trim());
     if (!pos.endsWith("中国")) {
-      return elements[0];
+      if (!pos.endsWith("俄罗斯")) {
+        return elements[0];
+      }
+      return "俄罗斯" + elements[elements.length - 4] + elements[0];
     }
 
     const directCities = ["北京市", "上海市", "天津市", "重庆市"];
