@@ -2353,5 +2353,20 @@
         "average_heartrate": null,
         "average_speed": 1.4196112820153555,
         "streak": 5
+    },
+    {
+        "run_id": 1739092138000,
+        "name": "GPS Logger 20250209-120858",
+        "distance": 8426.15147612168,
+        "moving_time": "0:09:43",
+        "type": "Run",
+        "start_date": "2025-02-09 09:08:58",
+        "start_date_local": "2025-02-09 12:08:58",
+        "location_country": "Проектно-конструкторское бюро по инфраструктуре, улица Космонавта Волкова, Войковский район, 莫斯科, 中央联邦管区, 125130, 俄罗斯",
+        "ending_point_pos": "18, улица Бутырский Вал, 特维尔区, 莫斯科, 中央联邦管区, 125196, 俄罗斯",
+        "summary_polyline": "}ltsI{k}cFMAMECA]L?A?A?A@AA@?@?T?h@FhADxABbBBfBDjBDpBBnBDjBLlBPjBRlBLnBBrBBlB@dB?jA?l@AN?@@??A??A??A?A?D???B?^?l@Cz@C|@?bA?l@E^KVS^i@Vk@d@y@n@_Ap@_Ap@{@n@m@d@c@\\SHKOCY?E@EFSXSb@a@l@e@v@k@v@m@z@o@bAw@dA{@`As@~@s@z@q@|CwBz@m@bA{@hA{@hAaAfA_AhAy@nA{@nA_AlA_AnAaAnAaAnA{@lA{@lA}@jA{@jAgAhAyAdAsB~@sBpBgIl@oDb@aDh@gDl@aDf@cDb@{Cd@qCn@sCp@qCn@sCh@{Cf@{Ch@}Cb@oD^uCj@iDj@aDh@}Cd@}Cf@eDh@cDl@}Ch@aDh@gDh@aDl@{Cn@yCx@sC|@mC|@sC|@yC`AqC`AyC`AsC`AuCbAsC`AyC`AuCbAwC~@wC~@mCdAsC~@oCx@cCx@eCx@eCv@cC|CoIz@oC`A_DtHwU~@mC|@oC`AsCbAuC`AwC~@sC|@kC|@iC~@iCz@mC|@kCz@gCv@eC|@iCv@kCdAkC|@cCz@{BfAiCt@qCl@aCdAgCbAgCz@_C|@_Cx@cCz@aCx@_Cv@wBv@{Bx@_Cx@uBv@wBj@wBz@wBv@oBv@}B~@}Bt@wBz@wBr@uBh@kBd@gARgBTeBO_CoEaQi@{Fg@hC",
+        "average_heartrate": null,
+        "average_speed": 14.45309001050031,
+        "streak": 6
     }
 ]
