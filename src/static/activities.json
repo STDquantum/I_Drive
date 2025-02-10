@@ -2398,5 +2398,20 @@
         "average_heartrate": null,
         "average_speed": 1.8622983056188593,
         "streak": 7
+    },
+    {
+        "run_id": 1739184038000,
+        "name": "GPS Logger 20250210-134038",
+        "distance": 1737.840826877463,
+        "moving_time": "0:12:11",
+        "type": "Run",
+        "start_date": "2025-02-10 10:40:38",
+        "start_date_local": "2025-02-10 13:40:38",
+        "location_country": "ИКАР, 13, Дубосековская улица, район Сокол, 莫斯科, 中央联邦管区, 125080, 俄罗斯",
+        "ending_point_pos": "Московский авиационный институт, 4, Волоколамское шоссе (дублёр), посёлок Сокол, район Сокол, 莫斯科, 中央联邦管区, 125993, 俄罗斯",
+        "summary_polyline": "i|ssIqvzcF????Bj@QdDALFkCDILsEFUGtBJKNYl@n@m@[AaCAYMxBAB?A?@A@?BAH@KBWPa@?e@Ms@Bw@C|BGtBAH?R@LCHAJ@G?????A@????????????????A?@??yBNNd@FJDH@?B??@GDMAECCEGEE@IAEBCFAF@B??@???@A???A????@AA????A@CAACBDABAD@?ABAECEE?D?D@@?A?AAA@CA??@HA@?DCFBD?BA??@@@CFKFGDAFAFAD?H?FBD@DBHDFFFDDDDFFFBBD@JBH?HCDCJI@A@ADAFADADG@EAICM?EBMBMDGBGDGBGDIDAD?D@@@B@B@B@@@XRA?BAFEDEBEBCBG@EBK@GBIBGDIDIBIBCD@D?D?F@D@N@H@F?H?FAF?DAD?F@FAD?DADCFEDEDEDI?@?@????????????????????????????????zB}A{B|AxB}AyB|A??????????????????BH^`AJJHBFBLBFBD@B?BA@Eb@\\mAx@CfCb@iBNYLEFQ@@A?",
+        "average_heartrate": null,
+        "average_speed": 2.3773472323905103,
+        "streak": 7
     }
 ]
