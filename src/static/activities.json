@@ -2428,5 +2428,20 @@
         "average_heartrate": null,
         "average_speed": 13.51165457682045,
         "streak": 7
+    },
+    {
+        "run_id": 1739206771000,
+        "name": "GPS Logger 20250210-195931",
+        "distance": 17370.72185409016,
+        "moving_time": "0:20:20",
+        "type": "Run",
+        "start_date": "2025-02-10 16:59:31",
+        "start_date_local": "2025-02-10 19:59:31",
+        "location_country": "Московский зоопарк, Баррикадная улица, Пресненский район, 莫斯科, 中央联邦管区, 123242, 俄罗斯",
+        "ending_point_pos": "Линзы тут, 6А, улица Космонавта Волкова, Войковский район, 莫斯科, 中央联邦管区, 127299, 俄罗斯",
+        "summary_polyline": "}{isIsfjdF@lACrAKv@WHC??\\Jh@LNPPJ^BP?d@D`@@T?^ERGRCXEXC^?`@C^GTiBz@[j@[VK\\NBMRKTHACNTQk@t@EBLIRBRBL\\h@dA?v@Lt@p@Q|@q@dAgAbAkBgAeJiF_Oo@cFw@eDoFkA{MdHuDnDlH~RaGqAuBpBr@`@m@h@c@CjGu]eE{INoHK_FfFiGdFfCDz@u@gAUoABnF@~CBtBmDmJCh@PIfBkJWgCCqBiAsDuA}DqAK_u@v{RBdI@d@?BBA@?@??@?@AF?@A@@?@?@D?`@At@@lA@hB?nBArB?xBAvB?`BGdAUz@c@f@m@?}@YcA]iAa@iAc@iA]mASmAUsA[wAa@{Ai@wAk@wAk@uAg@iAc@cAa@cAa@iAa@sAg@qAi@uAk@wAk@{Ak@}Ao@}Ao@{Aq@{A_AyAsAuAkA{AgBgPy[aAiBaAkBgAsBcAmB}@iB{@_Bs@mAo@iAg@aAi@aAo@oAy@_B{@aBcAgBgAuBeAwBeAuBcAoBaAoB_AkBw@aBq@wAo@uAq@wAw@aB{@eBsDwHcAsBcAuB_AqBaAmBgAkBiA}AqA}AwAwA{AwA}AwAaByAcBsAcCqBaa@i[kF_GgBgA{AkBHi@_@s@sA}@wAeAwMgLyAyBw@eAm@q@k@}@_@i@a@i@g@q@S]BIBCJ@Xf@b@b@l@p@n@p@h@j@\\\\JNDD?@???@@@A?????????ZVZZR`@B\\?N@N@b@?z@@fA@nA@`B@jBBrBFtBBlBBtA?tAB|AD~ABzA?|@FZLDF@D??@?@@?????????D?@DBB@CAAAA?E?A????????????????????????????Q|BP}B?????A????????P`F@N?@??????A@AG??@E?EAA?????????A?A?A???????????FCC@G?DAB",
+        "average_heartrate": null,
+        "average_speed": 14.238296601713245,
+        "streak": 7
     }
 ]
