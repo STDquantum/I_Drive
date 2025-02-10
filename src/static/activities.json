@@ -2413,5 +2413,20 @@
         "average_heartrate": null,
         "average_speed": 2.3773472323905103,
         "streak": 7
+    },
+    {
+        "run_id": 1739193886000,
+        "name": "GPS Logger 20250210-162446",
+        "distance": 11863.232718448355,
+        "moving_time": "0:14:38",
+        "type": "Run",
+        "start_date": "2025-02-10 13:24:46",
+        "start_date_local": "2025-02-10 16:24:46",
+        "location_country": "корпус №24 зона А, 5А, Ленинградское шоссе, район Сокол, 莫斯科, 中央联邦管区, 125080, 俄罗斯",
+        "ending_point_pos": "Торгово-промышленная палата РФ, 6/1 с1, улица Ильинка, 8, 基泰格羅德, 特维尔区, 莫斯科, 中央联邦管区, 109012, 俄罗斯",
+        "summary_polyline": "uetsIij{cF@C?@A?C??@??A???CMMEPYf@Of@[l@c@p@g@v@e@p@k@l@m@b@q@Tw@Ti@`@u@Xg@v@u@p@k@`Aw@dA{@jA{@hAaAhAaAjAaAlA}@jA{@lA_AhAcAfAuA`AgBdHeXb@oCp@uERoCb@kCb@aCf@yBn@{Bd@{B`@wB^_Cd@kC`@iCd@uC^sC^_C^cC`@oCb@iCb@iCXkC^gCb@eCZiCf@gCd@gCb@kCd@iCf@aCh@aCv@}B`@aCdAeBt@_Cx@_Cz@_Cv@uBr@yBr@wBl@_Cz@sBr@{Bt@kCv@qBt@_Ct@}B|@kCx@cCv@sCz@iCnAiC~@sCh[}~@bAsCdAoDj@aEbBeBz@}EjAiEdAcDp@oA`AyB|@sBd@qGjAuAnAyChJaVdAwCbAwCp@sClAyCnAmC~@sC~@eCn@_Af@y@b@_@`@Wd@_@u@wAF_@rV_o@GX@??E?A?E?@?@?@DOBGA@CP?@@?HSLYXm@Zw@d@}@f@}@h@gAl@yAm@U|@s@|AkAl@kA\\q@Jo@HKJGHKDi@AOAUAAEP?^RKNa@N]\\eA\\e@d@k@b@}@R}Ab@_A`@m@j@i@\\a@Xs@Rm@`@y@By@Jo@HUdBFlBVfBbB`BTvBf@t@DfAV{@cBc@mAGQSKAQCUs@lCKM}@aAq@}@NQCMk@q@E[EGEBAECK?@BNHVFNBHCAAAA?UEG@C???SH{@\\MBDEh@]GXLATKDC@?DELO?C?A?????h@Qr@c@t@~@UlA]fD_DjBeCbBcCdBqBvAwArAsAbAaAlAwAvAc@zAsA~AeApAyAjAeArAy@dAo@zAgAfAkBhAcCdAiB|@oB|@qB|NiUfEsGlBaY~Ca_@`FoQQ{S|AkR",
+        "average_heartrate": null,
+        "average_speed": 13.51165457682045,
+        "streak": 7
     }
 ]
