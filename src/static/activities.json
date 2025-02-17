@@ -2593,5 +2593,20 @@
         "average_heartrate": null,
         "average_speed": 1.3978157278168888,
         "streak": 1
+    },
+    {
+        "run_id": 1739794005000,
+        "name": "GPS Logger 20250217-150645",
+        "distance": 24435.43954555334,
+        "moving_time": "0:28:20",
+        "type": "Run",
+        "start_date": "2025-02-17 12:06:45",
+        "start_date_local": "2025-02-17 15:06:45",
+        "location_country": "7, улица Космонавта Волкова, Войковский район, 莫斯科, 中央联邦管区, 125130, 俄罗斯",
+        "ending_point_pos": "Терминал C, вл39 с1, Шереметьевское шоссе, транспортная зона Шереметьево, 希姆基, городской округ Химки, 莫斯科州, 中央联邦管区, 141426, 俄罗斯",
+        "summary_polyline": "gntsIg~|cFDfCD`CD|BJdCRdCT|BJzBBlC?jC?tB?fB?fBo@Kw@h@cA|@aA~@iA|@gAx@}@r@y@l@s@x@s@v@_Av@kAbAqAfAsAfAwAjAsAlAsAlAwAfAuAz@qAx@mAz@kA~@wAjA}AnAeBrAeBrAaBtAgBzAoBdBmB~AkBxAiBtAeBrAgBrAgBpAkBvAaBzAgBhA_BjAcFzD{AnAcBpAgBxAeBvA_BnAaBjAaBfA_BfAcBlAyAbAoAz@mAx@iAv@mAz@uA~@{AdAyAbAuA`AuA`AoAz@gAt@cAn@gAp@mAv@qAx@}A~@{A|@_B`AyA|@uA|@yAz@{A~@{A~@qAt@uAz@_BbAeBbAgBfAiBhAcBbA{A~@_B`AaBbAgBfAeBdAaB`A_BbAyAz@mAt@mAt@sAx@wAz@{A|@aB`A_B~@qAv@oAv@oAv@uAz@}A~@gBfAcBbAcBdAaB`A}A`AwAz@qAv@uAz@aB`AiBhAiBdAiBhAmBjAqBlAmBhAmBjAsBnAyBtAsBzAoBrBkBbCgBjCaBfCaBbCyA|B{A~B}AbCcBfCaBdCgBdCkBhCkBhCkBfCaBvB}AlBwAdBsAbBwAhB{AnBuAjBoA`BeAvA_AnA}@hAi@t@QVEDMPSTUZQTEFCFIJKLILIJKLKLOPMLKPQROPILKJILGLIVQXGHGFKLMNOV[^Y`@Y^Y`@Y\\Yb@Y\\OTMNSVW^Y\\]d@g@n@m@x@m@z@g@p@a@h@]d@_@f@e@l@m@x@m@v@k@t@i@r@k@r@m@x@s@~@q@z@i@r@c@l@i@r@k@v@m@x@u@`Ai@r@a@h@_@h@g@n@o@|@y@fAaApAcAvAkAxAoAbBoAbBqAfBoAbBoAbBkAzAcAtA_AlA{@hAw@dA{@jA{@jA{@hA}@nA}@hA_AnA{@hAy@jA_AnA{@jA}@hAu@fA}@jA_AnA_AlA}@jAaArA_ApAcAvAaArA}@pA}@pAgA|AeA`BgAhBgAfBaAbBiCtEeAhBeAjBiApBgAlBcAhBiAjBsAzBqA`CoA~BuAbCuA~ByA`CyA~B{A`C}A`CwAxBuAxBsAtBsApBsAlByAdB{AzAaBvA{AlAoA~@oA`AoAdAsArAoAzAqAdBuArBoAxBkAzBeA`CeAlCgApCgAvCmA~CmA~CmAtCiAdCoA`CmArBoAlBkAjBmAlBsAtBsA|BwAxBqAtBsApBqAnBoApBsAtBuArBsAtBqArBmAhB}@vA}@vA{@pAy@pA{@rAaAzA_AxAcA|AgAdBgAdBmFjIgAdBiAbBgAbBkAfBsAnB{AxByA~B{A`C{A`C{A~BoArBkApBiApBeAhBgAhBiAjBkAhBkAfBgAdBeAdBkAjBsAhBoAjBoAnBiAdBgAbBeA~A{@tAu@jAu@lAi@z@_@j@]j@]r@k@`A}@tAcA|AaAzA}@rA}@vAcA~AgAfBgAbB}@xA_AzAuDbGkAjBiAlBaAhBs@dAq@dAw@vAaAhBkAfBu@pAm@`A_@p@S\\QZYf@]b@g@n@w@t@kAd@yAKwAq@gAsAgAiBkAaCsAuCuAyCmAkCkAeCgAcCkAiCkAeCmAgCiAgCmAgCkAiCkAkCkAmCmAiCmAiCmAkCkAmCkAiCmAeCqAoCmAmCoAoCoAmCmAoCsAmCmAkCkAiCkAgCkAkCkAeCkAgCmAmCeF_LiAcCkAeCmAkCkAiCmAkCiAoCkAmCoAiCiA}BiAmCcA{BeA}BcA{BcAuBaAsB}@oB}@qB_AoB}@mBw@kBu@mBw@qBq@mBq@sBk@uBk@}Bk@sCg@wC_@iC[oCYmCUmCW{CUwCWoCUmCS_CS}BQ}BWsCSoCS_CSyBQ}BU{BU}BSqBQwBU_CWaCSeBOwASiA_@u@[o@Qg@GYAEAOGs@Gs@Ek@Ee@CYA?@??AA???@????A@??@?@???A??@A?A?A?????@???????@@??@?????@@F????AA???A????A?A??@???@????A@???@@@A????A?AAA@@???A?A@A????AOAOAKAC@?@JAI?K?C@A????????????????`BbDaBcD??@????A?G@G?G?E@O?C?YIYQZM`@YhAy@uA~@YXWA_@DG\\ABAFQFIHI",
+        "average_heartrate": null,
+        "average_speed": 14.373787967972554,
+        "streak": 2
     }
 ]
