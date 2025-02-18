@@ -937,203 +937,203 @@
   <trkpt lat="55.96886387" lon="37.43787885"><ele>189.996</ele><time>2025-02-17T18:30:56Z</time><speed>48.500</speed><sat>6</sat></trkpt>
             <trkpt lat="55.9998" lon="41.0228">
                 <time>2025-02-17T18:47:40Z</time>
-                <course>→ 88°</course>
+                <course>88</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.996" lon="41.4518">
                 <time>2025-02-17T18:49:39Z</time>
-                <course>→ 91°</course>
+                <course>91</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.9908" lon="41.8771">
                 <time>2025-02-17T18:51:37Z</time>
-                <course>→ 91°</course>
+                <course>91</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.984" lon="42.3131">
                 <time>2025-02-17T18:53:38Z</time>
-                <course>→ 91°</course>
+                <course>91</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.9799" lon="42.5329">
                 <time>2025-02-17T18:54:39Z</time>
-                <course>→ 92°</course>
+                <course>92</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.9711" lon="42.9542">
                 <time>2025-02-17T18:56:36Z</time>
-                <course>→ 92°</course>
+                <course>92</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.966" lon="43.1701">
                 <time>2025-02-17T18:57:36Z</time>
-                <course>→ 92°</course>
+                <course>92</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.9605" lon="43.3861">
                 <time>2025-02-17T18:58:36Z</time>
-                <course>→ 93°</course>
+                <course>93</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.9545" lon="43.6055">
                 <time>2025-02-17T18:59:37Z</time>
-                <course>→ 93°</course>
+                <course>93</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.9423" lon="44.0191">
                 <time>2025-02-17T19:01:32Z</time>
-                <course>→ 93°</course>
+                <course>93</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.9347" lon="44.2527">
                 <time>2025-02-17T19:02:37Z</time>
-                <course>→ 93°</course>
+                <course>93</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.9273" lon="44.4682">
                 <time>2025-02-17T19:03:37Z</time>
-                <course>→ 93°</course>
+                <course>93</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.9112" lon="44.9063">
                 <time>2025-02-17T19:05:39Z</time>
-                <course>→ 94°</course>
+                <course>94</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.8937" lon="45.3404">
                 <time>2025-02-17T19:07:40Z</time>
-                <course>→ 94°</course>
+                <course>94</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.8759" lon="45.7454">
                 <time>2025-02-17T19:09:33Z</time>
-                <course>→ 94°</course>
+                <course>94</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.8649" lon="45.9818">
                 <time>2025-02-17T19:10:39Z</time>
-                <course>→ 95°</course>
+                <course>95</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.8447" lon="46.3933">
                 <time>2025-02-17T19:12:34Z</time>
-                <course>→ 95°</course>
+                <course>95</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.8332" lon="46.615">
                 <time>2025-02-17T19:13:36Z</time>
-                <course>→ 95°</course>
+                <course>95</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.821" lon="46.8437">
                 <time>2025-02-17T19:14:40Z</time>
-                <course>→ 95°</course>
+                <course>95</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.797" lon="47.2686">
                 <time>2025-02-17T19:16:39Z</time>
-                <course>→ 96°</course>
+                <course>96</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.7842" lon="47.4861">
                 <time>2025-02-17T19:17:40Z</time>
-                <course>→ 96°</course>
+                <course>96</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.7581" lon="47.9102">
                 <time>2025-02-17T19:19:39Z</time>
-                <course>→ 96°</course>
+                <course>96</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.7303" lon="48.3372">
                 <time>2025-02-17T19:21:39Z</time>
-                <course>→ 96°</course>
+                <course>96</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.7032" lon="48.7316">
                 <time>2025-02-17T19:23:30Z</time>
-                <course>→ 97°</course>
+                <course>97</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.6855" lon="48.98">
                 <time>2025-02-17T19:24:40Z</time>
-                <course>→ 97°</course>
+                <course>97</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.6574" lon="49.3594">
                 <time>2025-02-17T19:26:27Z</time>
-                <course>→ 97°</course>
+                <course>97</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.6382" lon="49.6108">
                 <time>2025-02-17T19:27:38Z</time>
-                <course>→ 98°</course>
+                <course>98</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.605" lon="50.028">
                 <time>2025-02-17T19:29:36Z</time>
-                <course>→ 98°</course>
+                <course>98</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.5871" lon="50.247">
                 <time>2025-02-17T19:30:38Z</time>
-                <course>→ 98°</course>
+                <course>98</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.5515" lon="50.6667">
                 <time>2025-02-17T19:32:37Z</time>
-                <course>→ 98°</course>
+                <course>98</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.533" lon="50.878">
                 <time>2025-02-17T19:33:37Z</time>
-                <course>→ 99°</course>
+                <course>99</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.5138" lon="51.0926">
                 <time>2025-02-17T19:34:38Z</time>
-                <course>→ 99°</course>
+                <course>99</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.4946" lon="51.3035">
                 <time>2025-02-17T19:35:38Z</time>
-                <course>→ 99°</course>
+                <course>99</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.4554" lon="51.7212">
                 <time>2025-02-17T19:37:37Z</time>
-                <course>→ 99°</course>
+                <course>99</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.4348" lon="51.935">
                 <time>2025-02-17T19:38:38Z</time>
-                <course>→ 100°</course>
+                <course>100</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.4141" lon="52.145">
                 <time>2025-02-17T19:39:38Z</time>
-                <course>→ 100°</course>
+                <course>100</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.3721" lon="52.5609">
                 <time>2025-02-17T19:41:37Z</time>
-                <course>→ 100°</course>
+                <course>100</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.3496" lon="52.7773">
                 <time>2025-02-17T19:42:39Z</time>
-                <course>→ 100°</course>
+                <course>100</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="55.3077" lon="53.171">
                 <time>2025-02-17T19:44:32Z</time>
-                <course>→ 100°</course>
+                <course>100</course>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="56.0574" lon="52.3311">
                 <time>2025-02-17T19:45:29Z</time>
                 <ele>11278</ele>
-                <course>→ 87°</course>
+                <course>87</course>
                 <speed_knots>506</speed_knots>
                 <speed>937</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1141,7 +1141,7 @@
             <trkpt lat="56.0644" lon="52.5448">
                 <time>2025-02-17T19:46:20Z</time>
                 <ele>11278</ele>
-                <course>→ 87°</course>
+                <course>87</course>
                 <speed_knots>513</speed_knots>
                 <speed>950</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1149,7 +1149,7 @@
             <trkpt lat="56.0686" lon="52.6852">
                 <time>2025-02-17T19:46:53Z</time>
                 <ele>11278</ele>
-                <course>→ 87°</course>
+                <course>87</course>
                 <speed_knots>509</speed_knots>
                 <speed>943</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1157,7 +1157,7 @@
             <trkpt lat="56.0768" lon="53.1187">
                 <time>2025-02-17T19:48:37Z</time>
                 <ele>11278</ele>
-                <course>→ 88°</course>
+                <course>88</course>
                 <speed_knots>517</speed_knots>
                 <speed>958</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1165,7 +1165,7 @@
             <trkpt lat="56.0817" lon="53.4719">
                 <time>2025-02-17T19:50:01Z</time>
                 <ele>11278</ele>
-                <course>→ 90°</course>
+                <course>90</course>
                 <speed_knots>523</speed_knots>
                 <speed>969</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1173,7 +1173,7 @@
             <trkpt lat="56.0864" lon="53.6155">
                 <time>2025-02-17T19:50:35Z</time>
                 <ele>11278</ele>
-                <course>→ 88°</course>
+                <course>88</course>
                 <speed_knots>495</speed_knots>
                 <speed>917</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1181,7 +1181,7 @@
             <trkpt lat="56.0899" lon="53.7923">
                 <time>2025-02-17T19:51:16Z</time>
                 <ele>11278</ele>
-                <course>→ 88°</course>
+                <course>88</course>
                 <speed_knots>546</speed_knots>
                 <speed>1011</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1189,7 +1189,7 @@
             <trkpt lat="56.2636" lon="56.3763">
                 <time>2025-02-17T20:01:29Z</time>
                 <ele>11278</ele>
-                <course>→ 83°</course>
+                <course>83</course>
                 <speed_knots>498</speed_knots>
                 <speed>922</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1197,7 +1197,7 @@
             <trkpt lat="56.2738" lon="56.5197">
                 <time>2025-02-17T20:02:03Z</time>
                 <ele>11278</ele>
-                <course>→ 83°</course>
+                <course>83</course>
                 <speed_knots>497</speed_knots>
                 <speed>921</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1205,7 +1205,7 @@
             <trkpt lat="56.2831" lon="56.6494">
                 <time>2025-02-17T20:02:33Z</time>
                 <ele>11278</ele>
-                <course>→ 82°</course>
+                <course>82</course>
                 <speed_knots>531</speed_knots>
                 <speed>983</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1213,7 +1213,7 @@
             <trkpt lat="56.2918" lon="56.7768">
                 <time>2025-02-17T20:03:03Z</time>
                 <ele>11278</ele>
-                <course>→ 83°</course>
+                <course>83</course>
                 <speed_knots>513</speed_knots>
                 <speed>950</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1221,7 +1221,7 @@
             <trkpt lat="56.3008" lon="56.9069">
                 <time>2025-02-17T20:03:33Z</time>
                 <ele>11278</ele>
-                <course>→ 83°</course>
+                <course>83</course>
                 <speed_knots>536</speed_knots>
                 <speed>993</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1229,7 +1229,7 @@
             <trkpt lat="56.3103" lon="57.0508">
                 <time>2025-02-17T20:04:07Z</time>
                 <ele>11278</ele>
-                <course>→ 83°</course>
+                <course>83</course>
                 <speed_knots>516</speed_knots>
                 <speed>956</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1237,7 +1237,7 @@
             <trkpt lat="56.3193" lon="57.1848">
                 <time>2025-02-17T20:04:38Z</time>
                 <ele>11278</ele>
-                <course>→ 83°</course>
+                <course>83</course>
                 <speed_knots>521</speed_knots>
                 <speed>966</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1245,7 +1245,7 @@
             <trkpt lat="56.3284" lon="57.3232">
                 <time>2025-02-17T20:05:10Z</time>
                 <ele>11278</ele>
-                <course>→ 83°</course>
+                <course>83</course>
                 <speed_knots>526</speed_knots>
                 <speed>974</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1253,7 +1253,7 @@
             <trkpt lat="56.3367" lon="57.4515">
                 <time>2025-02-17T20:05:40Z</time>
                 <ele>11278</ele>
-                <course>→ 83°</course>
+                <course>83</course>
                 <speed_knots>520</speed_knots>
                 <speed>962</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1261,7 +1261,7 @@
             <trkpt lat="56.3454" lon="57.5907">
                 <time>2025-02-17T20:06:12Z</time>
                 <ele>11278</ele>
-                <course>→ 84°</course>
+                <course>84</course>
                 <speed_knots>537</speed_knots>
                 <speed>995</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1269,7 +1269,7 @@
             <trkpt lat="56.3545" lon="57.7402">
                 <time>2025-02-17T20:06:47Z</time>
                 <ele>11278</ele>
-                <course>→ 84°</course>
+                <course>84</course>
                 <speed_knots>574</speed_knots>
                 <speed>1064</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1277,7 +1277,7 @@
             <trkpt lat="56.3631" lon="57.8826">
                 <time>2025-02-17T20:07:20Z</time>
                 <ele>11278</ele>
-                <course>→ 84°</course>
+                <course>84</course>
                 <speed_knots>513</speed_knots>
                 <speed>950</speed>
                 <vertical_speed>0?</vertical_speed>
@@ -1285,7 +1285,7 @@
             <trkpt lat="56.1962" lon="64.8543">
                 <time>2025-02-17T20:34:27Z</time>
                 <ele>11270</ele>
-                <course>→ 97°</course>
+                <course>97</course>
                 <speed_knots>516</speed_knots>
                 <speed>956</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1293,7 +1293,7 @@
             <trkpt lat="54.4533" lon="82.3732">
                 <time>2025-02-17T21:50:26Z</time>
                 <ele>11278</ele>
-                <course>→ 101°</course>
+                <course>101</course>
                 <speed_knots>470</speed_knots>
                 <speed>871</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1301,7 +1301,7 @@
             <trkpt lat="54.4394" lon="82.4924">
                 <time>2025-02-17T21:50:59Z</time>
                 <ele>11278</ele>
-                <course>→ 101°</course>
+                <course>101</course>
                 <speed_knots>470</speed_knots>
                 <speed>871</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1309,7 +1309,7 @@
             <trkpt lat="54.4263" lon="82.6046">
                 <time>2025-02-17T21:51:29Z</time>
                 <ele>11278</ele>
-                <course>→ 101°</course>
+                <course>101</course>
                 <speed_knots>472</speed_knots>
                 <speed>874</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1317,7 +1317,7 @@
             <trkpt lat="54.4109" lon="82.7322">
                 <time>2025-02-17T21:52:04Z</time>
                 <ele>11278</ele>
-                <course>→ 101°</course>
+                <course>101</course>
                 <speed_knots>472</speed_knots>
                 <speed>874</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1325,7 +1325,7 @@
             <trkpt lat="54.396" lon="82.8565">
                 <time>2025-02-17T21:52:38Z</time>
                 <ele>11278</ele>
-                <course>→ 101°</course>
+                <course>101</course>
                 <speed_knots>472</speed_knots>
                 <speed>874</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1333,7 +1333,7 @@
             <trkpt lat="54.3822" lon="82.9737">
                 <time>2025-02-17T21:53:10Z</time>
                 <ele>11278</ele>
-                <course>→ 101°</course>
+                <course>101</course>
                 <speed_knots>472</speed_knots>
                 <speed>874</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1341,7 +1341,7 @@
             <trkpt lat="54.3687" lon="83.0828">
                 <time>2025-02-17T21:53:40Z</time>
                 <ele>11278</ele>
-                <course>→ 102°</course>
+                <course>102</course>
                 <speed_knots>465</speed_knots>
                 <speed>861</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1349,7 +1349,7 @@
             <trkpt lat="54.3531" lon="83.2047">
                 <time>2025-02-17T21:54:13Z</time>
                 <ele>11278</ele>
-                <course>→ 102°</course>
+                <course>102</course>
                 <speed_knots>472</speed_knots>
                 <speed>874</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1357,7 +1357,7 @@
             <trkpt lat="54.3391" lon="83.3175">
                 <time>2025-02-17T21:54:44Z</time>
                 <ele>11278</ele>
-                <course>→ 102°</course>
+                <course>102</course>
                 <speed_knots>472</speed_knots>
                 <speed>874</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1365,14 +1365,14 @@
             <trkpt lat="54.3247" lon="83.4304">
                 <time>2025-02-17T21:55:15Z</time>
                 <ele>11278</ele>
-                <course>→ 102°</course>
+                <course>102</course>
                 <speed_knots>472</speed_knots>
                 <speed>874</speed>
                 <vertical_speed>Level</vertical_speed>
             </trkpt>
             <trkpt lat="54.3087" lon="83.5548">
                 <time>2025-02-17T21:55:49Z</time>
-                <course>→ 103°</course>
+                <course>103</course>
                 <speed_knots>467</speed_knots>
                 <speed>864</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1380,7 +1380,7 @@
             <trkpt lat="54.2941" lon="83.6646">
                 <time>2025-02-17T21:56:19Z</time>
                 <ele>11278</ele>
-                <course>→ 103°</course>
+                <course>103</course>
                 <speed_knots>470</speed_knots>
                 <speed>871</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1388,7 +1388,7 @@
             <trkpt lat="54.2797" lon="83.7729">
                 <time>2025-02-17T21:56:49Z</time>
                 <ele>11278</ele>
-                <course>→ 103°</course>
+                <course>103</course>
                 <speed_knots>470</speed_knots>
                 <speed>871</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1396,7 +1396,7 @@
             <trkpt lat="54.2647" lon="83.8859">
                 <time>2025-02-17T21:57:20Z</time>
                 <ele>11278</ele>
-                <course>→ 103°</course>
+                <course>103</course>
                 <speed_knots>468</speed_knots>
                 <speed>867</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1404,7 +1404,7 @@
             <trkpt lat="54.2483" lon="84.0075">
                 <time>2025-02-17T21:57:54Z</time>
                 <ele>11278</ele>
-                <course>→ 103°</course>
+                <course>103</course>
                 <speed_knots>466</speed_knots>
                 <speed>863</speed>
                 <vertical_speed>-2?</vertical_speed>
@@ -1412,7 +1412,7 @@
             <trkpt lat="54.2338" lon="84.1157">
                 <time>2025-02-17T21:58:24Z</time>
                 <ele>11276</ele>
-                <course>→ 103°</course>
+                <course>103</course>
                 <speed_knots>472</speed_knots>
                 <speed>874</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1420,7 +1420,7 @@
             <trkpt lat="54.2195" lon="84.2221">
                 <time>2025-02-17T21:58:54Z</time>
                 <ele>11278</ele>
-                <course>→ 103°</course>
+                <course>103</course>
                 <speed_knots>451</speed_knots>
                 <speed>835</speed>
                 <vertical_speed>2?</vertical_speed>
@@ -1428,7 +1428,7 @@
             <trkpt lat="54.2044" lon="84.3334">
                 <time>2025-02-17T21:59:25Z</time>
                 <ele>11278</ele>
-                <course>→ 103°</course>
+                <course>103</course>
                 <speed_knots>466</speed_knots>
                 <speed>863</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1436,7 +1436,7 @@
             <trkpt lat="54.1895" lon="84.4403">
                 <time>2025-02-17T21:59:55Z</time>
                 <ele>11278</ele>
-                <course>→ 103°</course>
+                <course>103</course>
                 <speed_knots>466</speed_knots>
                 <speed>863</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1444,7 +1444,7 @@
             <trkpt lat="54.1746" lon="84.5489">
                 <time>2025-02-17T22:00:25Z</time>
                 <ele>11278</ele>
-                <course>→ 103°</course>
+                <course>103</course>
                 <speed_knots>472</speed_knots>
                 <speed>874</speed>
                 <vertical_speed>2?</vertical_speed>
@@ -1452,7 +1452,7 @@
             <trkpt lat="54.1597" lon="84.6565">
                 <time>2025-02-17T22:00:55Z</time>
                 <ele>11280</ele>
-                <course>→ 103°</course>
+                <course>103</course>
                 <speed_knots>466</speed_knots>
                 <speed>863</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1460,7 +1460,7 @@
             <trkpt lat="54.1445" lon="84.7649">
                 <time>2025-02-17T22:01:25Z</time>
                 <ele>11278</ele>
-                <course>→ 103°</course>
+                <course>103</course>
                 <speed_knots>472</speed_knots>
                 <speed>874</speed>
                 <vertical_speed>-2?</vertical_speed>
@@ -1468,7 +1468,7 @@
             <trkpt lat="54.1288" lon="84.8775">
                 <time>2025-02-17T22:01:56Z</time>
                 <ele>11278</ele>
-                <course>→ 103°</course>
+                <course>103</course>
                 <speed_knots>472</speed_knots>
                 <speed>874</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1476,7 +1476,7 @@
             <trkpt lat="54.1122" lon="84.9943">
                 <time>2025-02-17T22:02:28Z</time>
                 <ele>11278</ele>
-                <course>→ 103°</course>
+                <course>103</course>
                 <speed_knots>472</speed_knots>
                 <speed>874</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1484,7 +1484,7 @@
             <trkpt lat="54.0967" lon="85.1027">
                 <time>2025-02-17T22:02:58Z</time>
                 <ele>11278</ele>
-                <course>→ 104°</course>
+                <course>104</course>
                 <speed_knots>472</speed_knots>
                 <speed>874</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1492,7 +1492,7 @@
             <trkpt lat="54.0803" lon="85.2101">
                 <time>2025-02-17T22:03:28Z</time>
                 <ele>11278</ele>
-                <course>→ 105°</course>
+                <course>105</course>
                 <speed_knots>479</speed_knots>
                 <speed>887</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1500,7 +1500,7 @@
             <trkpt lat="54.063" lon="85.318">
                 <time>2025-02-17T22:03:58Z</time>
                 <ele>11278</ele>
-                <course>→ 105°</course>
+                <course>105</course>
                 <speed_knots>472</speed_knots>
                 <speed>874</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1508,7 +1508,7 @@
             <trkpt lat="54.0465" lon="85.4241">
                 <time>2025-02-17T22:04:28Z</time>
                 <ele>11278</ele>
-                <course>→ 105°</course>
+                <course>105</course>
                 <speed_knots>472</speed_knots>
                 <speed>874</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1516,7 +1516,7 @@
             <trkpt lat="54.0295" lon="85.533">
                 <time>2025-02-17T22:04:58Z</time>
                 <ele>11278</ele>
-                <course>→ 105°</course>
+                <course>105</course>
                 <speed_knots>479</speed_knots>
                 <speed>887</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1524,7 +1524,7 @@
             <trkpt lat="54.0123" lon="85.6444">
                 <time>2025-02-17T22:05:29Z</time>
                 <ele>11278</ele>
-                <course>→ 105°</course>
+                <course>105</course>
                 <speed_knots>483</speed_knots>
                 <speed>895</speed>
                 <vertical_speed>2?</vertical_speed>
@@ -1532,7 +1532,7 @@
             <trkpt lat="53.9949" lon="85.7521">
                 <time>2025-02-17T22:06:00Z</time>
                 <ele>11279</ele>
-                <course>→ 105°</course>
+                <course>105</course>
                 <speed_knots>466</speed_knots>
                 <speed>863</speed>
                 <vertical_speed>2?</vertical_speed>
@@ -1540,7 +1540,7 @@
             <trkpt lat="53.9781" lon="85.859">
                 <time>2025-02-17T22:06:30Z</time>
                 <ele>11280</ele>
-                <course>→ 105°</course>
+                <course>105</course>
                 <speed_knots>469</speed_knots>
                 <speed>869</speed>
                 <vertical_speed>Level</vertical_speed>
@@ -1548,7 +1548,7 @@
             <trkpt lat="53.9608" lon="85.9668">
                 <time>2025-02-17T22:07:00Z</time>
                 <ele>11279</ele>
-                <course>→ 105°</course>
+                <course>105</course>
                 <speed_knots>475</speed_knots>
                 <speed>880</speed>
                 <vertical_speed>-1?</vertical_speed>
@@ -1556,7 +1556,7 @@
             <trkpt lat="53.9435" lon="86.073">
                 <time>2025-02-17T22:07:30Z</time>
                 <ele>11279</ele>
-                <course>→ 105°</course>
+                <course>105</course>
                 <speed_knots>473</speed_knots>
                 <speed>875</speed>
                 <vertical_speed>-2?</vertical_speed>
@@ -1564,7 +1564,7 @@
             <trkpt lat="53.9255" lon="86.1829">
                 <time>2025-02-17T22:08:01Z</time>
                 <ele>11278</ele>
-                <course>→ 105°</course>
+                <course>105</course>
                 <speed_knots>470</speed_knots>
                 <speed>871</speed>
                 <vertical_speed>1?</vertical_speed>
@@ -1572,7 +1572,7 @@
             <trkpt lat="53.9083" lon="86.288">
                 <time>2025-02-17T22:08:31Z</time>
                 <ele>11280</ele>
-                <course>→ 105°</course>
+                <course>105</course>
                 <speed_knots>463</speed_knots>
                 <speed>858</speed>
                 <vertical_speed>2?</vertical_speed>
@@ -1580,7 +1580,7 @@
             <trkpt lat="53.8904" lon="86.3972">
                 <time>2025-02-17T22:09:02Z</time>
                 <ele>11279</ele>
-                <course>→ 106°</course>
+                <course>106</course>
                 <speed_knots>467</speed_knots>
                 <speed>864</speed>
                 <vertical_speed>-3?</vertical_speed>
@@ -1588,7 +1588,7 @@
             <trkpt lat="53.8718" lon="86.5103">
                 <time>2025-02-17T22:09:34Z</time>
                 <ele>11278</ele>
-                <course>→ 106°</course>
+                <course>106</course>
                 <speed_knots>469</speed_knots>
                 <speed>869</speed>
                 <vertical_speed>0?</vertical_speed>
@@ -1596,7 +1596,7 @@
             <trkpt lat="53.8533" lon="86.6215">
                 <time>2025-02-17T22:10:05Z</time>
                 <ele>11279</ele>
-                <course>→ 106°</course>
+                <course>106</course>
                 <speed_knots>475</speed_knots>
                 <speed>880</speed>
                 <vertical_speed>2?</vertical_speed>
@@ -1604,7 +1604,7 @@
             <trkpt lat="53.8345" lon="86.7347">
                 <time>2025-02-17T22:10:37Z</time>
                 <ele>11279</ele>
-                <course>→ 106°</course>
+                <course>106</course>
                 <speed_knots>470</speed_knots>
                 <speed>871</speed>
                 <vertical_speed>-1?</vertical_speed>
@@ -1612,7 +1612,7 @@
             <trkpt lat="53.8146" lon="86.8513">
                 <time>2025-02-17T22:11:10Z</time>
                 <ele>11279</ele>
-                <course>→ 106°</course>
+                <course>106</course>
                 <speed_knots>473</speed_knots>
                 <speed>875</speed>
                 <vertical_speed>-1?</vertical_speed>
@@ -1620,7 +1620,7 @@
             <trkpt lat="53.7964" lon="86.9332">
                 <time>2025-02-17T22:11:34Z</time>
                 <ele>11279</ele>
-                <course>↘ 112°</course>
+                <course>112</course>
                 <speed_knots>469</speed_knots>
                 <speed>869</speed>
                 <vertical_speed>0?</vertical_speed>
@@ -1628,7 +1628,7 @@
             <trkpt lat="53.769" lon="87.0366">
                 <time>2025-02-17T22:12:05Z</time>
                 <ele>11278</ele>
-                <course>↘ 114°</course>
+                <course>114</course>
                 <speed_knots>471</speed_knots>
                 <speed>872</speed>
                 <vertical_speed>0?</vertical_speed>
@@ -1636,7 +1636,7 @@
             <trkpt lat="53.7212" lon="87.2209">
                 <time>2025-02-17T22:13:00Z</time>
                 <ele>11278</ele>
-                <course>↘ 113°</course>
+                <course>113</course>
                 <speed_knots>454</speed_knots>
                 <speed>840</speed>
                 <vertical_speed>0?</vertical_speed>
@@ -1644,7 +1644,7 @@
             <trkpt lat="53.6747" lon="87.3983">
                 <time>2025-02-17T22:13:52Z</time>
                 <ele>11278</ele>
-                <course>↘ 114°</course>
+                <course>114</course>
                 <speed_knots>482</speed_knots>
                 <speed>893</speed>
                 <vertical_speed>0?</vertical_speed>
@@ -1652,7 +1652,7 @@
             <trkpt lat="53.6449" lon="87.5092">
                 <time>2025-02-17T22:14:26Z</time>
                 <ele>11278</ele>
-                <course>↘ 114°</course>
+                <course>114</course>
                 <speed_knots>464</speed_knots>
                 <speed>859</speed>
                 <vertical_speed>1?</vertical_speed>
@@ -1660,7 +1660,7 @@
             <trkpt lat="53.6123" lon="87.6343">
                 <time>2025-02-17T22:15:03Z</time>
                 <ele>11278</ele>
-                <course>↘ 114°</course>
+                <course>114</course>
                 <speed_knots>472</speed_knots>
                 <speed>874</speed>
                 <vertical_speed>0?</vertical_speed>
@@ -1668,7 +1668,7 @@
             <trkpt lat="53.5854" lon="87.7325">
                 <time>2025-02-17T22:15:33Z</time>
                 <ele>11279</ele>
-                <course>↘ 114°</course>
+                <course>114</course>
                 <speed_knots>469</speed_knots>
                 <speed>869</speed>
                 <vertical_speed>2?</vertical_speed>
@@ -1676,7 +1676,7 @@
             <trkpt lat="53.5577" lon="87.8359">
                 <time>2025-02-17T22:16:04Z</time>
                 <ele>11280</ele>
-                <course>↘ 114°</course>
+                <course>114</course>
                 <speed_knots>470</speed_knots>
                 <speed>871</speed>
                 <vertical_speed>-1?</vertical_speed>
@@ -1684,7 +1684,7 @@
             <trkpt lat="53.5257" lon="87.9554">
                 <time>2025-02-17T22:16:40Z</time>
                 <ele>11278</ele>
-                <course>↘ 114°</course>
+                <course>114</course>
                 <speed_knots>470</speed_knots>
                 <speed>871</speed>
                 <vertical_speed>-31?</vertical_speed>
@@ -1692,7 +1692,7 @@
             <trkpt lat="22.4484" lon="113.8263">
                 <time>2025-02-18T03:41:46Z</time>
                 <ele>1082</ele>
-                <course>→ 76°</course>
+                <course>76</course>
                 <speed_knots>188</speed_knots>
                 <speed>348</speed>
                 <vertical_speed>-32?</vertical_speed>
@@ -1700,7 +1700,7 @@
             <trkpt lat="22.4517" lon="113.843">
                 <time>2025-02-18T03:42:02Z</time>
                 <ele>1006</ele>
-                <course>→ 77°</course>
+                <course>77</course>
                 <speed_knots>184</speed_knots>
                 <speed>341</speed>
                 <vertical_speed>-229?</vertical_speed>
@@ -1708,7 +1708,7 @@
             <trkpt lat="22.4578" lon="113.8712">
                 <time>2025-02-18T03:42:32Z</time>
                 <ele>907</ele>
-                <course>→ 75°</course>
+                <course>75</course>
                 <speed_knots>182</speed_knots>
                 <speed>336</speed>
                 <vertical_speed>-191?</vertical_speed>
@@ -1716,7 +1716,7 @@
             <trkpt lat="22.4663" lon="113.8821">
                 <time>2025-02-18T03:42:50Z</time>
                 <ele>853</ele>
-                <course>→ 75°</course>
+                <course>75</course>
                 <speed_knots>182</speed_knots>
                 <speed>336</speed>
                 <vertical_speed>-202?</vertical_speed>
@@ -1724,7 +1724,7 @@
             <trkpt lat="22.4938" lon="113.8936">
                 <time>2025-02-18T03:43:24Z</time>
                 <ele>732</ele>
-                <course>↖ 335°</course>
+                <course>335</course>
                 <speed_knots>178</speed_knots>
                 <speed>330</speed>
                 <vertical_speed>-152?</vertical_speed>
@@ -1732,7 +1732,7 @@
             <trkpt lat="22.5249" lon="113.8544">
                 <time>2025-02-18T03:43:59Z</time>
                 <ele>678</ele>
-                <course>↖ 334°</course>
+                <course>334</course>
                 <speed_knots>233</speed_knots>
                 <speed>431</speed>
                 <vertical_speed>-91?</vertical_speed>
