@@ -55,9 +55,8 @@ const Index = () => {
     scrollToMap();
     if (name != 'Year') {
       setYear(thisYear);
-    } else {
-      setIsYearlyView(true);
     }
+    setIsYearlyView(true);
     setActivity(filterAndSortRuns(activities, item, func, sortDateFunc));
     setRunIndex(-1);
     setTitle(`${item} ${name} Running Heatmap`);
