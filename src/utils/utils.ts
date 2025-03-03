@@ -4,7 +4,7 @@ import { WebMercatorViewport } from 'viewport-mercator-project';
 import { chinaGeojson, RPGeometry } from '@/static/run_countries';
 import worldGeoJson from '@surbowl/world-geo-json-zh/world.zh.json';
 import { chinaCities } from '@/static/city';
-import { MAIN_COLOR, MUNICIPALITY_CITIES_ARR, NEED_FIX_MAP, RUN_TITLES } from './const';
+import { MAIN_COLOR, MUNICIPALITY_CITIES_ARR, NEED_FIX_MAP } from './const';
 import { FeatureCollection, LineString } from 'geojson';
 
 export type Coordinate = [number, number];
@@ -37,8 +37,9 @@ const titleForShow = (run: Activity): string => {
   if (run.name) {
     name = run.name;
   }
-  return `${name} ${date} ${distance} KM ${!run.summary_polyline ? '(No map data for this run)' : ''
-    }`;
+  return `${name} ${date} ${distance} KM ${
+    !run.summary_polyline ? '(No map data for this run)' : ''
+  }`;
 };
 
 const formatPace = (d: number): string => {
@@ -215,7 +216,7 @@ const geoJsonForRuns = (runs: Activity[]): FeatureCollection<LineString> => ({
 const geoJsonForMap = (): FeatureCollection<RPGeometry> => ({
   type: 'FeatureCollection',
   features: worldGeoJson.features.concat(chinaGeojson.features),
-})
+});
 
 const titleForRun = (run: Activity): string => {
   const runDistance = run.distance / 1000;
@@ -224,22 +225,22 @@ const titleForRun = (run: Activity): string => {
   const end_point = run.ending_point_pos;
   function getPrefix(pos: string | null | undefined) {
     // 判断输入是否为字符串
-    if (typeof pos !== "string") {
-      return "";
+    if (typeof pos !== 'string') {
+      return '';
     }
 
-    const elements = pos.split(",").map(s => s.trim());
-    if (!pos.endsWith("中国")) {
-      if (!pos.endsWith("俄罗斯")) {
+    const elements = pos.split(',').map((s) => s.trim());
+    if (!pos.endsWith('中国')) {
+      if (!pos.endsWith('俄罗斯')) {
         return elements[0];
       }
-      return "俄罗斯" + elements[elements.length - 4] + elements[0];
+      return '俄罗斯' + elements[elements.length - 4] + elements[0];
     }
 
-    const directCities = ["北京市", "上海市", "天津市", "重庆市"];
+    const directCities = ['北京市', '上海市', '天津市', '重庆市'];
     let anchorIndex = -1;
 
-    if (elements[0].includes("浙江大学")) {
+    if (elements[0].includes('浙江大学')) {
       return elements[0];
     }
     for (let i = elements.length - 1; i >= 0; i--) {
@@ -247,55 +248,58 @@ const titleForRun = (run: Activity): string => {
       if (directCities.includes(element)) {
         anchorIndex = i;
         break;
-      } else if (element.includes("省") || element.includes("自治区")) {
+      } else if (element.includes('省') || element.includes('自治区')) {
         anchorIndex = i - 1; // 找到省或自治区时设置为前一个元素
         break;
       }
     }
 
-    if (anchorIndex >= 1) { // 确保锚点及其前一个元素存在
+    if (anchorIndex >= 1) {
+      // 确保锚点及其前一个元素存在
       const ret = elements[anchorIndex] + elements[anchorIndex - 1];
-      if (anchorIndex - 1 !== 0) { // 存在区以下的细分地址
+      if (anchorIndex - 1 !== 0) {
+        // 存在区以下的细分地址
         return ret + elements[0];
       } else {
         return ret; // 只保留到区
       }
     }
 
-    return ""; // 如果没有找到符合条件的锚点
+    return ''; // 如果没有找到符合条件的锚点
   }
   const start_prefix = getPrefix(start_point);
   const end_prefix = getPrefix(end_point);
-  let prefix = "";
+  let prefix = '';
   if (start_prefix && end_prefix) {
-    prefix = start_prefix === end_prefix
-      ? start_prefix
-      : `${start_prefix} → ${end_prefix}`;
+    prefix =
+      start_prefix === end_prefix
+        ? start_prefix
+        : `${start_prefix} → ${end_prefix}`;
   } else {
-    prefix = start_prefix || end_prefix || "";
+    prefix = start_prefix || end_prefix || '';
   }
-  if (prefix !== "") {
-    prefix += " ";
+  if (prefix !== '') {
+    prefix += ' ';
   }
   if (runDistance >= 100) {
-    return prefix + "长途奔波";
+    return prefix + '长途奔波';
   }
   if (runDistance >= 30) {
-    return prefix + "中长途旅程";
+    return prefix + '中长途旅程';
   }
   if (runHour >= 0 && runHour <= 10) {
-    return prefix + "清晨";
+    return prefix + '清晨';
   }
   if (runHour > 10 && runHour <= 14) {
-    return prefix + "中午";
+    return prefix + '中午';
   }
   if (runHour > 14 && runHour <= 18) {
-    return prefix + "下午";
+    return prefix + '下午';
   }
   if (runHour > 18 && runHour <= 21) {
-    return prefix + "傍晚";
+    return prefix + '傍晚';
   }
-  return prefix + "夜间";
+  return prefix + '夜间';
 };
 
 export interface IViewState {

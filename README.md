@@ -44,7 +44,7 @@ English | [简体中文](https://github.com/yihong0618/running_page/blob/master/
 | [zhubao315](https://github.com/zhubao315)         | <https://zhubao315.github.io/running>          | Strava      |
 | [shaonianche](https://github.com/shaonianche)     | <https://run.duanfei.org>                      | Strava      |
 | [yihong0618](https://github.com/yihong0618)       | <https://yihong.run>                           | Nike        |
-| [superleeyom](https://github.com/superleeyom)     | <https://running.leeyom.top>                   | Strava        |
+| [superleeyom](https://github.com/superleeyom)     | <https://running.leeyom.top>                   | Strava      |
 | [geekplux](https://github.com/geekplux)           | <https://activities.geekplux.com>              | Nike        |
 | [guanlan](https://github.com/guanlan)             | <https://grun.vercel.app>                      | Strava      |
 | [tuzimoe](https://github.com/tuzimoe)             | <https://run.tuzi.moe>                         | Nike        |
@@ -98,14 +98,15 @@ English | [简体中文](https://github.com/yihong0618/running_page/blob/master/
 | [PPZ](https://github.com/8824PPZ)                 | <https://run.dudubbbbbbbbb.top/>               | Strava      |
 | [Yer1k](https://github.com/Yer1k)                 | <https://running.yer1k.com/>                   | Strava      |
 | [AlienVision](https://github.com/weaming)         | <https://run.drink.cafe/>                      | Strava      |
-| [闻笑忘](https://wenxiaowan.com)                   | <https://wenxiaowan.com>                       | 苹果健身    |
+| [闻笑忘](https://wenxiaowan.com)                  | <https://wenxiaowan.com>                       | 苹果健身    |
 | [Vensent](https://github.com/Vensent)             | <https://vensent.github.io/workouts_page/>     | Garmin      |
 | [Zeonsing](https://github.com/NoonieBao)          | <https://run.jogzeal.com/>                     | Coros       |
 | [yaoper](https://github.com/yaoper)               | <https://running.yaoper.cn>                    | codoon      |
 | [laqieer](https://github.com/laqieer)             | <https://laqieer.github.io/running_page/>      | Strava      |
 | [Guoxin](https://github.com/guoxinl)              | <https://running.guoxin.space/>                | Strava      |
-| [laihj](https://github.com/laihj)                 | <https://run.laihjx.com/>                      | 苹果健身     |
-| [Ginta](https://github.com/mar-heaven)            | <https://running.ginta.top/>                   | Keep         |
+| [laihj](https://github.com/laihj)                 | <https://run.laihjx.com/>                      | 苹果健身    |
+| [Ginta](https://github.com/mar-heaven)            | <https://running.ginta.top/>                   | Keep        |
+
 </details>
 
 ## How it works
@@ -142,6 +143,7 @@ English | [简体中文](https://github.com/yihong0618/running_page/blob/master/
 - **[Garmin_to_Strava(Using Garmin Run, Strava backup data)](#garmin_to_strava)**
 - **[Strava_to_Garmin(Using Strava Run, Garmin backup data)](#strava_to_garmin)**
 - **[Coros](#Coros)**
+
 ## Download
 
 Clone or fork the repo.
@@ -410,7 +412,7 @@ python3(python) run_page/garmin_sync.py xxxxxxxxxxxxxx(secret_string)  --is-cn -
 <br>
 
 - If you only want to sync `type running` add args --only-run
-**The Python version must be >=3.10**
+  **The Python version must be >=3.10**
 
 #### Get Garmin CN Secret
 
@@ -461,6 +463,7 @@ python3(python) run_page/garmin_sync_cn_global.py ${garmin_cn_secret_string} ${g
 ```bash
 python3(python) run_page/nike_sync.py ${access_token}
 ```
+
 ![tg_image_166091873](https://github.com/user-attachments/assets/9d4851d6-849a-4bb7-8ffe-5358fa7328b2)
 
 if you want to automate the submission of NRC data, you can refer to [issue692](https://github.com/yihong0618/running_page/issues/692#issuecomment-2218849713).
@@ -759,8 +762,6 @@ ps: **when initializing for the first time, if you have a large amount of strava
 
 </details>
 
-
-
 ### Coros
 
 <details>
@@ -772,7 +773,7 @@ ps: **when initializing for the first time, if you have a large amount of strava
 python run_page/coros_sync.py 'your coros account' 'your coros password'
 ```
 
-#### Modify `run_data_sync.yml`  env.RUN_TYPE: _coros_
+#### Modify `run_data_sync.yml` env.RUN*TYPE: \_coros*
 
 #### Set the Coros account information in github action
 

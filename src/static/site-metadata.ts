@@ -14,8 +14,7 @@ const data: ISiteMetadataResult = {
   siteUrl: 'https://stdquantum.github.io/I_Drive',
   logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTtc69JxHNcmN1ETpMUX4dozAgAN6iPjWalQ&usqp=CAU',
   description: '记录我的轨迹',
-  navLinks: [
-  ],
+  navLinks: [],
 };
 
 export default data;

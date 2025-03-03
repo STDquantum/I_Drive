@@ -45,7 +45,7 @@ const LIGHTS_ON = true;
 
 // IF you outside China please make sure IS_CHINESE = false
 const IS_CHINESE = true;
-const ZOOM_BIGMAP_LEVEL = 2; 
+const ZOOM_BIGMAP_LEVEL = 2;
 const USE_ANIMATION_FOR_GRID = false;
 const CHINESE_INFO_MESSAGE = (yearLength: number, year: string): string => {
   const yearStr = year === 'Total' ? '所有' : ` ${year} `;
