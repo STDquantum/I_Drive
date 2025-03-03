@@ -99,7 +99,7 @@ export {
   ZOOM_BIGMAP_LEVEL,
 };
 
-const nike = 'rgb(53, 238, 130)'; // if you want change the main color change here src/styles/variables.scss
+const nike = 'rgb(237, 44, 44)'; // if you want change the main color change here src/styles/variables.scss
 const dark_vanilla = 'rgb(228,212,220)';
 
 // If your map has an offset please change this line
