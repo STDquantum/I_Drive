@@ -8,7 +8,7 @@ import SVGStat from '@/components/SVGStat';
 import YearsStat from '@/components/YearsStat';
 import useActivities from '@/hooks/useActivities';
 import useSiteMetadata from '@/hooks/useSiteMetadata';
-import { IS_CHINESE } from '@/utils/const';
+import { IS_CHINESE, ZOOM_BIGMAP_LEVEL } from '@/utils/const';
 import {
   Activity,
   IViewState,
@@ -60,7 +60,7 @@ const Index = () => {
     // default year
     setYear(y);
 
-    if ((viewState.zoom ?? 0) > 3 && bounds) {
+    if ((viewState.zoom ?? 0) > ZOOM_BIGMAP_LEVEL && bounds) {
       setViewState({
         ...bounds,
       });
@@ -176,7 +176,7 @@ const Index = () => {
         <h1 className="my-12 text-5xl font-extrabold italic">
           <a href="/">{siteTitle}</a>
         </h1>
-        {(viewState.zoom ?? 0) <= 3 && IS_CHINESE ? (
+        {(viewState.zoom ?? 0) <= ZOOM_BIGMAP_LEVEL && IS_CHINESE ? (
           <LocationStat
             changeYear={changeYear}
             changeCity={changeCity}

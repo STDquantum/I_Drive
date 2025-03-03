@@ -15,6 +15,7 @@ import {
   MAP_HEIGHT,
   PRIVACY_MODE,
   LIGHTS_ON,
+  ZOOM_BIGMAP_LEVEL,
 } from '@/utils/const';
 import { Coordinate, IViewState, geoJsonForMap } from '@/utils/utils';
 import RunMarker from './RunMarker';
@@ -90,7 +91,7 @@ const RunMap = ({
   filterCountries.unshift('in', 'name');
 
   const initGeoDataLength = geoData.features.length;
-  const isBigMap = (viewState.zoom ?? 0) <= 3;
+  const isBigMap = (viewState.zoom ?? 0) <= ZOOM_BIGMAP_LEVEL;
   if (isBigMap && IS_CHINESE) {
     // Show boundary and line together, combine geoData(only when not combine yet)
     if(geoData.features.length === initGeoDataLength){
