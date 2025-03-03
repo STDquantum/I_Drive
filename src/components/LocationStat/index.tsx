@@ -22,10 +22,9 @@ const LocationStat = ({
     <section className="pb-0">
       <p className="leading-relaxed">
         {CHINESE_LOCATION_INFO_MESSAGE_FIRST}
-        .
+        <br />
         <br />
         {CHINESE_LOCATION_INFO_MESSAGE_SECOND}
-        .
         <br />
         <br />
         Что такое Crush?
