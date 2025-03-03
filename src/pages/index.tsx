@@ -86,11 +86,18 @@ const Index = () => {
 
   const locateActivity = (runIds: RunIds) => {
     const ids = new Set(runIds);
-
+    
+    
     const selectedRuns = !runIds.length
-      ? runs
-      : runs.filter((r: any) => ids.has(r.run_id));
-
+    ? runs
+    : runs.filter((r: any) => ids.has(r.run_id));
+    
+    if (!runIds.length) {
+      setIsYearlyView(true);
+    } else {
+      setIsYearlyView(false);
+    }
+    
     if (!selectedRuns.length) {
       return;
     }
@@ -101,7 +108,6 @@ const Index = () => {
       return;
     }
     setGeoData(geoJsonForRuns(selectedRuns));
-    setIsYearlyView(false);
     setTitle(titleForShow(lastRun));
     clearInterval(intervalId);
     scrollToMap();
