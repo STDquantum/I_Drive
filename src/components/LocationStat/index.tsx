@@ -28,7 +28,7 @@ const LocationStat = ({
         .
         <br />
         <br />
-        Yesterday you said tomorrow.
+        Что такое Crush?
       </p>
     </section>
     <hr color="red" />
