@@ -28,6 +28,7 @@ const Index = () => {
   const { siteTitle } = useSiteMetadata();
   const { activities, thisYear } = useActivities();
   const [year, setYear] = useState(thisYear);
+  const [isYearlyView, setIsYearlyView] = useState(true);
   const [runIndex, setRunIndex] = useState(-1);
   const [runs, setActivity] = useState(
     filterAndSortRuns(activities, year, filterYearRuns, sortDateFunc)
@@ -42,6 +43,10 @@ const Index = () => {
     ...bounds,
   });
 
+  useEffect(() => {
+    console.log(title);
+  }, [title]);
+
   const changeByItem = (
     item: string,
     name: string,
@@ -50,6 +55,8 @@ const Index = () => {
     scrollToMap();
     if (name != 'Year') {
       setYear(thisYear);
+    } else {
+      setIsYearlyView(true);
     }
     setActivity(filterAndSortRuns(activities, item, func, sortDateFunc));
     setRunIndex(-1);
@@ -95,6 +102,7 @@ const Index = () => {
       return;
     }
     setGeoData(geoJsonForRuns(selectedRuns));
+    setIsYearlyView(false);
     setTitle(titleForShow(lastRun));
     clearInterval(intervalId);
     scrollToMap();
@@ -194,6 +202,7 @@ const Index = () => {
           setViewState={setViewState}
           changeYear={changeYear}
           thisYear={year}
+          isYearlyView={isYearlyView}
         />
         {year === 'Total' ? (
           <SVGStat />

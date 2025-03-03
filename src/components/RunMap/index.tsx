@@ -39,6 +39,7 @@ interface IRunMapProps {
   changeYear: (_year: string) => void;
   geoData: FeatureCollection<RPGeometry>;
   thisYear: string;
+  isYearlyView: boolean;
 }
 
 const RunMap = ({
@@ -48,6 +49,7 @@ const RunMap = ({
   changeYear,
   geoData,
   thisYear,
+  isYearlyView,
 }: IRunMapProps) => {
   const { countries, provinces } = useActivities();
   const mapRef = useRef<MapRef>();
@@ -194,7 +196,7 @@ const RunMap = ({
           }}
         />
       </Source>
-      {isSingleRun && (
+      {isSingleRun && !isYearlyView && (
         <RunMarker
           startLat={startLat}
           startLon={startLon}
