@@ -2,8 +2,11 @@
   "_activities-594b46a4.js": {
     "file": "assets/activities-594b46a4.js"
   },
-  "_vendors-b53be6e6.js": {
-    "file": "assets/vendors-b53be6e6.js"
+  "_vendors-3209149f.js": {
+    "css": [
+      "assets/vendors-2b661aa2.css"
+    ],
+    "file": "assets/vendors-3209149f.js"
   },
   "assets/end.svg": {
     "file": "assets/end-a91503f9.svg",
@@ -17,9 +20,9 @@
     "assets": [
       "assets/github-9d4e1918.svg"
     ],
-    "file": "assets/github.svg-fab51f5f.js",
+    "file": "assets/github.svg-44b2b7fc.js",
     "imports": [
-      "_vendors-b53be6e6.js"
+      "_vendors-3209149f.js"
     ],
     "isDynamicEntry": true,
     "src": "assets/github.svg"
@@ -28,9 +31,9 @@
     "assets": [
       "assets/grid-14bc2148.svg"
     ],
-    "file": "assets/grid.svg-9abfae13.js",
+    "file": "assets/grid.svg-a8a5a438.js",
     "imports": [
-      "_vendors-b53be6e6.js"
+      "_vendors-3209149f.js"
     ],
     "isDynamicEntry": true,
     "src": "assets/grid.svg"
@@ -43,9 +46,9 @@
     "assets": [
       "assets/year_2022-576fdd85.svg"
     ],
-    "file": "assets/year_2022-f9bed6f3.js",
+    "file": "assets/year_2022-f0678dcc.js",
     "imports": [
-      "_vendors-b53be6e6.js"
+      "_vendors-3209149f.js"
     ],
     "isDynamicEntry": true,
     "src": "assets/year_2022.svg"
@@ -54,9 +57,9 @@
     "assets": [
       "assets/year_2023-017a1a1c.svg"
     ],
-    "file": "assets/year_2023-1e7dadbe.js",
+    "file": "assets/year_2023-9c153a60.js",
     "imports": [
-      "_vendors-b53be6e6.js"
+      "_vendors-3209149f.js"
     ],
     "isDynamicEntry": true,
     "src": "assets/year_2023.svg"
@@ -65,9 +68,9 @@
     "assets": [
       "assets/year_2024-f3cb973b.svg"
     ],
-    "file": "assets/year_2024-2d9d6b35.js",
+    "file": "assets/year_2024-181ffb09.js",
     "imports": [
-      "_vendors-b53be6e6.js"
+      "_vendors-3209149f.js"
     ],
     "isDynamicEntry": true,
     "src": "assets/year_2024.svg"
@@ -76,20 +79,20 @@
     "assets": [
       "assets/year_2025-79120651.svg"
     ],
-    "file": "assets/year_2025-6bd960af.js",
+    "file": "assets/year_2025-eeea8839.js",
     "imports": [
-      "_vendors-b53be6e6.js"
+      "_vendors-3209149f.js"
     ],
     "isDynamicEntry": true,
     "src": "assets/year_2025.svg"
   },
   "index.css": {
-    "file": "assets/index-89a0e839.css",
+    "file": "assets/index-28c9074b.css",
     "src": "index.css"
   },
   "index.html": {
     "css": [
-      "assets/index-89a0e839.css"
+      "assets/index-28c9074b.css"
     ],
     "dynamicImports": [
       "assets/year_2022.svg",
@@ -99,12 +102,16 @@
       "assets/github.svg",
       "assets/grid.svg"
     ],
-    "file": "assets/index-47951e73.js",
+    "file": "assets/index-087466fe.js",
     "imports": [
-      "_vendors-b53be6e6.js",
+      "_vendors-3209149f.js",
       "_activities-594b46a4.js"
     ],
     "isEntry": true,
     "src": "index.html"
+  },
+  "vendors.css": {
+    "file": "assets/vendors-2b661aa2.css",
+    "src": "vendors.css"
   }
 }
