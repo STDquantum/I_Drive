@@ -239,7 +239,9 @@ const Index = () => {
           />
         )}
       </div>
-      <div className="w-full lg:w-2/3">
+      <div className="w-full lg:w-2/3" style={{
+        marginLeft: '10px',
+      }}>
         <RunMap
           title={title}
           viewState={viewState}

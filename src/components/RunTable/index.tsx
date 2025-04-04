@@ -66,7 +66,7 @@ const RunTable = ({
   };
 
   return (
-    <div className={styles.tableContainer}>
+    <div className={styles.tableContainer} style={{ maxHeight: '550px', overflowY: 'auto' }}>
       <table className={styles.runTable} cellSpacing="0" cellPadding="0">
         <thead>
           <tr>

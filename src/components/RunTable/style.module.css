@@ -1,9 +1,12 @@
 @media only screen and (max-width: 700px) {
+
   /* 当屏幕宽度小于 700px 时 */
   .runTable th:nth-child(4),
-  .runTable td:nth-child(4) {
+  .runTable td:nth-child(4),
+  .runTable th:nth-child(7),
+  .runTable td:nth-child(7) {
     display: none;
-    /* 隐藏第四列 */
+    /* 隐藏第 4 列和第 7 列 */
   }
 }
 
@@ -46,6 +49,7 @@
 .tableContainer {
   width: 100%;
   overflow-x: auto;
+  margin-top: 30px;
 }
 
 .runDate {

@@ -18,7 +18,12 @@ const YearsStat = ({
 
   // for short solution need to refactor
   return (
-    <div className="w-full pb-16 pr-16 lg:w-full lg:pr-16">
+    <div className="w-full pb-16 pr-16 lg:w-full lg:pr-16" style={{
+      maxHeight: '977px', // 设置最大高度为 550px
+      overflowY: 'auto',  // 当内容超过最大高度时显示垂直滚动条
+      border: '0px solid #ccc', // 为了便于观察，可以添加边框
+      paddingRight: '5px', // 添加一些内边距
+    }}>
       <section className="pb-0">
         <p className="leading-relaxed">
           {INFO_MESSAGE(years.length, year)}
