@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import React, { useReducer } from 'react';
 import { Analytics } from '@vercel/analytics/react';
 import Layout from '@/components/Layout';
 import LocationStat from '@/components/LocationStat';
@@ -24,6 +25,18 @@ import {
   RunIds,
 } from '@/utils/utils';
 
+const SHOW_LOCATION_STAT = 'SHOW_LOCATION_STAT';
+const SHOW_YEARS_STAT = 'SHOW_YEARS_STAT';
+const reducer = (state: any, action: { type: any }) => {
+  switch (action.type) {
+    case SHOW_LOCATION_STAT:
+      return { showLocationStat: true };
+    case SHOW_YEARS_STAT:
+      return { showLocationStat: false };
+    default:
+      return state;
+  }
+};
 const Index = () => {
   const { siteTitle } = useSiteMetadata();
   const { activities, thisYear } = useActivities();
@@ -183,20 +196,47 @@ const Index = () => {
     };
   }, [year]);
 
+  // 初始化 state 和 dispatch 函数
+  const [state, dispatch] = useReducer(reducer, { showLocationStat: false });
+  // 切换显示组件的函数
+  const handleToggle = () => {
+    if (state.showLocationStat) {
+      dispatch({ type: SHOW_YEARS_STAT });
+    } else {
+      dispatch({ type: SHOW_LOCATION_STAT });
+    }
+  };
+  const buttonStyle = {
+    backgroundColor: '#595959', // 背景色
+    color: 'rgb(224 237 94)', // 文字颜色
+    border: 'none', // 去除边框
+    borderRadius: '4px', // 圆角
+    padding: '10px 20px', // 内边距
+    fontSize: '16px', // 字体大小
+    cursor: 'pointer', // 鼠标指针样式
+    marginBottom: '20px', // 底部外边距
+  };
+
   return (
     <Layout>
       <div className="w-full lg:w-1/3">
         <h1 className="my-12 text-5xl font-extrabold italic">
           <a href="/">{siteTitle}</a>
         </h1>
-        {(viewState.zoom ?? 0) <= ZOOM_BIGMAP_LEVEL && IS_CHINESE ? (
+        <button onClick={handleToggle} style={buttonStyle}>
+          {state.showLocationStat ? '切换至年份统计' : '切换至地点统计'}
+        </button>
+        {state.showLocationStat ? (
           <LocationStat
             changeYear={changeYear}
             changeCity={changeCity}
             changeTitle={changeTitle}
           />
         ) : (
-          <YearsStat year={year} onClick={changeYear} />
+          <YearsStat
+            year={year}
+            onClick={changeYear}
+          />
         )}
       </div>
       <div className="w-full lg:w-2/3">
