@@ -126,8 +126,8 @@ jobs:
       - name: Commit to repository
         if: always()
         run: |
-          git config --local user.email "${{ env.GITHUB_EMAIL }}"
-          git config --local user.name "${{ env.GITHUB_NAME }}"
-          git add I_drive/
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
           git commit -m "更新 public 文件夹" || echo "nothing to commit"
           git push || echo "nothing to push"
