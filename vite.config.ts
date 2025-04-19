@@ -43,10 +43,6 @@ export default defineConfig({
     manifest: true,
     outDir: './dist', // for user easy to use, vercel use default dir -> dist
     rollupOptions: {
-      input: {
-        main: './index.html',    // 默认入口
-        summary: './summary.html', // 新增 summary 入口
-      },
       output: {
         manualChunks: (id: string) => {
           if (id.includes('node_modules')) {
