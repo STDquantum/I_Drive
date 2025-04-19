@@ -34,8 +34,8 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  GITHUB_NAME: "action@github.com" # default Actions bot you can change it to yours
-  GITHUB_EMAIL: "GitHub Action" # default Actions bot you can change it to yours
+  GITHUB_NAME: "GitHub Action"
+  GITHUB_EMAIL: "action@github.com"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
