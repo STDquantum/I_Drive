@@ -105,15 +105,11 @@ jobs:
       - name: Build
         run: PATH_PREFIX=/${{ github.event.repository.name }} pnpm build
 
-
-      - name: Copy artifacts to publish directory
-        run: mkdir -p ./I_drive/ && rm -rf ./I_drive/* && cp -r dist/* ./I_drive/
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist repository
-          path: './dist'
+          path: './i_drive'
 
       - name: Deploy to GitHub Pages
         id: deployment

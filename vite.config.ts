@@ -43,7 +43,7 @@ export default defineConfig({
     // minify: false, // 禁用代码压缩（默认是 'esbuild'）
     // sourcemap: true, // 生成 sourcemap 文件（可选）
     manifest: true,
-    outDir: './docs', // for user easy to use, vercel use default dir -> dist
+    outDir: './i_drive', // for user easy to use, vercel use default dir -> dist
     rollupOptions: {
       input: {
         main: './index.html',    // 默认入口
