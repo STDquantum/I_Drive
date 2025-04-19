@@ -1,40 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Index from './pages';
 import NotFound from './pages/404';
-import ReactGA from 'react-ga4';
-import {
-  GOOGLE_ANALYTICS_TRACKING_ID,
-  USE_GOOGLE_ANALYTICS,
-} from './utils/const';
-import '@/styles/index.css';
-import { withOptionalGAPageTracking } from './utils/trackRoute';
 import HomePage from "@/pages/total";
+import '@/styles/index.css';
 
-if (USE_GOOGLE_ANALYTICS) {
-  ReactGA.initialize(GOOGLE_ANALYTICS_TRACKING_ID);
-}
-
-const routes = createBrowserRouter(
-  [
-    {
-      path: '/',
-      element: withOptionalGAPageTracking(<Index />),
-    },
-    {
-      path: '*',
-      element: withOptionalGAPageTracking(<NotFound />),
-    },
-  ],
-  { basename: import.meta.env.BASE_URL }
-);
+// 根据环境变量动态设置 basename
+const basename = process.env.NODE_ENV === 'production' ? '/i_drive' : '/';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <HelmetProvider>
-      <RouterProvider router={routes} />
+      <BrowserRouter basename={basename}>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/summary" element={<HomePage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
     </HelmetProvider>
   </React.StrictMode>
 );

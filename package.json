@@ -47,7 +47,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yihong0618/running_page"
+    "url": "https://github.com/STDquantum/I_Drive"
   },
   "devDependencies": {
     "@types/geojson": "^7946.0.14",
@@ -67,5 +67,6 @@
     "prettier-plugin-tailwindcss": "^0.5.13",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.1.6"
-  }
+  },
+  "homepage": "https://stdquantum.github.io/I_Drive/"
 }
