@@ -35,7 +35,7 @@ export default defineConfig({
       },
     }),
   ],
-  base: process.env.PATH_PREFIX || './',
+  base: '/i_drive/',
   define: {
     'import.meta.env.VERCEL': JSON.stringify(process.env.VERCEL),
   },

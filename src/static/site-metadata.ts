@@ -22,7 +22,7 @@ const data: ISiteMetadataResult = {
   navLinks: [
     {
       name: 'Summary',
-      url: `${getBasePath()}/summary`,
+      url: `${getBasePath()}#/summary`,
     },
   ],
 };
