@@ -1,1 +1,0 @@
-import{j as t}from"./total-33d4f282.js";import{d as o,j as e,R as r,q as m}from"./vendors-41e7ca76.js";import"./activities-421834d1.js";o.createRoot(document.getElementById("root")).render(e.jsx(r.StrictMode,{children:e.jsx(m,{children:e.jsx(t,{})})}));
