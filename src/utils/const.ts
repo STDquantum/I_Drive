@@ -144,7 +144,8 @@ export {
   SHOW_ELEVATION_GAIN,
   RICH_TITLE,
   ACTIVITY_TYPES,
-  ACTIVITY_TOTAL
+  ACTIVITY_TOTAL,
+  ZOOM_BIGMAP_LEVEL
 };
 
 const nike = 'rgb(224,237,94)'; // if you want change the main color change here src/styles/variables.scss
