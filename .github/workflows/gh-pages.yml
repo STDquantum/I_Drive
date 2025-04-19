@@ -109,8 +109,12 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist repository
-          path: './i_drive'
+          path: './dist'
 
+      - name: Copy artifacts to publish directory
+        run: mkdir -p ./I_drive/ && rm -rf ./I_drive/* && cp -r dist/* ./I_drive/
+  
+  
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
