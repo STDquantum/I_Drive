@@ -7,14 +7,17 @@
   "_activities-421834d1.js": {
     "file": "assets/activities-421834d1.js"
   },
-  "_vendors-357957a2.js": {
+  "_const-0c3abedc.js": {
+    "file": "assets/const-0c3abedc.js"
+  },
+  "_vendors-a43e93ac.js": {
     "css": [
       "assets/vendors-2b661aa2.css"
     ],
     "dynamicImports": [
       "__vite-optional-peer-dep:mapbox-gl:react-map-gl"
     ],
-    "file": "assets/vendors-357957a2.js"
+    "file": "assets/vendors-a43e93ac.js"
   },
   "assets/end.svg": {
     "file": "assets/end-a91503f9.svg",
@@ -28,9 +31,9 @@
     "assets": [
       "assets/github-b0bb5d46.svg"
     ],
-    "file": "assets/github.svg-92316486.js",
+    "file": "assets/github.svg-a70b8e63.js",
     "imports": [
-      "_vendors-357957a2.js"
+      "_vendors-a43e93ac.js"
     ],
     "isDynamicEntry": true,
     "src": "assets/github.svg"
@@ -39,9 +42,9 @@
     "assets": [
       "assets/grid-04901f20.svg"
     ],
-    "file": "assets/grid.svg-c073f025.js",
+    "file": "assets/grid.svg-78e3bc1e.js",
     "imports": [
-      "_vendors-357957a2.js"
+      "_vendors-a43e93ac.js"
     ],
     "isDynamicEntry": true,
     "src": "assets/grid.svg"
@@ -54,9 +57,9 @@
     "assets": [
       "assets/year_2022-576fdd85.svg"
     ],
-    "file": "assets/year_2022-c0289c05.js",
+    "file": "assets/year_2022-847c8cc7.js",
     "imports": [
-      "_vendors-357957a2.js"
+      "_vendors-a43e93ac.js"
     ],
     "isDynamicEntry": true,
     "src": "assets/year_2022.svg"
@@ -65,9 +68,9 @@
     "assets": [
       "assets/year_2023-017a1a1c.svg"
     ],
-    "file": "assets/year_2023-de48d60b.js",
+    "file": "assets/year_2023-2ed73cf0.js",
     "imports": [
-      "_vendors-357957a2.js"
+      "_vendors-a43e93ac.js"
     ],
     "isDynamicEntry": true,
     "src": "assets/year_2023.svg"
@@ -76,9 +79,9 @@
     "assets": [
       "assets/year_2024-f3cb973b.svg"
     ],
-    "file": "assets/year_2024-9c1387ef.js",
+    "file": "assets/year_2024-de9f647a.js",
     "imports": [
-      "_vendors-357957a2.js"
+      "_vendors-a43e93ac.js"
     ],
     "isDynamicEntry": true,
     "src": "assets/year_2024.svg"
@@ -87,20 +90,20 @@
     "assets": [
       "assets/year_2025-d1169da1.svg"
     ],
-    "file": "assets/year_2025-7899f059.js",
+    "file": "assets/year_2025-24268de8.js",
     "imports": [
-      "_vendors-357957a2.js"
+      "_vendors-a43e93ac.js"
     ],
     "isDynamicEntry": true,
     "src": "assets/year_2025.svg"
   },
   "index.css": {
-    "file": "assets/index-ea605a9d.css",
+    "file": "assets/index-c5119432.css",
     "src": "index.css"
   },
   "index.html": {
     "css": [
-      "assets/index-ea605a9d.css"
+      "assets/index-c5119432.css"
     ],
     "dynamicImports": [
       "assets/year_2022.svg",
@@ -110,13 +113,31 @@
       "assets/github.svg",
       "assets/grid.svg"
     ],
-    "file": "assets/index-901e71f2.js",
+    "file": "assets/main-d0d53e14.js",
     "imports": [
-      "_vendors-357957a2.js",
+      "_const-0c3abedc.js",
+      "_vendors-a43e93ac.js",
       "_activities-421834d1.js"
     ],
     "isEntry": true,
     "src": "index.html"
+  },
+  "summary.css": {
+    "file": "assets/summary-b7223043.css",
+    "src": "summary.css"
+  },
+  "summary.html": {
+    "css": [
+      "assets/summary-b7223043.css"
+    ],
+    "file": "assets/summary-cb994471.js",
+    "imports": [
+      "_const-0c3abedc.js",
+      "_vendors-a43e93ac.js",
+      "_activities-421834d1.js"
+    ],
+    "isEntry": true,
+    "src": "summary.html"
   },
   "vendors.css": {
     "file": "assets/vendors-2b661aa2.css",
