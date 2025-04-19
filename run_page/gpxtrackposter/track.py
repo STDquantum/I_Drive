@@ -42,6 +42,7 @@ class Track:
         self.file_names = []
         self.polylines = []
         self.polyline_str = ""
+        self.track_name = None
         self.start_time = None
         self.end_time = None
         self.start_time_local = None
@@ -49,11 +50,13 @@ class Track:
         self.length = 0
         self.special = False
         self.average_heartrate = None
+        self.elevation_gain = None
         self.moving_dict = {}
         self.run_id = 0
         self.start_latlng = []
         self.end_latlng = []
         self.type = "Run"
+        self.subtype = None  # for fit file
         self.device = ""
 
     def load_gpx(self, file_name):
@@ -100,6 +103,9 @@ class Track:
             stream = Stream.from_file(file_name)
             decoder = Decoder(stream)
             messages, errors = decoder.read(convert_datetimes_to_dates=False)
+            # Handle empty fit files that have no distance data
+            if messages.get("total_distance") is None:
+                return
             if errors:
                 print(f"FIT file read fail: {errors}")
             self._load_fit_data(messages)
@@ -169,6 +175,7 @@ class Track:
             except:
                 pass
             self.polyline_str = polyline.encode(polyline_container)
+        self.elevation_gain = tcx.ascent
         self.moving_dict = {
             "distance": self.length,
             "moving_time": datetime.timedelta(seconds=moving_time),
@@ -212,6 +219,8 @@ class Track:
         else:
             self.name = self.type + " from " + self.source
         for t in gpx.tracks:
+            if self.track_name is None:
+                self.track_name = t.name
             for s in t.segments:
                 try:
                     extensions = [
@@ -252,6 +261,7 @@ class Track:
             sum(heart_rate_list) / len(heart_rate_list) if heart_rate_list else None
         )
         self.moving_dict = self._get_moving_data(gpx)
+        self.elevation_gain = gpx.get_uphill_downhill().uphill
 
     def _load_fit_data(self, fit: dict):
         _polylines = []
@@ -269,7 +279,11 @@ class Track:
         self.average_heartrate = (
             message["avg_heart_rate"] if "avg_heart_rate" in message else None
         )
-        self.type = message["sport"].lower()
+        if message["sport"].lower() == "running":
+            self.type = "Run"
+        else:
+            self.type = message["sport"].lower()
+        self.subtype = message["sub_sport"] if "sub_sport" in message else None
 
         # moving_dict
         self.moving_dict["distance"] = message["total_distance"]
@@ -332,6 +346,10 @@ class Track:
             )
             self.file_names.extend(other.file_names)
             self.special = self.special or other.special
+            self.average_heartrate = self.average_heartrate or other.average_heartrate
+            self.elevation_gain = (
+                self.elevation_gain if self.elevation_gain else 0
+            ) + (other.elevation_gain if other.elevation_gain else 0)
         except:
             print(
                 f"something wrong append this {self.end_time},in files {str(self.file_names)}"
@@ -359,6 +377,7 @@ class Track:
             "id": self.run_id,
             "name": self.name,  # maybe change later
             "type": "Run",  # Run for now only support run for now maybe change later
+            "subtype": (self.subtype if self.subtype else ""),
             "start_date": self.start_time.strftime("%Y-%m-%d %H:%M:%S"),
             "end": self.end_time.strftime("%Y-%m-%d %H:%M:%S"),
             "start_date_local": self.start_time_local.strftime("%Y-%m-%d %H:%M:%S"),
@@ -367,6 +386,7 @@ class Track:
             "average_heartrate": (
                 int(self.average_heartrate) if self.average_heartrate else None
             ),
+            "elevation_gain": (int(self.elevation_gain) if self.elevation_gain else 0),
             "map": run_map(self.polyline_str),
             "start_latlng": self.start_latlng,
             "end_latlng": self.end_latlng,
