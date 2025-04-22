@@ -26,3 +26,12 @@ hr {
   border-color: #0003;
   margin: 2rem 0;
 }
+
+
+g.yAxis {
+  font-size: 12px;
+}
+
+svg.recharts-surface {
+  width: 250px!important;
+}
