@@ -34,8 +34,8 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  GITHUB_NAME: "action@github.com" # default Actions bot you can change it to yours
-  GITHUB_EMAIL: "GitHub Action" # default Actions bot you can change it to yours
+  GITHUB_EMAIL: "action@github.com" # default Actions bot you can change it to yours
+  GITHUB_NAME: "GitHub Action" # default Actions bot you can change it to yours
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -112,7 +112,7 @@ jobs:
           path: './dist'
 
       - name: Copy artifacts to publish directory
-        run: mkdir -p ./I_drive/ && rm -rf ./I_drive/* && cp -r dist/* ./I_drive/
+        run: rm -rf ./i_drive/* && cp -r dist/* ./i_drive/
   
   
       - name: Deploy to GitHub Pages
