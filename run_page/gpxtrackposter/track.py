@@ -261,6 +261,7 @@ class Track:
             sum(heart_rate_list) / len(heart_rate_list) if heart_rate_list else None
         )
         self.moving_dict = self._get_moving_data(gpx)
+        self.moving_dict["distance"] = self.length
         self.elevation_gain = gpx.get_uphill_downhill().uphill
 
     def _load_fit_data(self, fit: dict):
@@ -360,8 +361,10 @@ class Track:
     def _get_moving_data(gpx):
         moving_data = gpx.get_moving_data()
         return {
-            "distance": moving_data.moving_distance,
-            "moving_time": datetime.timedelta(seconds=moving_data.moving_time),
+            # "distance": moving_data.moving_distance,
+            "moving_time": datetime.timedelta(
+                seconds=(moving_data.moving_time + moving_data.stopped_time)
+            ),
             "elapsed_time": datetime.timedelta(
                 seconds=(moving_data.moving_time + moving_data.stopped_time)
             ),
