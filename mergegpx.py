@@ -145,7 +145,7 @@ def merge_ori_into_dst(ori_folder, dst_folder):
 
 
 if __name__ == '__main__':
-    ori = r"D:\image\yeah\gpx_output"
+    ori = r"D:\image\yeah\gpx_output_run"
     dst = r'D:\Mine\I_Drive\GPX_OUT'
     merge_ori_into_dst(ori, dst)
     
