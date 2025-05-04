@@ -148,7 +148,7 @@ class TrackLoader:
                 merged_tracks.append(t)
             else:
                 dt = (t.start_time_local - last_end_time).total_seconds()
-                if 0 < dt < 3600 and merged_tracks[-1].type == t.type:
+                if 0 < dt < 600 and merged_tracks[-1].type == t.type:
                     merged_tracks[-1].append(t)
                     merged_tracks[-1].end_latlng = t.end_latlng
                 else:
