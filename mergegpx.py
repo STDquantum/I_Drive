@@ -145,15 +145,15 @@ def merge_ori_into_dst(ori_folder, dst_folder):
 
 
 if __name__ == '__main__':
-    ori = "gpx_output11"
+    ori = r"D:\image\yeah\gpx_output"
     dst = r'D:\Mine\I_Drive\GPX_OUT'
     merge_ori_into_dst(ori, dst)
     
-    all_points = read_all_gpx_in_folder(dst)
+    # all_points = read_all_gpx_in_folder(dst)
 
-    print(f"共读取了 {len(all_points)} 个文件")
-    for filename, points in all_points:
-        print(f"文件: {filename}，包含 {len(points)} 个点")
+    # print(f"共读取了 {len(all_points)} 个文件")
+    # for filename, points in all_points:
+    #     print(f"文件: {filename}，包含 {len(points)} 个点")
         # for point in points:
         #     print(point)
 
