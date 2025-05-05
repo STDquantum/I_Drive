@@ -330,7 +330,7 @@ const titleForRun = (run: Activity): string => {
     }
     for (let i = elements.length - 1; i >= 0; i--) {
       const element = elements[i];
-      if (directCities.includes(element) || ) {
+      if (directCities.includes(element)) {
         anchorIndex = i;
         break;
       } else if (element.includes('省') || element.includes('自治区')) {
