@@ -335,7 +335,7 @@ const titleForRun = (run: Activity): string => {
         break;
       } else if (element.includes('省') || element.includes('自治区')) {
         // 昆明市不会被写出来，不知道什么情况
-        if (element === '云南省' && pos.includes('五华区, 云南省')) {
+        if (element === '云南省' && (pos.includes('五华区, 云南省') || pos.includes('官渡区, 云南省'))) {
           elements[i] = '昆明市';
           anchorIndex = i;
           break;
