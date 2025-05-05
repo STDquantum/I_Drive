@@ -4,8 +4,8 @@
     "isDynamicEntry": true,
     "src": "__vite-optional-peer-dep:mapbox-gl:react-map-gl"
   },
-  "_activities-0ae84c89.js": {
-    "file": "assets/activities-0ae84c89.js"
+  "_activities-ebe26d21.js": {
+    "file": "assets/activities-ebe26d21.js"
   },
   "_vendors-5148a232.js": {
     "css": [
@@ -26,9 +26,9 @@
   },
   "assets/github.svg": {
     "assets": [
-      "assets/github-daba135c.svg"
+      "assets/github-ee878eb4.svg"
     ],
-    "file": "assets/github.svg-c9d11225.js",
+    "file": "assets/github.svg-f610f343.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -37,9 +37,9 @@
   },
   "assets/grid.svg": {
     "assets": [
-      "assets/grid-f7abe88a.svg"
+      "assets/grid-d08ef798.svg"
     ],
-    "file": "assets/grid.svg-f9054442.js",
+    "file": "assets/grid.svg-d4c0b1f0.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -170,10 +170,10 @@
       "assets/github.svg",
       "assets/grid.svg"
     ],
-    "file": "assets/index-0acd01eb.js",
+    "file": "assets/index-19826a7d.js",
     "imports": [
       "_vendors-5148a232.js",
-      "_activities-0ae84c89.js"
+      "_activities-ebe26d21.js"
     ],
     "isEntry": true,
     "src": "index.html"
