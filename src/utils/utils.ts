@@ -330,10 +330,16 @@ const titleForRun = (run: Activity): string => {
     }
     for (let i = elements.length - 1; i >= 0; i--) {
       const element = elements[i];
-      if (directCities.includes(element)) {
+      if (directCities.includes(element) || ) {
         anchorIndex = i;
         break;
       } else if (element.includes('省') || element.includes('自治区')) {
+        // 昆明市不会被写出来，不知道什么情况
+        if (element === '云南省' && pos.includes('五华区, 云南省')) {
+          elements[i] = '昆明市';
+          anchorIndex = i;
+          break;
+        }
         anchorIndex = i - 1; // 找到省或自治区时设置为前一个元素
         break;
       }
