@@ -39,9 +39,8 @@ const titleForShow = (run: Activity): string => {
   if (run.name) {
     name = run.name;
   }
-  return `${name} ${date} ${distance} KM ${
-    !run.summary_polyline ? '(No map data for this run)' : ''
-  }`;
+  return `${name} ${date} ${distance} KM ${!run.summary_polyline ? '(No map data for this run)' : ''
+    }`;
 };
 
 const formatPace = (d: number): string => {
@@ -215,7 +214,7 @@ const pathForRun = (run: Activity): Coordinate[] => {
 
 const colorForRun = (run: Activity): string => {
   switch (run.type) {
-    case 'Run':{
+    case 'Run': {
       if (run.subtype === 'trail') {
         return RUN_TRAIL_COLOR;
       } else if (run.subtype === 'generic') {
@@ -316,10 +315,11 @@ const titleForRun = (run: Activity): string => {
 
     const elements = pos.split(',').map((s) => s.trim());
     if (!pos.endsWith('中国')) {
-      if (!pos.endsWith('俄罗斯') && !pos.endsWith('日本')) {
+      if (elements.length > 4) {
+        return elements[elements.length - 1] + elements[elements.length - 4] + elements[0];
+      } else {
         return elements[0];
       }
-      return elements[elements.length - 1] + elements[elements.length - 4] + elements[0];
     }
 
     const directCities = ['北京市', '上海市', '天津市', '重庆市'];
