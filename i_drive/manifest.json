@@ -4,8 +4,8 @@
     "isDynamicEntry": true,
     "src": "__vite-optional-peer-dep:mapbox-gl:react-map-gl"
   },
-  "_activities-0cc162e8.js": {
-    "file": "assets/activities-0cc162e8.js"
+  "_activities-0ae84c89.js": {
+    "file": "assets/activities-0ae84c89.js"
   },
   "_vendors-5148a232.js": {
     "css": [
@@ -26,9 +26,9 @@
   },
   "assets/github.svg": {
     "assets": [
-      "assets/github-c26553ad.svg"
+      "assets/github-daba135c.svg"
     ],
-    "file": "assets/github.svg-cc681d29.js",
+    "file": "assets/github.svg-c9d11225.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -37,9 +37,9 @@
   },
   "assets/grid.svg": {
     "assets": [
-      "assets/grid-977437fa.svg"
+      "assets/grid-f7abe88a.svg"
     ],
-    "file": "assets/grid.svg-38ab7ea5.js",
+    "file": "assets/grid.svg-f9054442.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -50,11 +50,33 @@
     "file": "assets/start-2a9d06f3.svg",
     "src": "assets/start.svg"
   },
+  "assets/year_2017.svg": {
+    "assets": [
+      "assets/year_2017-8229c889.svg"
+    ],
+    "file": "assets/year_2017-2f74818e.js",
+    "imports": [
+      "_vendors-5148a232.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/year_2017.svg"
+  },
+  "assets/year_2018.svg": {
+    "assets": [
+      "assets/year_2018-a86f38bd.svg"
+    ],
+    "file": "assets/year_2018-5ca04600.js",
+    "imports": [
+      "_vendors-5148a232.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "assets/year_2018.svg"
+  },
   "assets/year_2019.svg": {
     "assets": [
-      "assets/year_2019-c956dc3c.svg"
+      "assets/year_2019-e481bf8b.svg"
     ],
-    "file": "assets/year_2019-d24d9257.js",
+    "file": "assets/year_2019-0d6000b4.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -63,9 +85,9 @@
   },
   "assets/year_2020.svg": {
     "assets": [
-      "assets/year_2020-36b9af33.svg"
+      "assets/year_2020-ee83f4a1.svg"
     ],
-    "file": "assets/year_2020-54c65ca7.js",
+    "file": "assets/year_2020-466f0046.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -74,9 +96,9 @@
   },
   "assets/year_2021.svg": {
     "assets": [
-      "assets/year_2021-eaaa5404.svg"
+      "assets/year_2021-4a05f03b.svg"
     ],
-    "file": "assets/year_2021-4346b118.js",
+    "file": "assets/year_2021-1ee4c7f8.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -85,9 +107,9 @@
   },
   "assets/year_2022.svg": {
     "assets": [
-      "assets/year_2022-adfc7868.svg"
+      "assets/year_2022-f3cc1f98.svg"
     ],
-    "file": "assets/year_2022-9a86a9b0.js",
+    "file": "assets/year_2022-5711ff6a.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -96,9 +118,9 @@
   },
   "assets/year_2023.svg": {
     "assets": [
-      "assets/year_2023-7dbe9921.svg"
+      "assets/year_2023-35d51f9f.svg"
     ],
-    "file": "assets/year_2023-024154c5.js",
+    "file": "assets/year_2023-ccb38e98.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -107,9 +129,9 @@
   },
   "assets/year_2024.svg": {
     "assets": [
-      "assets/year_2024-ab166969.svg"
+      "assets/year_2024-0310180f.svg"
     ],
-    "file": "assets/year_2024-8e36825d.js",
+    "file": "assets/year_2024-49ff471f.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -118,9 +140,9 @@
   },
   "assets/year_2025.svg": {
     "assets": [
-      "assets/year_2025-3c0673f0.svg"
+      "assets/year_2025-c5a0e363.svg"
     ],
-    "file": "assets/year_2025-1007c545.js",
+    "file": "assets/year_2025-1bb6a4e6.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -136,6 +158,8 @@
       "assets/index-6cfe9a3e.css"
     ],
     "dynamicImports": [
+      "assets/year_2017.svg",
+      "assets/year_2018.svg",
       "assets/year_2019.svg",
       "assets/year_2020.svg",
       "assets/year_2021.svg",
@@ -146,10 +170,10 @@
       "assets/github.svg",
       "assets/grid.svg"
     ],
-    "file": "assets/index-53981657.js",
+    "file": "assets/index-0acd01eb.js",
     "imports": [
       "_vendors-5148a232.js",
-      "_activities-0cc162e8.js"
+      "_activities-0ae84c89.js"
     ],
     "isEntry": true,
     "src": "index.html"
