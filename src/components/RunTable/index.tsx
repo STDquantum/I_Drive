@@ -37,7 +37,7 @@ const RunTable = ({
       ? (a.elevation_gain ?? 0) - (b.elevation_gain ?? 0)
       : (b.elevation_gain ?? 0) - (a.elevation_gain ?? 0);
   const sortAvgVFunc: SortFunc = (a, b) =>
-    sortFuncInfo === 'AvgV'
+    sortFuncInfo === 'AvgKPH'
       ? b.average_speed - a.average_speed
       : a.average_speed - b.average_speed;
   const sortBPMFunc: SortFunc = (a, b) => {
@@ -57,7 +57,7 @@ const RunTable = ({
   const sortFuncMap = new Map([
     ['KM', sortKMFunc],
     ['Elevation Gain', sortElevationGainFunc],
-    ['AvgV', sortAvgVFunc],
+    ['AvgKPH', sortAvgVFunc],
     ['BPM', sortBPMFunc],
     ['Time', sortRunTimeFunc],
     ['Date', sortDateFuncClick],

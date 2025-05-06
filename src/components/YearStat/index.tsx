@@ -69,7 +69,7 @@ const YearStat = ({
         <Stat value={runs.length} description=" Runs" />
         <Stat value={sumDistance} description=" KM" />
         {SHOW_ELEVATION_GAIN && <Stat value={sumElevationGain} description=" Elevation Gain" />}
-        <Stat value={avgSpeed} description=" Avg Speed" />
+        <Stat value={`${avgSpeed} kph`} description=" Avg Speed" />
         <Stat value={`${streak} day`} description=" Streak" />
         {SHOW_BPM && hasHeartRate && (
           <Stat value={avgHeartRate} description=" Avg Heart Rate" />
