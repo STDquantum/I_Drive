@@ -153,7 +153,7 @@ const RunMap = ({
       {...viewState}
       onMove={onMove}
       style={style}
-      mapStyle="https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json"
+      mapStyle="https://tiles.stadiamaps.com/styles/alidade_smooth_dark.json"
       ref={mapRefCallback}
       mapLib={maplibregl}
     >
