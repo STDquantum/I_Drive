@@ -79,13 +79,13 @@ const ActivityCard: React.FC<ActivityCardProps> = ({ period, summary, dailyDista
         return `${h}h ${m}m ${s}s`;
     };
 
-    const formatPace = (speed: number): string => {
-        if (speed === 0) return '0:00';
-        const pace = 60 / speed; // min/km
-        const minutes = Math.floor(pace);
-        const seconds = Math.round((pace - minutes) * 60);
-        return `${minutes}:${seconds < 10 ? '0' : ''}${seconds} min/km`;
-    };
+    // const formatPace = (speed: number): string => {
+    //     if (speed === 0) return '0:00';
+    //     const pace = 60 / speed; // min/km
+    //     const minutes = Math.floor(pace);
+    //     const seconds = Math.round((pace - minutes) * 60);
+    //     return `${minutes}:${seconds < 10 ? '0' : ''}${seconds} min/km`;
+    // };
 
     // Calculate Y-axis maximum value and ticks
     const yAxisMax = Math.ceil(Math.max(...data.map(d => parseFloat(d.distance))) + 10); // Round up and add buffer
@@ -96,13 +96,13 @@ const ActivityCard: React.FC<ActivityCardProps> = ({ period, summary, dailyDista
             <h2 className={styles.activityName}>{period}</h2>
             <div className={styles.activityDetails}>
                 <p><strong>{ACTIVITY_TOTAL.TOTAL_DISTANCE_TITLE}:</strong> {summary.totalDistance.toFixed(2)} km</p>
-                <p><strong>{ACTIVITY_TOTAL.AVERAGE_SPEED_TITLE}:</strong> {activityType === 'ride' ? `${summary.averageSpeed.toFixed(2)} km/h` : formatPace(summary.averageSpeed)}</p>
+                <p><strong>{ACTIVITY_TOTAL.AVERAGE_SPEED_TITLE}:</strong> {`${summary.averageSpeed.toFixed(2)} km/h`}</p>
                 <p><strong>{ACTIVITY_TOTAL.TOTAL_TIME_TITLE}:</strong> {formatTime(summary.totalTime)}</p>
                 {interval !== 'day' && (
                     <>
                         <p><strong>{ACTIVITY_TOTAL.ACTIVITY_COUNT_TITLE}:</strong> {summary.count}</p>
                         <p><strong>{ACTIVITY_TOTAL.MAX_DISTANCE_TITLE}:</strong> {summary.maxDistance.toFixed(2)} km</p>
-                        <p><strong>{ACTIVITY_TOTAL.MAX_SPEED_TITLE}:</strong> {activityType === 'ride' ? `${summary.maxSpeed.toFixed(2)} km/h` : formatPace(summary.maxSpeed)}</p>
+                        <p><strong>{ACTIVITY_TOTAL.MAX_SPEED_TITLE}:</strong> {`${summary.maxSpeed.toFixed(2)} km/h`}</p>
                     </>
                 )}
                 {interval === 'day' && (

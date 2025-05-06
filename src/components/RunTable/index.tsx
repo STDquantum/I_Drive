@@ -6,7 +6,7 @@ import {
   Activity,
   RunIds,
 } from '@/utils/utils';
-import { SHOW_ELEVATION_GAIN } from "@/utils/const";
+import { SHOW_ELEVATION_GAIN, SHOW_BPM } from "@/utils/const";
 
 import RunRow from './RunRow';
 import styles from './style.module.css';
@@ -36,10 +36,10 @@ const RunTable = ({
     sortFuncInfo === 'Elevation Gain'
       ? (a.elevation_gain ?? 0) - (b.elevation_gain ?? 0)
       : (b.elevation_gain ?? 0) - (a.elevation_gain ?? 0);
-  const sortPaceFunc: SortFunc = (a, b) =>
-    sortFuncInfo === 'Pace'
-      ? a.average_speed - b.average_speed
-      : b.average_speed - a.average_speed;
+  const sortAvgVFunc: SortFunc = (a, b) =>
+    sortFuncInfo === 'AvgV'
+      ? b.average_speed - a.average_speed
+      : a.average_speed - b.average_speed;
   const sortBPMFunc: SortFunc = (a, b) => {
     return sortFuncInfo === 'BPM'
       ? (a.average_heartrate ?? 0) - (b.average_heartrate ?? 0)
@@ -57,13 +57,16 @@ const RunTable = ({
   const sortFuncMap = new Map([
     ['KM', sortKMFunc],
     ['Elevation Gain', sortElevationGainFunc],
-    ['Pace', sortPaceFunc],
+    ['AvgV', sortAvgVFunc],
     ['BPM', sortBPMFunc],
     ['Time', sortRunTimeFunc],
     ['Date', sortDateFuncClick],
   ]);
   if (!SHOW_ELEVATION_GAIN){
     sortFuncMap.delete('Elevation Gain')
+  }
+  if (!SHOW_BPM) {
+    sortFuncMap.delete('BPM');
   }
 
   const handleClick: React.MouseEventHandler<HTMLElement> = (e) => {

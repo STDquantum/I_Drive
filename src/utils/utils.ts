@@ -43,12 +43,10 @@ const titleForShow = (run: Activity): string => {
     }`;
 };
 
-const formatPace = (d: number): string => {
+const formatSpeed = (d: number): string => {
   if (Number.isNaN(d)) return '0';
-  const pace = (1000.0 / 60.0) * (1.0 / d);
-  const minutes = Math.floor(pace);
-  const seconds = Math.floor((pace - minutes) * 60.0);
-  return `${minutes}'${seconds.toFixed(0).toString().padStart(2, '0')}"`;
+  const speed = d * 3.6; // 把 m/s 转换成 km/h
+  return `${Math.round(speed)}`; // 四舍五入到整数
 };
 
 const convertMovingTime2Sec = (moving_time: string): number => {
@@ -472,7 +470,7 @@ const sortDateFuncReverse = (a: Activity, b: Activity) => sortDateFunc(b, a);
 
 export {
   titleForShow,
-  formatPace,
+  formatSpeed,
   scrollToMap,
   locationForRun,
   intComma,

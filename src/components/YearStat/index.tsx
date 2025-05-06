@@ -1,11 +1,11 @@
 import { lazy, Suspense } from 'react';
 import Stat from '@/components/Stat';
 import useActivities from '@/hooks/useActivities';
-import { formatPace } from '@/utils/utils';
+import { formatSpeed } from '@/utils/utils';
 import useHover from '@/hooks/useHover';
 import { yearStats } from '@assets/index';
 import { loadSvgComponent } from '@/utils/svgUtils';
-import { SHOW_ELEVATION_GAIN } from "@/utils/const";
+import { SHOW_ELEVATION_GAIN, SHOW_BPM } from "@/utils/const";
 
 const YearStat = ({
   year,
@@ -53,7 +53,7 @@ const YearStat = ({
   });
   sumDistance = parseFloat((sumDistance / 1000.0).toFixed(1));
   sumElevationGain = (sumElevationGain).toFixed(0);
-  const avgPace = formatPace(totalMetersAvail / totalSecondsAvail);
+  const avgSpeed = formatSpeed(totalMetersAvail / totalSecondsAvail);
   const hasHeartRate = !(heartRate === 0);
   const avgHeartRate = (heartRate / (runs.length - heartRateNullCount)).toFixed(
     0
@@ -69,9 +69,9 @@ const YearStat = ({
         <Stat value={runs.length} description=" Runs" />
         <Stat value={sumDistance} description=" KM" />
         {SHOW_ELEVATION_GAIN && <Stat value={sumElevationGain} description=" Elevation Gain" />}
-        <Stat value={avgPace} description=" Avg Pace" />
+        <Stat value={avgSpeed} description=" Avg Speed" />
         <Stat value={`${streak} day`} description=" Streak" />
-        {hasHeartRate && (
+        {SHOW_BPM && hasHeartRate && (
           <Stat value={avgHeartRate} description=" Avg Heart Rate" />
         )}
       </section>

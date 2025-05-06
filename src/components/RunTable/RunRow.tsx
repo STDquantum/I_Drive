@@ -1,5 +1,5 @@
-import { formatPace, titleForRun, formatRunTime, Activity, RunIds } from '@/utils/utils';
-import { SHOW_ELEVATION_GAIN } from '@/utils/const';
+import { formatSpeed, titleForRun, formatRunTime, Activity, RunIds } from '@/utils/utils';
+import { SHOW_ELEVATION_GAIN, SHOW_BPM } from '@/utils/const';
 import styles from './style.module.css';
 
 interface IRunRowProperties {
@@ -19,7 +19,7 @@ const RunRow = ({
 }: IRunRowProperties) => {
   const distance = (run.distance / 1000.0).toFixed(2);
   const elevation_gain = run.elevation_gain?.toFixed(0);
-  const paceParts = run.average_speed ? formatPace(run.average_speed) : null;
+  const avgVParts = run.average_speed ? formatSpeed(run.average_speed) : null;
   const heartRate = run.average_heartrate;
   const runTime = formatRunTime(run.moving_time);
   const handleClick = () => {
@@ -41,8 +41,8 @@ const RunRow = ({
       <td>{titleForRun(run)}</td>
       <td>{distance}</td>
       {SHOW_ELEVATION_GAIN && <td>{elevation_gain}</td>}
-      {paceParts && <td>{paceParts}</td>}
-      <td>{heartRate && heartRate.toFixed(0)}</td>
+      <td>{avgVParts ? avgVParts : 0}</td>
+      {SHOW_BPM && heartRate && <td>{heartRate.toFixed(0)}</td>}
       <td>{runTime}</td>
       <td className={styles.runDate}>{run.start_date_local}</td>
     </tr>
