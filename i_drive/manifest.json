@@ -17,7 +17,7 @@
     "file": "assets/vendors-5148a232.js"
   },
   "assets/end.svg": {
-    "file": "assets/end-e97ce96f.svg",
+    "file": "assets/end-e0449409.svg",
     "src": "assets/end.svg"
   },
   "assets/favicon.png": {
@@ -170,7 +170,7 @@
       "assets/github.svg",
       "assets/grid.svg"
     ],
-    "file": "assets/index-e7853073.js",
+    "file": "assets/index-5c82abe1.js",
     "imports": [
       "_vendors-5148a232.js",
       "_activities-eab083a1.js"
