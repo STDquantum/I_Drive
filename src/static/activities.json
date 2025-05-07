@@ -13602,36 +13602,19 @@
     {
         "run_id": 1720069050000,
         "name": "Run from AutoMerger",
-        "distance": 3720336.620255159,
-        "moving_time": "10:52:46",
+        "distance": 1892463.574163557,
+        "moving_time": "1 day, 10:44:15",
         "type": "Run",
         "subtype": "",
         "start_date": "2024-07-04 04:57:30",
         "start_date_local": "2024-07-04 12:57:30",
         "location_country": "南边海路, 吉阳区, 三亚市, 海南省, 560000, 中国",
         "ending_point_pos": "黎巨川墓, 禺山西路, 南双玉村, 沙头街道, 番禺区, 广州市, 广东省, 511400, 中国",
-        "summary_polyline": "e~cnBwme{SynyhA_gt_A??????????pvg~@h}ty@????MpAvDeCi@dU??????T?`@j@[c@??????????DGEJ????qApAByAyDhBxCxCcqH_uKev@d@i|@zCgh@lA}hgEguFetUkqAgyKyn@am[mnD_vBmnAsr_A_reAgpoFw~cMcBcB",
+        "summary_polyline": "e~cnBwme{SgwpIuh~D????MpAvDeCi@dU??????T?`@j@[c@??????????DGEJ????qApAByAyDhBxCxCcqH_uKev@d@i|@zCgh@lA}hgEguFetUkqAgyKyn@am[mnD_vBmnAsr_A_reAgpoFw~cMcBcB_zni@sxnh@m|@yaC_{FouOctDs}JgrEqqMuqUsxq@}mJebY_}B{xFkrSx_UzlAxiMt|Lzm]fGCy|J`|eAoe@}Tbf@t`@cBcB",
         "average_heartrate": null,
-        "average_speed": 224.09355026951735,
-        "elevation_gain": 9725.0,
+        "average_speed": 56.298845400041095,
+        "elevation_gain": 9075.0,
         "streak": 8
-    },
-    {
-        "run_id": 1720113101000,
-        "name": "Run from AutoMerger",
-        "distance": 151128.12409638218,
-        "moving_time": "22:35:04",
-        "type": "Run",
-        "subtype": "",
-        "start_date": "2024-07-04 17:11:41",
-        "start_date_local": "2024-07-05 01:11:41",
-        "location_country": "儒直坞村, 楼塔镇, 萧山区, 杭州市, 浙江省, 中国",
-        "ending_point_pos": "三墩镇, 西湖区, 杭州市, 浙江省, 310058, 中国",
-        "summary_polyline": "ifquD}n_|Um|@yaC_{FouOctDs}JgrEqqMuqUsxq@}mJebY_}B{xFkrSx_UzlAxiMt|Lzm]fGCy|J`|eAoe@}Tbf@t`@cBcB",
-        "average_heartrate": null,
-        "average_speed": 24.117948927565067,
-        "elevation_gain": 0.0,
-        "streak": 9
     },
     {
         "run_id": 1720256970000,
@@ -13648,7 +13631,7 @@
         "average_heartrate": null,
         "average_speed": 1.225576508121004,
         "elevation_gain": 0.0,
-        "streak": 10
+        "streak": 1
     },
     {
         "run_id": 1720324831000,
@@ -13665,7 +13648,7 @@
         "average_heartrate": null,
         "average_speed": 1.2255419113052883,
         "elevation_gain": 0.0,
-        "streak": 11
+        "streak": 2
     },
     {
         "run_id": 1720411426000,
@@ -13682,7 +13665,7 @@
         "average_heartrate": null,
         "average_speed": 1.2255401653047544,
         "elevation_gain": 0.0,
-        "streak": 12
+        "streak": 3
     },
     {
         "run_id": 1720504969000,
@@ -13699,7 +13682,7 @@
         "average_heartrate": null,
         "average_speed": 1.2255775384682797,
         "elevation_gain": 0.0,
-        "streak": 13
+        "streak": 4
     },
     {
         "run_id": 1720607591000,
@@ -13716,7 +13699,7 @@
         "average_heartrate": null,
         "average_speed": 1.6381958274654125,
         "elevation_gain": 0.0,
-        "streak": 14
+        "streak": 5
     },
     {
         "run_id": 1720681169000,
@@ -13733,7 +13716,7 @@
         "average_heartrate": null,
         "average_speed": 1.3549485184718597,
         "elevation_gain": 0.0,
-        "streak": 15
+        "streak": 6
     },
     {
         "run_id": 1720758670000,
@@ -13750,7 +13733,7 @@
         "average_heartrate": null,
         "average_speed": 2.289058337869171,
         "elevation_gain": 0.0,
-        "streak": 16
+        "streak": 7
     },
     {
         "run_id": 1720835539000,
@@ -13767,7 +13750,7 @@
         "average_heartrate": null,
         "average_speed": 1.2255775224525556,
         "elevation_gain": 0.0,
-        "streak": 17
+        "streak": 8
     },
     {
         "run_id": 1720952464000,
@@ -13784,7 +13767,7 @@
         "average_heartrate": null,
         "average_speed": 0.3308437496049848,
         "elevation_gain": 0.0,
-        "streak": 18
+        "streak": 9
     },
     {
         "run_id": 1721001221000,
@@ -13801,7 +13784,7 @@
         "average_heartrate": null,
         "average_speed": 4.97809525125821,
         "elevation_gain": 0.0,
-        "streak": 19
+        "streak": 10
     },
     {
         "run_id": 1721095093000,
@@ -13818,7 +13801,7 @@
         "average_heartrate": null,
         "average_speed": 6.121160087709326,
         "elevation_gain": 0.0,
-        "streak": 20
+        "streak": 11
     },
     {
         "run_id": 1721212722000,
@@ -13835,7 +13818,7 @@
         "average_heartrate": null,
         "average_speed": 1.7332701818124674,
         "elevation_gain": 0.0,
-        "streak": 21
+        "streak": 12
     },
     {
         "run_id": 1721269285000,
@@ -13852,7 +13835,7 @@
         "average_heartrate": null,
         "average_speed": 19.823372678207797,
         "elevation_gain": 0.0,
-        "streak": 22
+        "streak": 13
     },
     {
         "run_id": 1721346372000,
@@ -13869,7 +13852,7 @@
         "average_heartrate": null,
         "average_speed": 3.1419976544685597,
         "elevation_gain": 0.0,
-        "streak": 23
+        "streak": 14
     },
     {
         "run_id": 1721456979000,
@@ -13886,7 +13869,7 @@
         "average_heartrate": null,
         "average_speed": 0.8373741398775819,
         "elevation_gain": 0.0,
-        "streak": 24
+        "streak": 15
     },
     {
         "run_id": 1721523862000,
@@ -13903,7 +13886,7 @@
         "average_heartrate": null,
         "average_speed": 5.1405885313528685,
         "elevation_gain": 0.0,
-        "streak": 25
+        "streak": 16
     },
     {
         "run_id": 1721650720000,
@@ -13920,7 +13903,7 @@
         "average_heartrate": null,
         "average_speed": 1.225744119569211,
         "elevation_gain": 0.0,
-        "streak": 26
+        "streak": 17
     },
     {
         "run_id": 1721722455000,
@@ -13937,7 +13920,7 @@
         "average_heartrate": null,
         "average_speed": 67.24391927496417,
         "elevation_gain": 7729.0,
-        "streak": 27
+        "streak": 18
     },
     {
         "run_id": 1721902544000,
