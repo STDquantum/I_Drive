@@ -45,15 +45,3 @@ def get_address_from_coordinates(latitude, longitude, language="en"):
         return f"未知错误：{str(e)}"
 
 
-# 示例用法
-if __name__ == "__main__":
-    
-    geo = {"lng":"37.50022992899543","lat":"55.809602322032205"}
-    
-    # 输入坐标（示例：北京天安门广场）
-    lat = geo["lat"]
-    lon = geo["lng"]
-
-    # 获取中文地址
-    address = get_address_from_coordinates(lat, lon, language="zh")
-    print(f"坐标 ({lat}, {lon}) 对应的地址是：\n{address}")
