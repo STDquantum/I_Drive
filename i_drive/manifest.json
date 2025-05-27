@@ -4,8 +4,8 @@
     "isDynamicEntry": true,
     "src": "__vite-optional-peer-dep:mapbox-gl:react-map-gl"
   },
-  "_activities-04238f49.js": {
-    "file": "assets/activities-04238f49.js"
+  "_activities-a29e4e3f.js": {
+    "file": "assets/activities-a29e4e3f.js"
   },
   "_vendors-5148a232.js": {
     "css": [
@@ -26,9 +26,9 @@
   },
   "assets/github.svg": {
     "assets": [
-      "assets/github-c013fe96.svg"
+      "assets/github-ac379a47.svg"
     ],
-    "file": "assets/github.svg-039078f1.js",
+    "file": "assets/github.svg-c9a8ceca.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -37,9 +37,9 @@
   },
   "assets/grid.svg": {
     "assets": [
-      "assets/grid-e7e60751.svg"
+      "assets/grid-f2af8367.svg"
     ],
-    "file": "assets/grid.svg-0a7e4914.js",
+    "file": "assets/grid.svg-7cdd51a7.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -140,9 +140,9 @@
   },
   "assets/year_2025.svg": {
     "assets": [
-      "assets/year_2025-2c50e2e3.svg"
+      "assets/year_2025-7bddb0cf.svg"
     ],
-    "file": "assets/year_2025-9e3333f7.js",
+    "file": "assets/year_2025-b30bb057.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -170,10 +170,10 @@
       "assets/github.svg",
       "assets/grid.svg"
     ],
-    "file": "assets/index-9bacdf22.js",
+    "file": "assets/index-1c531d79.js",
     "imports": [
       "_vendors-5148a232.js",
-      "_activities-04238f49.js"
+      "_activities-a29e4e3f.js"
     ],
     "isEntry": true,
     "src": "index.html"
