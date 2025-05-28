@@ -2,11 +2,13 @@ import gpxpy
 from datetime import timedelta
 
 # 读取 GPX 文件
-input_file = 'GPX_OUT\\20250508walk_adjusted.gpx'
+input_file = r'GPX_OUT\20250528.gpx'
 output_file = 'GPX_OUT\\20250508健步_adjusted.gpx'
+output_file = input_file[:-4] + "_adjusted.gpx"
 
-with open(input_file, 'r', encoding='utf-8') as f:
-    gpx = gpxpy.parse(f)
+f = open(input_file, 'r', encoding='utf-8')
+gpx = gpxpy.parse(f)
+f.close()
 
 gpx.creator = 'miHealth'
 
