@@ -11,6 +11,7 @@ import os
 from collections import namedtuple
 
 import gpxpy as mod_gpxpy
+import gpxpy.gpx as gpxpy_gpx
 import lxml
 import polyline
 import s2sphere as s2
@@ -185,7 +186,7 @@ class Track:
             "average_speed": self.length / moving_time if moving_time else 0,
         }
 
-    def _load_gpx_data(self, gpx):
+    def _load_gpx_data(self, gpx: gpxpy_gpx.GPX):
         self.start_time, self.end_time = gpx.get_time_bounds()
         # use timestamp as id
         self.run_id = self.__make_run_id(self.start_time)
