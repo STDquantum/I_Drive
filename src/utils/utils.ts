@@ -337,6 +337,10 @@ const titleForRun = (run: Activity): string => {
           elements[i] = '昆明市';
           anchorIndex = i;
           break;
+        } else if (element === '湖南省' && (pos.includes('天心区, 湖南省') || pos.includes('芙蓉区, 湖南省'))) {
+          elements[i] = '长沙市';
+          anchorIndex = i;
+          break
         }
         anchorIndex = i - 1; // 找到省或自治区时设置为前一个元素
         break;
