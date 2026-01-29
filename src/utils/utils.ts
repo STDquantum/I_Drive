@@ -323,7 +323,7 @@ const titleForRun = (run: Activity): string => {
     const directCities = ['北京市', '上海市', '天津市', '重庆市'];
     let anchorIndex = -1;
 
-    if (elements[0].includes('浙江大学')) {
+    if (elements[0].includes('浙江大学') && elements[0].includes('校区')) {
       return elements[0];
     }
     for (let i = elements.length - 1; i >= 0; i--) {
