@@ -4,8 +4,8 @@
     "isDynamicEntry": true,
     "src": "__vite-optional-peer-dep:mapbox-gl:react-map-gl"
   },
-  "_activities-d16a7f28.js": {
-    "file": "assets/activities-d16a7f28.js"
+  "_activities-b6e98478.js": {
+    "file": "assets/activities-b6e98478.js"
   },
   "_vendors-5148a232.js": {
     "css": [
@@ -26,9 +26,9 @@
   },
   "assets/github.svg": {
     "assets": [
-      "assets/github-706bf8ce.svg"
+      "assets/github-d5bb9cf2.svg"
     ],
-    "file": "assets/github.svg-44578f69.js",
+    "file": "assets/github.svg-3890e00a.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -37,9 +37,9 @@
   },
   "assets/grid.svg": {
     "assets": [
-      "assets/grid-e0bea13c.svg"
+      "assets/grid-d4c3d146.svg"
     ],
-    "file": "assets/grid.svg-9c108a14.js",
+    "file": "assets/grid.svg-15658194.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -129,9 +129,9 @@
   },
   "assets/year_2024.svg": {
     "assets": [
-      "assets/year_2024-784abf0a.svg"
+      "assets/year_2024-ae9b8bd3.svg"
     ],
-    "file": "assets/year_2024-f009691e.js",
+    "file": "assets/year_2024-b13ba354.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -140,9 +140,9 @@
   },
   "assets/year_2025.svg": {
     "assets": [
-      "assets/year_2025-35c535ba.svg"
+      "assets/year_2025-7a2610e9.svg"
     ],
-    "file": "assets/year_2025-82b88324.js",
+    "file": "assets/year_2025-ff9afdcf.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -151,9 +151,9 @@
   },
   "assets/year_2026.svg": {
     "assets": [
-      "assets/year_2026-6c398165.svg"
+      "assets/year_2026-9b2faf2f.svg"
     ],
-    "file": "assets/year_2026-407a09c2.js",
+    "file": "assets/year_2026-698892d1.js",
     "imports": [
       "_vendors-5148a232.js"
     ],
@@ -182,10 +182,10 @@
       "assets/github.svg",
       "assets/grid.svg"
     ],
-    "file": "assets/index-134f28bf.js",
+    "file": "assets/index-8e1fa0e6.js",
     "imports": [
       "_vendors-5148a232.js",
-      "_activities-d16a7f28.js"
+      "_activities-b6e98478.js"
     ],
     "isEntry": true,
     "src": "index.html"
