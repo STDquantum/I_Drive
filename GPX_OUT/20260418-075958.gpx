@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with BasicAirData GPS Logger for Android - ver. 3.2.3 -->
+<!-- Created with BasicAirData GPS Logger for Android - ver. 3.3.0 -->
 <!-- Track 381 = 2897 TrackPoints + 0 Placemarks -->
 
 <!-- Track Statistics (based on Total Time | Time in Movement): -->
@@ -13,13 +13,13 @@
 <!--  Altitudes = Corrected using EGM96 grid (bilinear interpolation) -->
 
 <gpx version="1.1"
-     creator="BasicAirData GPS Logger 3.2.3"
+     creator="BasicAirData GPS Logger 3.3.0"
      xmlns="http://www.topografix.com/GPX/1/1"
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
      xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
 <metadata> 
  <name>GPS Logger 20260418-075958</name>
- <time>2026-04-19T13:12:37Z</time>
+ <time>2026-08-05T14:29:22Z</time>
  <keywords>car</keywords>
  <bounds minlat="30.27016405" minlon="120.07009588" maxlat="30.30938853" maxlon="120.12062859" />
 </metadata>
