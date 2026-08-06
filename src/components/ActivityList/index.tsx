@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import activities from '@/static/activities.json';
 import styles from './style.module.css';
 import {ACTIVITY_TOTAL, ACTIVITY_TYPES} from "@/utils/const";
+import { convertMovingTime2Sec } from '@/utils/utils';
 
 // Define interfaces for our data structures
 interface Activity {
@@ -148,11 +149,6 @@ const ActivityList: React.FC = () => {
         return activity.type.toLowerCase() === activityType;
     };
 
-    const convertTimeToSeconds = (time: string): number => {
-        const [hours, minutes, seconds] = time.split(':').map(Number);
-        return hours * 3600 + minutes * 60 + seconds;
-    };
-
     const groupActivities = (interval: IntervalType): ActivityGroups => {
         return (activities as Activity[]).filter(filterActivities).reduce((acc: ActivityGroups, activity) => {
             const date = new Date(activity.start_date_local);
@@ -195,7 +191,7 @@ const ActivityList: React.FC = () => {
             };
 
             const distanceKm = activity.distance / 1000; // Convert to kilometers
-            const timeInSeconds = convertTimeToSeconds(activity.moving_time);
+            const timeInSeconds = convertMovingTime2Sec(activity.moving_time);
             const speedKmh = timeInSeconds > 0 ? distanceKm / (timeInSeconds / 3600) : 0;
 
             acc[key].totalDistance += distanceKm;
