@@ -161,12 +161,12 @@
     "src": "assets/year_2026.svg"
   },
   "index.css": {
-    "file": "assets/index-cc5ea55b.css",
+    "file": "assets/index-7d6d7a30.css",
     "src": "index.css"
   },
   "index.html": {
     "css": [
-      "assets/index-cc5ea55b.css"
+      "assets/index-7d6d7a30.css"
     ],
     "dynamicImports": [
       "assets/year_2017.svg",
@@ -182,7 +182,7 @@
       "assets/github.svg",
       "assets/grid.svg"
     ],
-    "file": "assets/index-fe4155b1.js",
+    "file": "assets/index-0474bcc1.js",
     "imports": [
       "_vendors-5148a232.js",
       "_activities-3c464275.js"
