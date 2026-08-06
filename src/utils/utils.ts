@@ -442,6 +442,13 @@ const filterYearRuns = (run: Activity, year: string) => {
   return false;
 };
 
+const filterMonthRuns = (run: Activity, month: string) => {
+  if (run && run.start_date_local) {
+    return run.start_date_local.slice(5, 7) === month;
+  }
+  return false;
+};
+
 const filterCityRuns = (run: Activity, city: string) => {
   if (run && run.location_country) {
     return run.location_country.includes(city);
@@ -457,10 +464,10 @@ const filterAndSortRuns = (
   filterFunc: (_run: Activity, _bvalue: string) => boolean,
   sortFunc: (_a: Activity, _b: Activity) => number
 ) => {
-  let s = activities;
-  if (item !== 'Total') {
-    s = activities.filter((run) => filterFunc(run, item));
-  }
+  const s =
+    item === 'Total'
+      ? activities.slice()
+      : activities.filter((run) => filterFunc(run, item));
   return s.sort(sortFunc);
 };
 
@@ -483,6 +490,7 @@ export {
   geoJsonForMap,
   titleForRun,
   filterYearRuns,
+  filterMonthRuns,
   filterCityRuns,
   filterTitleRuns,
   filterAndSortRuns,

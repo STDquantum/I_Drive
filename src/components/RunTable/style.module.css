@@ -60,8 +60,32 @@
 
 .tableContainer {
   width: 100%;
+  margin-top: 20px;
+}
+
+.monthFilter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  color: rgb(204, 204, 204);
+  font-size: 1rem;
+}
+
+.monthFilter select {
+  min-width: 5.5rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid rgb(89, 89, 89);
+  border-radius: 4px;
+  color: rgb(224, 237, 94);
+  background-color: rgb(89, 89, 89);
+  cursor: pointer;
+}
+
+.tableScroll {
+  max-height: 550px;
   overflow-x: auto;
-  margin-top: 30px;
+  overflow-y: auto;
 }
 
 .runDate {

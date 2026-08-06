@@ -15,6 +15,7 @@ import {
   IViewState,
   filterAndSortRuns,
   filterCityRuns,
+  filterMonthRuns,
   filterTitleRuns,
   filterYearRuns,
   geoJsonForRuns,
@@ -27,6 +28,7 @@ import {
 
 const SHOW_LOCATION_STAT = 'SHOW_LOCATION_STAT';
 const SHOW_YEARS_STAT = 'SHOW_YEARS_STAT';
+const ALL_MONTHS = 'all';
 const reducer = (state: any, action: { type: any }) => {
   switch (action.type) {
     case SHOW_LOCATION_STAT:
@@ -41,11 +43,17 @@ const Index = () => {
   const { siteTitle } = useSiteMetadata();
   const { activities, thisYear } = useActivities();
   const [year, setYear] = useState(thisYear);
+  const [month, setMonth] = useState(ALL_MONTHS);
   const [isYearlyView, setIsYearlyView] = useState(true);
   const [runIndex, setRunIndex] = useState(-1);
-  const [runs, setActivity] = useState(
-    filterAndSortRuns(activities, year, filterYearRuns, sortDateFunc)
+  const initialRuns = filterAndSortRuns(
+    activities,
+    year,
+    filterYearRuns,
+    sortDateFunc
   );
+  const [baseRuns, setBaseRuns] = useState(initialRuns);
+  const [runs, setActivity] = useState(initialRuns);
   const [title, setTitle] = useState('');
   const [geoData, setGeoData] = useState(geoJsonForRuns(runs));
   // for auto zoom
@@ -69,8 +77,11 @@ const Index = () => {
     if (name != 'Year') {
       setYear(thisYear);
     }
+    setMonth(ALL_MONTHS);
     setIsYearlyView(true);
-    setActivity(filterAndSortRuns(activities, item, func, sortDateFunc));
+    const filteredRuns = filterAndSortRuns(activities, item, func, sortDateFunc);
+    setBaseRuns(filteredRuns);
+    setActivity(filteredRuns);
     setRunIndex(-1);
     setTitle(`${item} ${name} Running Heatmap`);
   };
@@ -78,6 +89,7 @@ const Index = () => {
   const changeYear = (y: string) => {
     // default year
     setYear(y);
+    setMonth(ALL_MONTHS);
 
     if ((viewState.zoom ?? 0) > ZOOM_BIGMAP_LEVEL && bounds) {
       setViewState({
@@ -86,6 +98,27 @@ const Index = () => {
     }
 
     changeByItem(y, 'Year', filterYearRuns);
+    clearInterval(intervalId);
+  };
+
+  const changeMonth = (selectedMonth: string) => {
+    if (year === 'Total') {
+      return;
+    }
+
+    setMonth(selectedMonth);
+    setIsYearlyView(true);
+    const selectedRuns =
+      selectedMonth === ALL_MONTHS
+        ? baseRuns
+        : baseRuns.filter((run) => filterMonthRuns(run, selectedMonth));
+    setActivity(selectedRuns.slice().sort(sortDateFunc));
+    setRunIndex(-1);
+    setTitle(
+      selectedMonth === ALL_MONTHS
+        ? `${year} Running Heatmap`
+        : `${year}-${selectedMonth} Running Heatmap`
+    );
     clearInterval(intervalId);
   };
 
@@ -258,6 +291,8 @@ const Index = () => {
             runs={runs}
             locateActivity={locateActivity}
             setActivity={setActivity}
+            month={month}
+            onMonthChange={changeMonth}
             runIndex={runIndex}
             setRunIndex={setRunIndex}
           />

@@ -15,6 +15,8 @@ interface IRunTableProperties {
   runs: Activity[];
   locateActivity: (_runIds: RunIds) => void;
   setActivity: (_runs: Activity[]) => void;
+  month: string;
+  onMonthChange: (_month: string) => void;
   runIndex: number;
   setRunIndex: (_index: number) => void;
 }
@@ -25,6 +27,8 @@ const RunTable = ({
   runs,
   locateActivity,
   setActivity,
+  month,
+  onMonthChange,
   runIndex,
   setRunIndex,
 }: IRunTableProperties) => {
@@ -75,35 +79,51 @@ const RunTable = ({
 
     setRunIndex(-1);
     setSortFuncInfo(sortFuncInfo === funcName ? '' : funcName);
-    setActivity(runs.sort(f));
+    setActivity(runs.slice().sort(f));
   };
 
   return (
-    <div className={styles.tableContainer} style={{ maxHeight: '550px', overflowY: 'auto' }}>
-      <table className={styles.runTable} cellSpacing="0" cellPadding="0">
-        <thead>
-          <tr>
-            <th />
-            {Array.from(sortFuncMap.keys()).map((k) => (
-              <th key={k} onClick={handleClick}>
-                {k}
-              </th>
+    <div className={styles.tableContainer}>
+      <label className={styles.monthFilter}>
+        <span>月份</span>
+        <select value={month} onChange={(e) => onMonthChange(e.target.value)}>
+          <option value="all">全部</option>
+          {Array.from({ length: 12 }, (_, index) => {
+            const monthValue = String(index + 1).padStart(2, '0');
+            return (
+              <option key={monthValue} value={monthValue}>
+                {index + 1}月
+              </option>
+            );
+          })}
+        </select>
+      </label>
+      <div className={styles.tableScroll}>
+        <table className={styles.runTable} cellSpacing="0" cellPadding="0">
+          <thead>
+            <tr>
+              <th />
+              {Array.from(sortFuncMap.keys()).map((k) => (
+                <th key={k} onClick={handleClick}>
+                  {k}
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {runs.map((run, elementIndex) => (
+              <RunRow
+                key={run.run_id}
+                elementIndex={elementIndex}
+                locateActivity={locateActivity}
+                run={run}
+                runIndex={runIndex}
+                setRunIndex={setRunIndex}
+              />
             ))}
-          </tr>
-        </thead>
-        <tbody>
-          {runs.map((run, elementIndex) => (
-            <RunRow
-              key={run.run_id}
-              elementIndex={elementIndex}
-              locateActivity={locateActivity}
-              run={run}
-              runIndex={runIndex}
-              setRunIndex={setRunIndex}
-            />
-          ))}
-        </tbody>
-      </table>
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
