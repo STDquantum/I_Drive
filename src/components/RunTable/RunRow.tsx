@@ -8,6 +8,8 @@ interface IRunRowProperties {
   run: Activity;
   runIndex: number;
   setRunIndex: (_ndex: number) => void;
+  selected: boolean;
+  onToggleSelection: (_runId: number, _selected: boolean) => void;
 }
 
 const RunRow = ({
@@ -16,6 +18,8 @@ const RunRow = ({
   run,
   runIndex,
   setRunIndex,
+  selected,
+  onToggleSelection,
 }: IRunRowProperties) => {
   const distance = (run.distance / 1000.0).toFixed(2);
   const elevation_gain = run.elevation_gain?.toFixed(0);
@@ -38,7 +42,17 @@ const RunRow = ({
       key={run.start_date_local}
       onClick={handleClick}
     >
-      <td>{titleForRun(run)}</td>
+      <td>
+        <input
+          className={styles.selectionCheckbox}
+          type="checkbox"
+          checked={selected}
+          aria-label={`选择路线 ${titleForRun(run)}`}
+          onClick={(e) => e.stopPropagation()}
+          onChange={(e) => onToggleSelection(run.run_id, e.target.checked)}
+        />
+        {titleForRun(run)}
+      </td>
       <td>{distance}</td>
       {SHOW_ELEVATION_GAIN && <td>{elevation_gain}</td>}
       <td>{avgVParts ? avgVParts : 0}</td>

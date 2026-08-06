@@ -54,6 +54,7 @@ const Index = () => {
   );
   const [baseRuns, setBaseRuns] = useState(initialRuns);
   const [runs, setActivity] = useState(initialRuns);
+  const [selectedRunIds, setSelectedRunIds] = useState<RunIds>([]);
   const [title, setTitle] = useState('');
   const [geoData, setGeoData] = useState(geoJsonForRuns(runs));
   // for auto zoom
@@ -78,6 +79,7 @@ const Index = () => {
       setYear(thisYear);
     }
     setMonth(ALL_MONTHS);
+    setSelectedRunIds([]);
     setIsYearlyView(true);
     const filteredRuns = filterAndSortRuns(activities, item, func, sortDateFunc);
     setBaseRuns(filteredRuns);
@@ -90,6 +92,7 @@ const Index = () => {
     // default year
     setYear(y);
     setMonth(ALL_MONTHS);
+    setSelectedRunIds([]);
 
     if ((viewState.zoom ?? 0) > ZOOM_BIGMAP_LEVEL && bounds) {
       setViewState({
@@ -107,6 +110,7 @@ const Index = () => {
     }
 
     setMonth(selectedMonth);
+    setSelectedRunIds([]);
     setIsYearlyView(true);
     const selectedRuns =
       selectedMonth === ALL_MONTHS
@@ -128,6 +132,13 @@ const Index = () => {
 
   const changeTitle = (title: string) => {
     changeByItem(title, 'Title', filterTitleRuns);
+  };
+
+  const changeSelectedRuns = (runIds: RunIds) => {
+    setSelectedRunIds(runIds);
+    setRunIndex(-1);
+    setIsYearlyView(true);
+    setTitle(runIds.length ? `Selected ${runIds.length} Routes` : '');
   };
 
   const locateActivity = (runIds: RunIds) => {
@@ -166,7 +177,11 @@ const Index = () => {
   }, [geoData]);
 
   useEffect(() => {
-    const runsNum = runs.length;
+    const selectedRunIdSet = new Set(selectedRunIds);
+    const runsToShow = selectedRunIds.length
+      ? runs.filter((run) => selectedRunIdSet.has(run.run_id))
+      : runs;
+    const runsNum = runsToShow.length;
     // maybe change 20 ?
     const sliceNume = runsNum >= 20 ? runsNum / 20 : 1;
     let i = sliceNume;
@@ -175,12 +190,13 @@ const Index = () => {
         clearInterval(id);
       }
 
-      const tempRuns = runs.slice(0, i);
+      const tempRuns = runsToShow.slice(0, i);
       setGeoData(geoJsonForRuns(tempRuns));
       i += sliceNume;
     }, 100);
     setIntervalId(id);
-  }, [runs]);
+    return () => clearInterval(id);
+  }, [runs, selectedRunIds]);
 
   useEffect(() => {
     if (year !== 'Total') {
@@ -293,6 +309,8 @@ const Index = () => {
             setActivity={setActivity}
             month={month}
             onMonthChange={changeMonth}
+            selectedRunIds={selectedRunIds}
+            onSelectionChange={changeSelectedRuns}
             runIndex={runIndex}
             setRunIndex={setRunIndex}
           />

@@ -17,6 +17,8 @@ interface IRunTableProperties {
   setActivity: (_runs: Activity[]) => void;
   month: string;
   onMonthChange: (_month: string) => void;
+  selectedRunIds: RunIds;
+  onSelectionChange: (_runIds: RunIds) => void;
   runIndex: number;
   setRunIndex: (_index: number) => void;
 }
@@ -29,6 +31,8 @@ const RunTable = ({
   setActivity,
   month,
   onMonthChange,
+  selectedRunIds,
+  onSelectionChange,
   runIndex,
   setRunIndex,
 }: IRunTableProperties) => {
@@ -73,6 +77,25 @@ const RunTable = ({
     sortFuncMap.delete('BPM');
   }
 
+  const selectedRunIdSet = new Set(selectedRunIds);
+  const selectedRuns = runs.filter((run) => selectedRunIdSet.has(run.run_id));
+  const selectedDistance = selectedRuns.reduce(
+    (total, run) => total + run.distance,
+    0
+  );
+  const selectedElevation = selectedRuns.reduce(
+    (total, run) => total + (run.elevation_gain ?? 0),
+    0
+  );
+  const selectedTime = selectedRuns.reduce(
+    (total, run) => total + convertMovingTime2Sec(run.moving_time),
+    0
+  );
+  const selectedAverageSpeed = selectedTime
+    ? (selectedDistance / 1000 / (selectedTime / 3600)).toFixed(1)
+    : '0.0';
+  const selectedTimeHours = (selectedTime / 3600).toFixed(1);
+
   const handleClick: React.MouseEventHandler<HTMLElement> = (e) => {
     const funcName = (e.target as HTMLElement).innerHTML;
     const f = sortFuncMap.get(funcName);
@@ -82,8 +105,40 @@ const RunTable = ({
     setActivity(runs.slice().sort(f));
   };
 
+  const handleToggleSelection = (runId: number, isSelected: boolean) => {
+    const nextSelectedRunIds = new Set(selectedRunIds);
+    if (isSelected) {
+      nextSelectedRunIds.add(runId);
+    } else {
+      nextSelectedRunIds.delete(runId);
+    }
+    onSelectionChange(Array.from(nextSelectedRunIds));
+  };
+
   return (
     <div className={styles.tableContainer}>
+      <div className={styles.selectionToolbar}>
+        <span>已选择 {selectedRuns.length} 条路线</span>
+        <button
+          type="button"
+          onClick={() => onSelectionChange(runs.map((run) => run.run_id))}
+        >
+          全选
+        </button>
+        <button type="button" onClick={() => onSelectionChange([])}>
+          全部取消
+        </button>
+        {selectedRuns.length > 0 && (
+          <>
+            <span>{(selectedDistance / 1000).toFixed(2)} KM</span>
+            {SHOW_ELEVATION_GAIN && (
+              <span>{selectedElevation.toFixed(0)} Elevation Gain</span>
+            )}
+            <span>{selectedAverageSpeed} AvgKPH</span>
+            <span>{selectedTimeHours} h</span>
+          </>
+        )}
+      </div>
       <label className={styles.monthFilter}>
         <span>月份</span>
         <select value={month} onChange={(e) => onMonthChange(e.target.value)}>
@@ -119,6 +174,8 @@ const RunTable = ({
                 run={run}
                 runIndex={runIndex}
                 setRunIndex={setRunIndex}
+                selected={selectedRunIdSet.has(run.run_id)}
+                onToggleSelection={handleToggleSelection}
               />
             ))}
           </tbody>
